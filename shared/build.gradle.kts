@@ -29,8 +29,8 @@ kotlin {
         it.binaries.framework {
             baseName = "shared"
             isStatic = false
-            export("dev.icerock.moko:resources:0.24.3")
-            export("dev.icerock.moko:graphics:0.9.0")
+            export("dev.icerock.moko:resources:0.25.1")
+            export("dev.icerock.moko:graphics:0.10.0")
         }
     }
 
@@ -70,6 +70,7 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
+            implementation(compose.materialIconsExtended)
             implementation(compose.ui)
             implementation(compose.components.resources)
 
