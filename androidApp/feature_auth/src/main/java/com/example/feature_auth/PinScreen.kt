@@ -20,6 +20,7 @@ import com.example.kursovikkmp.feature.auth.pin.PinState
 import com.example.kursovikkmp.feature.auth.pin.PinViewModel
 import org.koin.androidx.compose.koinViewModel
 
+
 @Composable
 fun PinScreen() {
     val viewModel: PinViewModel = koinViewModel()
