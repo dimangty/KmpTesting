@@ -54,7 +54,15 @@ object HomeScreen : Screen {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreenView(tabs: List<String>) {
+fun HomeScreenView(
+    tabs: List<String>,
+    tabItems: List<Tab> = listOf(
+        NewsTab(tabs[0]),
+        FavoritesTab(tabs[1]),
+        RecipesTab(tabs[2]),
+        FridgeTab(tabs[3])
+    )
+) {
     val tabNavigator = LocalTabNavigator.current
     val isIos = remember { getPlatform().name.startsWith("iOS") }
 
@@ -79,10 +87,9 @@ fun HomeScreenView(tabs: List<String>) {
             NavigationBar(
                 windowInsets = if (isIos) WindowInsets(0, 0, 0, 0) else NavigationBarDefaults.windowInsets
             ) {
-                TabNavigationItem(NewsTab(tabs[0]))
-                TabNavigationItem(FavoritesTab(tabs[1]))
-                TabNavigationItem(RecipesTab(tabs[2]))
-                TabNavigationItem(FridgeTab(tabs[3]))
+                tabItems.forEach { tab ->
+                    TabNavigationItem(tab)
+                }
             }
         }
     ) { paddingValues ->

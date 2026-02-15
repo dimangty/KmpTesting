@@ -1,7 +1,10 @@
+@file:OptIn(kotlin.time.ExperimentalTime::class)
+
 package com.example.kursovikkmp.network
 
-import info.javaway.spend_sense.extensions.now
+import com.example.kursovikkmp.extensions.now
 import kotlinx.datetime.Instant
+import kotlinx.datetime.LocalTime
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
 import kotlinx.datetime.TimeZone
@@ -41,15 +44,17 @@ object DateSerializer : KSerializer<LocalDate> {
 
     override fun deserialize(decoder: Decoder): LocalDate {
         return kotlin.runCatching {
-            decoder.decodeLong().let { Instant.fromEpochMilliseconds(it) }.toLocalDateTime(
-                TimeZone.currentSystemDefault()
-            ).date
-        }.getOrNull() ?: LocalDateTime.now().date
+            val dateTime = decoder.decodeLong()
+                .let { Instant.fromEpochMilliseconds(it) }
+                .toLocalDateTime(TimeZone.currentSystemDefault())
+            LocalDate(dateTime.year, dateTime.month, dateTime.dayOfMonth)
+        }.getOrNull() ?: LocalDate.now()
     }
 
     override fun serialize(encoder: Encoder, value: LocalDate) {
+        val now = LocalDateTime.now()
         val longValue = value
-            .atTime(LocalDateTime.now().time)
+            .atTime(LocalTime(now.hour, now.minute, now.second, now.nanosecond))
             .toInstant(TimeZone.currentSystemDefault())
             .toEpochMilliseconds()
         encoder.encodeLong(longValue)

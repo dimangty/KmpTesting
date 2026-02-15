@@ -1,12 +1,17 @@
-package info.javaway.spend_sense.extensions
+@file:OptIn(kotlin.time.ExperimentalTime::class)
 
-import kotlinx.datetime.Clock
-import kotlinx.datetime.LocalDate
+package com.example.kursovikkmp.extensions
+
+import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 
 fun LocalDateTime.Companion.now() =
-    Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault())
+    Instant.fromEpochMilliseconds(0).toLocalDateTime(TimeZone.currentSystemDefault())
 
-fun LocalDate.Companion.now() = LocalDateTime.now().date
+fun LocalDate.Companion.now(): LocalDate {
+    val dateTime = LocalDateTime.now()
+    return LocalDate(dateTime.year, dateTime.month, dateTime.dayOfMonth)
+}

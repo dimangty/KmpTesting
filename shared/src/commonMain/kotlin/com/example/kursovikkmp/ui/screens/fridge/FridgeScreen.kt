@@ -65,9 +65,7 @@ fun FridgeScreenView(
     onUiEvent: (FridgeEvents) -> Unit
 ) {
     var searchQuery by remember { mutableStateOf("") }
-    val filteredProducts = state.productsItems.filter { item ->
-        item.name.contains(searchQuery.trim(), ignoreCase = true)
-    }
+    val filteredProducts = filterProductsForQuery(state.productsItems, searchQuery)
 
     LazyColumn(
         modifier = Modifier
@@ -128,6 +126,17 @@ fun FridgeScreenView(
                 }
             }
         }
+    }
+}
+
+internal fun filterProductsForQuery(
+    products: List<FridgeProductUiState>,
+    query: String
+): List<FridgeProductUiState> {
+    val trimmedQuery = query.trim()
+    if (trimmedQuery.isEmpty()) return products
+    return products.filter { item ->
+        item.name.contains(trimmedQuery, ignoreCase = true)
     }
 }
 

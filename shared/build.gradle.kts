@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.compose.ExperimentalComposeLibrary
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -10,6 +11,7 @@ plugins {
     id("dev.icerock.mobile.multiplatform-resources")
 }
 
+@OptIn(ExperimentalComposeLibrary::class)
 kotlin {
     androidTarget {
         compilations.all {
@@ -90,6 +92,7 @@ kotlin {
             implementation(libs.kotlin.test)
             implementation(libs.kotlin.coroutines.test)
             implementation(libs.turbine)
+            implementation(compose.uiTest)
         }
         androidMain.dependencies {
             implementation(libs.koin.android)
