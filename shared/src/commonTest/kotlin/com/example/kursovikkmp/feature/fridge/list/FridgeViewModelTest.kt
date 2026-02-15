@@ -134,6 +134,10 @@ class FridgeViewModelTest {
 
     @Test
     fun onRetryClicked_loadsProducts() = runTest {
+        // Given
+        viewModel.initScreenData()
+        testDispatcher.scheduler.advanceUntilIdle()
+
         // When
         viewModel.pushEvent(FridgeEvents.OnRetryClicked)
         testDispatcher.scheduler.advanceUntilIdle()

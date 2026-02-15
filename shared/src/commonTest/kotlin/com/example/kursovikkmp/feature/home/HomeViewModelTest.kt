@@ -1,5 +1,6 @@
 package com.example.kursovikkmp.feature.home
 
+import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.common.mvvm.LceStateManager
 import com.example.kursovikkmp.feature.device.DeviceService
 import com.example.kursovikkmp.feature.device.ResourceService
@@ -127,7 +128,13 @@ class HomeViewModelTest {
 
     private class ResourceServiceFake : ResourceService {
         override fun getString(stringRes: StringResource): String {
-            return "Test String"
+            return when (stringRes) {
+                MR.strings.scr_news_tab_title -> "News"
+                MR.strings.scr_favorite_tab_title -> "Favorite"
+                MR.strings.scr_recipes_tab_title -> "Recipes"
+                MR.strings.scr_fridge_tab_title -> "Fridge"
+                else -> "Test String"
+            }
         }
 
         override fun getString(stringRes: StringResource, args: List<String>): String {

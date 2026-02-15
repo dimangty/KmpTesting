@@ -71,6 +71,7 @@ class ProfileViewModelTest {
     @Test
     fun initialState_whenNoSavedProfile_loadsMockData() = runTest {
         // Given - no saved profile
+        viewModel.initScreenData()
 
         // Then
         val state = viewModel.state
@@ -96,6 +97,7 @@ class ProfileViewModelTest {
 
         // When - create new viewModel with saved profile
         viewModel = ProfileViewModel(profileRepository, authService)
+        viewModel.initScreenData()
 
         // Then
         val state = viewModel.state
@@ -127,6 +129,7 @@ class ProfileViewModelTest {
 
         // When
         viewModel = ProfileViewModel(profileRepository, authService)
+        viewModel.initScreenData()
 
         // Then
         val state = viewModel.state

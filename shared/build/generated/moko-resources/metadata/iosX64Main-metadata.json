@@ -608,7 +608,7 @@
                     {
                         "quality": null,
                         "appearance": "LIGHT",
-                        "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/images/favorite_on_icon.svg"
+                        "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/images/favorite_on_icon.svg"
                     }
                 ]
             },
@@ -619,7 +619,7 @@
                     {
                         "quality": null,
                         "appearance": "LIGHT",
-                        "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/images/ic_titlebar_back.svg"
+                        "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/images/ic_titlebar_back.svg"
                     }
                 ]
             },
@@ -630,7 +630,7 @@
                     {
                         "quality": null,
                         "appearance": "LIGHT",
-                        "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/images/favorite_off_icon.svg"
+                        "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/images/favorite_off_icon.svg"
                     }
                 ]
             }
@@ -807,22 +807,22 @@
             {
                 "resourceType": "dev.icerock.gradle.metadata.resource.FontMetadata",
                 "key": "lato_semibold",
-                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/fonts/lato_semibold.ttf"
+                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/fonts/lato_semibold.ttf"
             },
             {
                 "resourceType": "dev.icerock.gradle.metadata.resource.FontMetadata",
                 "key": "lato_regular",
-                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/fonts/lato_regular.ttf"
+                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/fonts/lato_regular.ttf"
             },
             {
                 "resourceType": "dev.icerock.gradle.metadata.resource.FontMetadata",
                 "key": "lato_medium",
-                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/fonts/lato_medium.ttf"
+                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/fonts/lato_medium.ttf"
             },
             {
                 "resourceType": "dev.icerock.gradle.metadata.resource.FontMetadata",
                 "key": "lato_light",
-                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonMain/moko-resources/fonts/lato_light.ttf"
+                "filePath": "/Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/src/commonMain/moko-resources/fonts/lato_light.ttf"
             }
         ]
     }

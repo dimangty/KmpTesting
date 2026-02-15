@@ -72,6 +72,7 @@ class NewsDetailsViewModelTest {
             Article(author = null, title = "Test Article", description = "Test description", url = testUrl, urlToImage = null, publishedAt = "2024-01-01", content = null)
         )
         viewModel = NewsDetailsViewModel("Test Article", newsService, favoritesRepository)
+        viewModel.initScreenData()
 
         // When
         viewModel.pushEvent(NewsDetailsEvents.OnOpenClicked)
@@ -86,11 +87,9 @@ class NewsDetailsViewModelTest {
 
     private class NewsServiceFake : NewsService {
         var mockNews: MutableList<Article> = mutableListOf()
-        override var news: MutableList<Article> = mutableListOf()
-
-        init {
-            news = mockNews
-        }
+        override var news: MutableList<Article>
+            get() = mockNews
+            set(value) { mockNews = value }
 
         override suspend fun getNews(): HttpResponse {
             throw NotImplementedError("Use mockNews for testing")

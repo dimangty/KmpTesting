@@ -32,6 +32,7 @@ class SignUpViewModel(
     override fun initScreenData() {
         // No initial data to load
         // Button strings are configured in state computed properties
+        validateForm()
     }
 
     override fun initialState(): SignUpState {
@@ -86,7 +87,7 @@ class SignUpViewModel(
             createAccountButton = ButtonState.primary(
                 value = getString(MR.strings.create_account),
                 background = MR.colors.grey
-            )
+            ).updateEnabled(false)
         )
     }
 
@@ -230,10 +231,10 @@ class SignUpViewModel(
                 copy(
                     isLoading = true,
                     errorMessage = null,
-                    errorTextState = null
+                    errorTextState = null,
+                    createAccountButton = createAccountButton.updateEnabled(false)
                 )
             }
-            validateForm()
 
             val signUpData = SignUpData(
                 firstName = state.firstName,

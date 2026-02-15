@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.kursovikkmp.feature.favorites.details.FavoriteDetailsViewModelTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-15T06:50:55" hostname="MacBook-Pro-Dmitrij-3.local" time="0.049">
+<testsuite name="com.example.kursovikkmp.feature.favorites.details.FavoriteDetailsViewModelTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-15T07:19:30" hostname="MacBook-Pro-Dmitrij-3.local" time="0.039">
   <properties/>
-  <testcase name="onOpenClicked_opensUrlInDevice" classname="com.example.kursovikkmp.feature.favorites.details.FavoriteDetailsViewModelTest" time="0.049"/>
+  <testcase name="onOpenClicked_opensUrlInDevice" classname="com.example.kursovikkmp.feature.favorites.details.FavoriteDetailsViewModelTest" time="0.039"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

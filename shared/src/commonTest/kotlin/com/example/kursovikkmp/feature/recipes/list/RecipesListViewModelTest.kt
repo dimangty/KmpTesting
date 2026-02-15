@@ -82,6 +82,10 @@ class RecipesListViewModelTest {
 
     @Test
     fun onRetryClicked_loadsRecipes() = runTest {
+        // Given
+        viewModel.initScreenData()
+        testDispatcher.scheduler.advanceUntilIdle()
+
         // When
         viewModel.pushEvent(RecipesListEvents.OnRetryClicked)
         testDispatcher.scheduler.advanceUntilIdle()

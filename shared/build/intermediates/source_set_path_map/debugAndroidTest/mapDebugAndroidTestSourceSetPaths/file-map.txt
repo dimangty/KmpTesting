@@ -47,8 +47,8 @@ com.example.kursovikkmp.test.shared-core-runtime-2.2.0-45 /Users/dmitrijbykov/.g
 com.example.kursovikkmp.test.shared-navigation-runtime-ktx-2.8.7-46 /Users/dmitrijbykov/.gradle/caches/8.9/transforms/ecc4b4dd37e6d68fbb1b04e6af877dd7/transformed/navigation-runtime-ktx-2.8.7/res
 com.example.kursovikkmp.test.shared-activity-compose-1.9.2-47 /Users/dmitrijbykov/.gradle/caches/8.9/transforms/fcdf0284a4120471c76b558ce4cc88c7/transformed/activity-compose-1.9.2/res
 com.example.kursovikkmp.test.shared-ui-geometry-release-48 /Users/dmitrijbykov/.gradle/caches/8.9/transforms/ff580797bf7b9f793f9d31abd25c8652/transformed/ui-geometry-release/res
-com.example.kursovikkmp.test.shared-androidTest-49 /Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/build/generated/res/resValues/androidTest/debug
-com.example.kursovikkmp.test.shared-mergeDebugAndroidTestResources-50 /Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.kursovikkmp.test.shared-mergeDebugAndroidTestResources-51 /Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.kursovikkmp.test.shared-debugAndroidTest-52 /Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
-com.example.kursovikkmp.test.shared-debug-53 /Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/build/intermediates/packaged_res/debug/packageDebugResources
+com.example.kursovikkmp.test.shared-androidTest-49 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/build/generated/res/resValues/androidTest/debug
+com.example.kursovikkmp.test.shared-mergeDebugAndroidTestResources-50 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.kursovikkmp.test.shared-mergeDebugAndroidTestResources-51 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.kursovikkmp.test.shared-debugAndroidTest-52 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.example.kursovikkmp.test.shared-debug-53 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/shared/build/intermediates/packaged_res/debug/packageDebugResources

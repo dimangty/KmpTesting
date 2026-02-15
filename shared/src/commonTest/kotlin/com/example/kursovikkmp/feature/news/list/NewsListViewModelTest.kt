@@ -89,7 +89,7 @@ class NewsListViewModelTest {
             Article(author = null, title = "Test Article", description = "Test description", url = "", urlToImage = null, publishedAt = "2024-01-01", content = null),
             Article(author = null, title = "Other Article", description = "Other description", url = "", urlToImage = null, publishedAt = "2024-01-02", content = null)
         )
-        viewModel.initScreenData()
+        viewModel.news = newsService.mockNews.toMutableList()
         testDispatcher.scheduler.advanceUntilIdle()
 
         // When
@@ -108,7 +108,7 @@ class NewsListViewModelTest {
             Article(author = null, title = "Test Article", description = "Test description", url = "", urlToImage = null, publishedAt = "2024-01-01", content = null),
             Article(author = null, title = "Other Article", description = "Other description", url = "", urlToImage = null, publishedAt = "2024-01-02", content = null)
         )
-        viewModel.initScreenData()
+        viewModel.news = newsService.mockNews.toMutableList()
         testDispatcher.scheduler.advanceUntilIdle()
 
         // When
@@ -145,7 +145,7 @@ class NewsListViewModelTest {
         newsService.mockNews = listOf(
             Article(author = null, title = title, description = "Test description", url = "", urlToImage = null, publishedAt = "2024-01-01", content = null)
         )
-        viewModel.initScreenData()
+        viewModel.news = newsService.mockNews.toMutableList()
         testDispatcher.scheduler.advanceUntilIdle()
 
         // When
@@ -178,7 +178,9 @@ class NewsListViewModelTest {
 
     private class NewsServiceFake : NewsService {
         var mockNews: List<Article> = emptyList()
-        override var news: MutableList<Article> = mutableListOf()
+        override var news: MutableList<Article>
+            get() = mockNews.toMutableList()
+            set(value) { mockNews = value }
 
         override suspend fun getNews(): HttpResponse {
             throw NotImplementedError("Use mockNews for testing")
