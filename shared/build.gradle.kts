@@ -3,6 +3,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.serialization)
     alias(libs.plugins.sqldelight)
     id("dev.icerock.mobile.multiplatform-resources")
@@ -41,6 +43,7 @@ kotlin {
 
             //Moko
             api(libs.moko.resources)
+            api(libs.moko.resources.compose)
 
             //Network
             implementation(libs.ktor.client.core)
@@ -62,6 +65,25 @@ kotlin {
             api(libs.napier)
 
             implementation(libs.touchLab)
+
+            //Compose Multiplatform
+            implementation(compose.runtime)
+            implementation(compose.foundation)
+            implementation(compose.material3)
+            implementation(compose.ui)
+            implementation(compose.components.resources)
+
+            //Voyager Navigation
+            implementation(libs.voyager.navigator)
+            implementation(libs.voyager.transitions)
+            implementation(libs.voyager.koin)
+            implementation(libs.voyager.tab.navigator)
+
+            //Kamel Image Loading
+            implementation(libs.kamel.image)
+
+            //Koin Compose
+            api(libs.koin.compose)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -73,6 +95,7 @@ kotlin {
             implementation(libs.ktor.client.okhttp)
             implementation(libs.androidx.navigation.compose)
             implementation(libs.sqldelight.android.driver)
+            implementation(libs.compose.ui.tooling.preview.multiplatform)
         }
 
         iosMain.dependencies {

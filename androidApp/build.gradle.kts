@@ -38,18 +38,7 @@ android {
 
 dependencies {
     implementation(projects.shared)
-    implementation(project(":androidApp:core"))
-    implementation(projects.androidApp.featureNews)
-    implementation(libs.compose.ui)
-    implementation(libs.compose.ui.tooling.preview)
-    implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.coil.compose)
-    implementation(libs.koin.core)
     implementation(libs.koin.android)
-    implementation(libs.koin.android.compose)
-    implementation(project(":androidApp:feature_favorites"))
-    implementation(project(":androidApp:feature_auth"))
     debugImplementation(libs.compose.ui.tooling)
 }

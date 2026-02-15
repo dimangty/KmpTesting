@@ -17,18 +17,14 @@ import com.example.kursovikkmp.feature.fridge.list.FridgeViewModel
 import com.example.kursovikkmp.feature.profile.ProfileViewModel
 import com.example.kursovikkmp.feature.recipes.details.RecipesDetailsViewModel
 import com.example.kursovikkmp.feature.recipes.list.RecipesListViewModel
-import com.example.kursovikkmp.navigation.NavigationService
-import com.example.kursovikkmp.navigation.NavigationServiceImpl
 import org.koin.core.module.Module
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 internal actual val platformModule: Module = module {
     single<DatabaseDriverFactory> { DatabaseDriverFactory(get()) }
-    single<NavigationService> { NavigationServiceImpl() }
     single<DeviceService> { DeviceServiceImpl(get()) }
     single<ResourceService> { ResourceServiceImpl(get()) }
-    single { get<NavigationService>() as NavigationServiceImpl }
 }
 
 internal actual val vmModule: Module = module {

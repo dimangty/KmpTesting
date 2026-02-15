@@ -9,6 +9,7 @@
 "scr_recipes_screen_title" = "Рецепты";
 "scr_fridge_screen_title" = "Холодильник";
 "scr_fridge_products_title" = "Продукты в холодильнике";
+"scr_fridge_search_placeholder" = "Поиск продуктов";
 "scr_fridge_recommendations_title" = "Подходящие рецепты";
 "scr_fridge_empty_recommendations" = "По выбранным продуктам рецепты не найдены";
 "scr_fridge_recommend_button" = "Рекомендовать рецепты";

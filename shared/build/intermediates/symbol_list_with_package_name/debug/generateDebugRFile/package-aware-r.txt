@@ -61,6 +61,7 @@ string scr_fridge_products_title
 string scr_fridge_recommend_button
 string scr_fridge_recommendations_title
 string scr_fridge_screen_title
+string scr_fridge_search_placeholder
 string scr_fridge_tab_title
 string scr_news_screen_title
 string scr_news_search_placeholder

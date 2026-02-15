@@ -11,6 +11,7 @@
 	<string name="scr_recipes_screen_title">Рецепты</string>
 	<string name="scr_fridge_screen_title">Холодильник</string>
 	<string name="scr_fridge_products_title">Продукты в холодильнике</string>
+	<string name="scr_fridge_search_placeholder">Поиск продуктов</string>
 	<string name="scr_fridge_recommendations_title">Подходящие рецепты</string>
 	<string name="scr_fridge_empty_recommendations">По выбранным продуктам рецепты не найдены</string>
 	<string name="scr_fridge_recommend_button">Рекомендовать рецепты</string>

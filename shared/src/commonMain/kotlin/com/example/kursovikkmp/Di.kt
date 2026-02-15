@@ -49,6 +49,10 @@ internal val commonModule = module {
     // Auth services
     single<com.example.kursovikkmp.feature.auth.AuthService> { com.example.kursovikkmp.feature.auth.AuthServiceImpl(get()) }
     single<com.example.kursovikkmp.feature.auth.ValidationService> { com.example.kursovikkmp.feature.auth.ValidationServiceImpl() }
+
+    // Navigation service (Voyager-based for shared UI)
+    single<com.example.kursovikkmp.navigation.NavigationService> { com.example.kursovikkmp.navigation.VoyagerNavigationService() }
+    single { get<com.example.kursovikkmp.navigation.NavigationService>() as com.example.kursovikkmp.navigation.VoyagerNavigationService }
 }
 
 internal val NetworkCompositeModule: Module = module {

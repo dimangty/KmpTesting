@@ -34,6 +34,8 @@ public expect object MR {
 
     public val scr_fridge_products_title: StringResource
 
+    public val scr_fridge_search_placeholder: StringResource
+
     public val scr_fridge_recommendations_title: StringResource
 
     public val scr_fridge_empty_recommendations: StringResource

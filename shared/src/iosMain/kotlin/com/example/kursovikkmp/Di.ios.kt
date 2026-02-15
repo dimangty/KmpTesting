@@ -19,8 +19,6 @@ import com.example.kursovikkmp.feature.fridge.list.FridgeViewModel
 import com.example.kursovikkmp.feature.profile.ProfileViewModel
 import com.example.kursovikkmp.feature.recipes.details.RecipesDetailsViewModel
 import com.example.kursovikkmp.feature.recipes.list.RecipesListViewModel
-import com.example.kursovikkmp.navigation.NavigationService
-import com.example.kursovikkmp.navigation.NavigationServiceImpl
 import kotlinx.cinterop.BetaInteropApi
 import kotlinx.cinterop.ObjCClass
 import kotlinx.cinterop.ObjCProtocol
@@ -74,7 +72,6 @@ internal actual val vmModule: Module = module {
 
 internal actual val platformModule: Module = module {
     single<DeviceService> { DeviceServiceImpl() }
-    single<NavigationService> { NavigationServiceImpl() }
     single<ResourceService> { ResourceServiceImpl() }
     single<DatabaseDriverFactory> { DatabaseDriverFactory() }
 }

@@ -17,7 +17,3 @@ dependencyResolutionManagement {
 rootProject.name = "KursovikKMP"
 include(":androidApp")
 include(":shared")
-include(":androidApp:core")
-include(":androidApp:feature_news")
-include(":androidApp:feature_favorites")
-include(":androidApp:feature_auth")

@@ -11,7 +11,7 @@ import kotlin.String
 import kotlin.collections.List
 
 public actual object MR {
-  private val contentHash: String = "4a0374464ca3fa98d19fce1f99e782a6"
+  private val contentHash: String = "0e2ad849932a053c2746c03d5ac52c8a"
 
   public actual object strings : ResourceContainer<StringResource> {
     actual override val __platformDetails: ResourcePlatformDetails = ResourcePlatformDetails()
@@ -48,6 +48,9 @@ public actual object MR {
 
     public actual val scr_fridge_products_title: StringResource =
         StringResource(R.string.scr_fridge_products_title)
+
+    public actual val scr_fridge_search_placeholder: StringResource =
+        StringResource(R.string.scr_fridge_search_placeholder)
 
     public actual val scr_fridge_recommendations_title: StringResource =
         StringResource(R.string.scr_fridge_recommendations_title)
@@ -158,14 +161,15 @@ public actual object MR {
         scr_favorite_tab_title, scr_recipes_tab_title, scr_fridge_tab_title, scr_profile_tab_title,
         scr_news_screen_title, scr_news_search_placeholder, scr_favorite_screen_title,
         scr_recipes_screen_title, scr_fridge_screen_title, scr_fridge_products_title,
-        scr_fridge_recommendations_title, scr_fridge_empty_recommendations,
-        scr_fridge_recommend_button, scr_recipe_details_screen_title, scr_recipe_ingredients_title,
-        scr_recipe_steps_title, scr_details_open_button, phone_number, confirm, sign_up,
-        invalid_phone_number, pin_placeholder, confirm_pin, pin_helper_text, invalid_pin,
-        sign_up_title, personal_information, first_name, last_name, gender, select, birth_date,
-        location, country, city, contact, email, phone, create_account, back, sign_up_failed, male,
-        female, other, usa, uk, germany, france, new_york, london, berlin, paris, news, favorites,
-        profile, loading, error, retry)
+        scr_fridge_search_placeholder, scr_fridge_recommendations_title,
+        scr_fridge_empty_recommendations, scr_fridge_recommend_button,
+        scr_recipe_details_screen_title, scr_recipe_ingredients_title, scr_recipe_steps_title,
+        scr_details_open_button, phone_number, confirm, sign_up, invalid_phone_number,
+        pin_placeholder, confirm_pin, pin_helper_text, invalid_pin, sign_up_title,
+        personal_information, first_name, last_name, gender, select, birth_date, location, country,
+        city, contact, email, phone, create_account, back, sign_up_failed, male, female, other, usa,
+        uk, germany, france, new_york, london, berlin, paris, news, favorites, profile, loading,
+        error, retry)
   }
 
   public actual object images : ResourceContainer<ImageResource> {

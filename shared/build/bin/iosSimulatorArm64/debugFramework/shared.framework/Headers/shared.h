@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedArticleDb, SharedArticle, SharedProfileDb, SharedProfileData, SharedNetworkModule, SharedKoin_coreModule, SharedStorageModule, SharedArticleDbQueries, SharedProfileDbQueries, SharedDatabaseCompanion, SharedMR, SharedResourcePlatformDetails, SharedMRColors, SharedColorResource, SharedMRFonts, SharedFontResource, SharedMRImages, SharedImageResource, SharedMRStrings, SharedStringResource, SharedKotlinArray<T>, SharedLifecycle_viewmodelViewModel, SharedNavigationAction, SharedDefaultUiEvent, SharedErrorStateAlertError, SharedCommonFlow<T>, SharedLceState, SharedLceStateManager, SharedTitleBarState, SharedDefaultUiEventOnBackClicked, SharedDefaultUiEventOnScreenCreated, SharedDefaultUiEventOnScreenDestroyed, SharedDefaultUiEventOnScreenResumed, SharedErrorState, SharedErrorStateAlertErrorCompanion, SharedTextState, SharedErrorStateApiAlertErrorCompanion, SharedErrorStateApiAlertError, SharedButtonData, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedButtonDataAlignment, SharedButtonDataColoredState, SharedButtonDataImageButtonCompanion, SharedButtonDataImageButton, SharedButtonDataPrimaryButtonCompanion, SharedButtonDataPrimaryButton, SharedButtonStateCompanion, SharedButtonState, SharedDropdownFieldState, SharedTextFieldStateKeyboardType, SharedTextFieldState, SharedTextFontStateCompanion, SharedTextFontState, SharedTextStateCompanion, SharedTitleBarStateCompanion, SharedKotlinUnit, SharedRuntimeTransacterTransaction, SharedKotlinThrowable, SharedRuntimeBaseTransacterImpl, SharedRuntimeSuspendingTransacterImpl, SharedRuntimeQuery<__covariant RowType>, SharedKotlinException, SharedAuthError, SharedAuthErrorInvalidData, SharedAuthErrorInvalidPhone, SharedSignUpData, SharedLoginEvents, SharedLoginEventsLoginButtonTapped, SharedLoginEventsPhoneChanged, SharedLoginEventsSignUpButtonTapped, SharedLoginState, SharedBaseViewModel<State, Event>, SharedPinEvents, SharedPinEventsConfirmTapped, SharedPinEventsPinChanged, SharedPinState, SharedSignUpEvents, SharedSignUpEventsBackButtonTapped, SharedSignUpEventsBirthDateChanged, SharedSignUpEventsCityChanged, SharedSignUpEventsCountryChanged, SharedSignUpEventsCreateAccountTapped, SharedSignUpEventsEmailChanged, SharedSignUpEventsFirstNameChanged, SharedSignUpEventsGenderChanged, SharedSignUpEventsLastNameChanged, SharedSignUpEventsPhoneChanged, SharedSignUpState, SharedFavoriteDetailsEvents, SharedFavoriteDetailsEventsOnOpenClicked, SharedFavoriteDetailsStateCompanion, SharedFavoriteDetailsState, SharedFavoriteUiStateCompanion, SharedFavoriteUiState, SharedFavoritesListEvents, SharedFavoritesListStateCompanion, SharedFavoritesListState, SharedArticleDao, SharedFridgeProduct, SharedFridgeRecommendedRecipe, SharedFridgeEvents, SharedFridgeEventsOnProductClicked, SharedFridgeEventsOnRecipeClicked, SharedFridgeEventsOnRecommendRecipesClicked, SharedFridgeEventsOnRetryClicked, SharedFridgeProductUiState, SharedFridgeRecommendedRecipeUiStateCompanion, SharedFridgeRecommendedRecipeUiState, SharedFridgeStateCompanion, SharedFridgeState, SharedHomeStateCompanion, SharedHomeState, SharedHomeEvents, SharedKtor_client_coreHttpResponse, SharedKtor_client_coreHttpClient, SharedNetworkSettings, SharedNewsDetailsEvents, SharedNewsDetailsEventsOnFavoriteClicked, SharedNewsDetailsEventsOnOpenClicked, SharedNewsDetailsStateCompanion, SharedNewsDetailsState, SharedNewsListEvents, SharedNewsUiState, SharedNewsListStateCompanion, SharedNewsListState, SharedNewsUiStateCompanion, SharedArticleCompanion, SharedNewsListCompanion, SharedNewsList, SharedProfileDataCompanion, SharedProfileEffect, SharedProfileEffectShowImageSourceDialog, SharedProfileEvents, SharedProfileEventsAvatarTapped, SharedProfileEventsLogoutTapped, SharedProfileEventsPhotoChanged, SharedProfileDao, SharedProfileState, SharedRecipe, SharedRecipeIngredientUiState, SharedRecipeStepUiState, SharedRecipesDetailsEvents, SharedRecipesDetailsEventsOnRetryClicked, SharedRecipesDetailsStateCompanion, SharedRecipesDetailsState, SharedRecipeUiStateCompanion, SharedRecipeUiState, SharedRecipesListEvents, SharedRecipesListEventsOnRetryClicked, SharedRecipesListStateCompanion, SharedRecipesListState, SharedRecipeIngredient, SharedRecipeStep, SharedNavigationActionCompanion, SharedNavigationActionNavigateBack, SharedNavigationActionNavigateToFavoritesDetailsCompanion, SharedNavigationActionNavigateToLogin, SharedNavigationActionNavigateToMain, SharedNavigationActionNavigateToNewsDetailsCompanion, SharedNavigationActionNavigateToPin, SharedNavigationActionNavigateToRecipesDetailsCompanion, SharedNavigationActionNavigateToSignUp, SharedDateSerializer, SharedKotlinx_datetimeLocalDate, SharedDateTimeSerializer, SharedKotlinx_datetimeLocalDateTime, SharedColorCompanion, SharedColor, NSBundle, NSURL, SharedFileResource, NSData, UIImage, NSError, SharedCompositionStringDesc, SharedPluralsResource, SharedPluralFormattedStringDesc, SharedPluralStringDesc, SharedRawStringDesc, SharedResourceFormattedStringDesc, SharedResourceStringDesc, SharedStringDescCompanion, SharedStringDescLocaleType, NSLocale, SharedStringDescLocaleTypeSystem, SharedUtils, SharedColorDescCompanion, SharedImageDescCompanion, SharedImageDescResource, SharedImageDescUrl, SharedApiErrorCompanion, SharedApiError, SharedApiErrorWrapperCompanion, SharedApiErrorWrapper, UIFont, UIColor, SharedKotlinx_datetimeLocalDateCompanion, SharedKotlinx_datetimeLocalDateTimeCompanion, SharedKoin_coreScope, SharedKoin_coreParametersHolder, SharedKotlinLazyThreadSafetyMode, SharedKoin_coreLogger, SharedKoin_coreExtensionManager, SharedKoin_coreInstanceRegistry, SharedKoin_corePropertyRegistry, SharedKoin_coreScopeRegistry, SharedKoin_coreKoin, Protocol, SharedKoin_coreKoinApplication, SharedAssetResource, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKoin_coreKoinDefinition<R>, SharedKoin_coreInstanceFactory<T>, SharedKoin_coreSingleInstanceFactory<T>, SharedKoin_coreScopeDSL, SharedRuntimeAfterVersion, SharedRuntimeExecutableQuery<__covariant RowType>, SharedKtor_client_coreHttpClientCall, SharedKtor_utilsGMTDate, SharedKtor_httpHttpStatusCode, SharedKtor_httpHttpProtocolVersion, SharedKtor_client_coreHttpClientEngineConfig, SharedKtor_client_coreHttpClientConfig<T>, SharedKtor_eventsEvents, SharedKtor_client_coreHttpReceivePipeline, SharedKtor_client_coreHttpRequestPipeline, SharedKtor_client_coreHttpResponsePipeline, SharedKtor_client_coreHttpSendPipeline, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_datetimeMonth, SharedKotlinx_datetimeDayOfWeek, SharedKotlinx_datetimeLocalTime, SharedKoin_coreLockable, SharedKoin_coreLevel, SharedKoin_coreScopeRegistryCompanion, SharedKoin_coreKoinApplicationCompanion, SharedKotlinByteArray, SharedKoin_coreBeanDefinition<T>, SharedKoin_coreInstanceFactoryCompanion, SharedKoin_coreResolutionContext, SharedKtor_client_coreHttpRequestData, SharedKtor_client_coreHttpResponseData, SharedKtor_client_coreHttpClientCallCompanion, SharedKtor_utilsTypeInfo, SharedKtor_ioMemory, SharedKtor_ioChunkBuffer, SharedKtor_ioBuffer, SharedKtor_ioByteReadPacket, SharedKtor_utilsGMTDateCompanion, SharedKtor_utilsWeekDay, SharedKtor_utilsMonth, SharedKtor_httpHttpStatusCodeCompanion, SharedKtor_httpHttpProtocolVersionCompanion, SharedKotlinx_coroutines_coreCoroutineDispatcher, SharedKtor_client_coreProxyConfig, SharedKtor_utilsAttributeKey<T>, SharedKtor_eventsEventDefinition<T>, SharedKtor_utilsPipelinePhase, SharedKtor_utilsPipeline<TSubject, TContext>, SharedKtor_client_coreHttpReceivePipelinePhases, SharedKtor_client_coreHttpRequestPipelinePhases, SharedKtor_client_coreHttpRequestBuilder, SharedKtor_client_coreHttpResponsePipelinePhases, SharedKtor_client_coreHttpResponseContainer, SharedKtor_client_coreHttpSendPipelinePhases, SharedKotlinx_datetimeLocalTimeCompanion, SharedKotlinByteIterator, SharedKoin_coreKind, SharedKoin_coreCallbacks<T>, SharedKtor_httpUrl, SharedKtor_httpHttpMethod, SharedKtor_httpOutgoingContent, SharedKtor_ioMemoryCompanion, SharedKtor_ioBufferCompanion, SharedKtor_ioChunkBufferCompanion, SharedKtor_ioInputCompanion, SharedKtor_ioInput, SharedKtor_ioByteReadPacketCompanion, SharedKtor_utilsWeekDayCompanion, SharedKtor_utilsMonthCompanion, SharedKotlinAbstractCoroutineContextElement, SharedKotlinx_coroutines_coreCoroutineDispatcherKey, SharedKtor_httpHeadersBuilder, SharedKtor_client_coreHttpRequestBuilderCompanion, SharedKtor_httpURLBuilder, SharedKtor_httpUrlCompanion, SharedKtor_httpURLProtocol, SharedKtor_httpHttpMethodCompanion, SharedKtor_httpContentType, SharedKotlinCancellationException, SharedKotlinKTypeProjection, SharedKotlinAbstractCoroutineContextKey<B, E>, SharedKtor_utilsStringValuesBuilderImpl, SharedKtor_httpURLBuilderCompanion, SharedKtor_httpURLProtocolCompanion, SharedKtor_httpHeaderValueParam, SharedKtor_httpHeaderValueWithParametersCompanion, SharedKtor_httpHeaderValueWithParameters, SharedKtor_httpContentTypeCompanion, SharedKotlinKVariance, SharedKotlinKTypeProjectionCompanion;
+@class SharedArticleDb, SharedArticle, SharedProfileDb, SharedProfileData, SharedNetworkModule, SharedKoin_coreModule, SharedStorageModule, SharedArticleDbQueries, SharedProfileDbQueries, SharedDatabaseCompanion, SharedMR, SharedResourcePlatformDetails, SharedMRColors, SharedColorResource, SharedMRFonts, SharedFontResource, SharedMRImages, SharedImageResource, SharedMRStrings, SharedStringResource, SharedKotlinArray<T>, SharedLifecycle_viewmodelViewModel, SharedNavigationAction, SharedDefaultUiEvent, SharedErrorStateAlertError, SharedCommonFlow<T>, SharedLceState, SharedLceStateManager, SharedTitleBarState, SharedDefaultUiEventOnBackClicked, SharedDefaultUiEventOnScreenCreated, SharedDefaultUiEventOnScreenDestroyed, SharedDefaultUiEventOnScreenResumed, SharedErrorState, SharedErrorStateAlertErrorCompanion, SharedTextState, SharedErrorStateApiAlertErrorCompanion, SharedErrorStateApiAlertError, SharedButtonData, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedButtonDataAlignment, SharedButtonDataColoredState, SharedButtonDataImageButtonCompanion, SharedButtonDataImageButton, SharedButtonDataPrimaryButtonCompanion, SharedButtonDataPrimaryButton, SharedButtonStateCompanion, SharedButtonState, SharedTextFieldStateKeyboardType, SharedTextFontStateCompanion, SharedTextFontState, SharedTextStateCompanion, SharedTitleBarStateCompanion, SharedKotlinUnit, SharedRuntimeTransacterTransaction, SharedKotlinThrowable, SharedRuntimeBaseTransacterImpl, SharedRuntimeSuspendingTransacterImpl, SharedRuntimeQuery<__covariant RowType>, SharedKotlinException, SharedAuthError, SharedAuthErrorInvalidData, SharedAuthErrorInvalidPhone, SharedSignUpData, SharedLoginEvents, SharedLoginEventsLoginButtonTapped, SharedLoginEventsSignUpButtonTapped, SharedTextFieldState, SharedBaseViewModel<State, Event>, SharedLoginState, SharedPinEvents, SharedPinEventsConfirmTapped, SharedPinState, SharedSignUpEvents, SharedSignUpEventsBackButtonTapped, SharedSignUpEventsCreateAccountTapped, SharedDropdownFieldState, SharedSignUpState, SharedFavoriteDetailsEvents, SharedFavoriteDetailsEventsOnOpenClicked, SharedFavoriteDetailsStateCompanion, SharedFavoriteDetailsState, SharedFavoriteUiStateCompanion, SharedFavoriteUiState, SharedFavoritesListEvents, SharedFavoritesListStateCompanion, SharedFavoritesListState, SharedArticleDao, SharedFridgeProduct, SharedFridgeRecommendedRecipe, SharedFridgeEvents, SharedFridgeEventsOnRecommendRecipesClicked, SharedFridgeEventsOnRetryClicked, SharedFridgeRecommendedRecipeUiStateCompanion, SharedFridgeRecommendedRecipeUiState, SharedFridgeProductUiState, SharedFridgeStateCompanion, SharedFridgeState, SharedHomeStateCompanion, SharedHomeState, SharedHomeEvents, SharedKtor_client_coreHttpResponse, SharedKtor_client_coreHttpClient, SharedNetworkSettings, SharedNewsDetailsEvents, SharedNewsDetailsEventsOnFavoriteClicked, SharedNewsDetailsEventsOnOpenClicked, SharedNewsDetailsStateCompanion, SharedNewsDetailsState, SharedNewsListEvents, SharedNewsUiState, SharedNewsListStateCompanion, SharedNewsListState, SharedNewsUiStateCompanion, SharedArticleCompanion, SharedNewsListCompanion, SharedProfileDataCompanion, SharedProfileEffect, SharedProfileEffectShowImageSourceDialog, SharedProfileEvents, SharedProfileEventsAvatarTapped, SharedProfileEventsLogoutTapped, SharedProfileDao, SharedProfileState, SharedRecipe, SharedRecipesDetailsEvents, SharedRecipesDetailsEventsOnRetryClicked, SharedRecipeIngredientUiState, SharedRecipeStepUiState, SharedRecipesDetailsStateCompanion, SharedRecipesDetailsState, SharedRecipeUiStateCompanion, SharedRecipeUiState, SharedRecipesListEvents, SharedRecipesListEventsOnRetryClicked, SharedRecipesListStateCompanion, SharedRecipesListState, SharedRecipeIngredient, SharedRecipeStep, SharedNavigationActionCompanion, SharedNavigationActionNavigateBack, SharedNavigationActionNavigateToFavoritesDetailsCompanion, SharedNavigationActionNavigateToLogin, SharedNavigationActionNavigateToMain, SharedNavigationActionNavigateToNewsDetailsCompanion, SharedNavigationActionNavigateToPin, SharedNavigationActionNavigateToRecipesDetailsCompanion, SharedNavigationActionNavigateToSignUp, SharedVoyager_navigatorNavigator, SharedDateSerializer, SharedKotlinx_datetimeLocalDate, SharedDateTimeSerializer, SharedKotlinx_datetimeLocalDateTime, SharedLoginScreen, SharedPinScreen, SharedSignUpScreen, SharedFavoritesListScreen, SharedFridgeScreen, SharedHomeScreen, SharedNewsListScreen, SharedProfileScreen, SharedRecipesListScreen, SharedAppShapes, SharedFoundationRoundedCornerShape, SharedColorCompanion, SharedColor, NSBundle, NSURL, SharedFileResource, NSData, UIImage, NSError, SharedCompositionStringDesc, SharedPluralsResource, SharedPluralFormattedStringDesc, SharedPluralStringDesc, SharedRawStringDesc, SharedResourceFormattedStringDesc, SharedResourceStringDesc, SharedStringDescCompanion, SharedStringDescLocaleType, NSLocale, SharedStringDescLocaleTypeSystem, SharedUtils, SharedColorDescCompanion, SharedImageDescCompanion, SharedImageDescResource, SharedImageDescUrl, SharedApiErrorCompanion, SharedApiError, SharedApiErrorWrapperCompanion, UIFont, UIColor, SharedKotlinx_datetimeLocalDateCompanion, SharedKotlinx_datetimeLocalDateTimeCompanion, SharedKoin_coreScope, SharedKoin_coreParametersHolder, SharedKotlinLazyThreadSafetyMode, SharedKoin_coreLogger, SharedKoin_coreExtensionManager, SharedKoin_coreInstanceRegistry, SharedKoin_corePropertyRegistry, SharedKoin_coreScopeRegistry, SharedKoin_coreKoin, Protocol, UIViewController, SharedKoin_coreKoinApplication, SharedAssetResource, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKoin_coreKoinDefinition<R>, SharedKoin_coreInstanceFactory<T>, SharedKoin_coreSingleInstanceFactory<T>, SharedKoin_coreScopeDSL, SharedRuntimeAfterVersion, SharedRuntimeExecutableQuery<__covariant RowType>, SharedKtor_client_coreHttpClientCall, SharedKtor_utilsGMTDate, SharedKtor_httpHttpStatusCode, SharedKtor_httpHttpProtocolVersion, SharedKtor_client_coreHttpClientEngineConfig, SharedKtor_client_coreHttpClientConfig<T>, SharedKtor_eventsEvents, SharedKtor_client_coreHttpReceivePipeline, SharedKtor_client_coreHttpRequestPipeline, SharedKtor_client_coreHttpResponsePipeline, SharedKtor_client_coreHttpSendPipeline, SharedVoyager_coreStackEvent, SharedVoyager_navigatorNavigatorDisposeBehavior, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_datetimeMonth, SharedKotlinx_datetimeDayOfWeek, SharedKotlinx_datetimeLocalTime, SharedUi_graphicsOutline, SharedUi_unitLayoutDirection, SharedFoundationCornerBasedShape, SharedKotlinx_datetimePadding, SharedKotlinx_datetimeDayOfWeekNames, SharedKotlinx_datetimeMonthNames, SharedKoin_coreLockable, SharedKoin_coreLevel, SharedKoin_coreScopeRegistryCompanion, SharedKoin_coreKoinApplicationCompanion, SharedKotlinByteArray, SharedKoin_coreBeanDefinition<T>, SharedKoin_coreInstanceFactoryCompanion, SharedKoin_coreResolutionContext, SharedKtor_client_coreHttpRequestData, SharedKtor_client_coreHttpResponseData, SharedKtor_client_coreHttpClientCallCompanion, SharedKtor_utilsTypeInfo, SharedKtor_ioMemory, SharedKtor_ioChunkBuffer, SharedKtor_ioBuffer, SharedKtor_ioByteReadPacket, SharedKtor_utilsGMTDateCompanion, SharedKtor_utilsWeekDay, SharedKtor_utilsMonth, SharedKtor_httpHttpStatusCodeCompanion, SharedKtor_httpHttpProtocolVersionCompanion, SharedKotlinx_coroutines_coreCoroutineDispatcher, SharedKtor_client_coreProxyConfig, SharedKtor_utilsAttributeKey<T>, SharedKtor_eventsEventDefinition<T>, SharedKtor_utilsPipelinePhase, SharedKtor_utilsPipeline<TSubject, TContext>, SharedKtor_client_coreHttpReceivePipelinePhases, SharedKtor_client_coreHttpRequestPipelinePhases, SharedKtor_client_coreHttpRequestBuilder, SharedKtor_client_coreHttpResponsePipelinePhases, SharedKtor_client_coreHttpResponseContainer, SharedKtor_client_coreHttpSendPipelinePhases, SharedKotlinx_datetimeLocalTimeCompanion, SharedUi_geometryRect, SharedUi_unitDpRect, SharedKotlinx_datetimeDayOfWeekNamesCompanion, SharedKotlinx_datetimeMonthNamesCompanion, SharedKotlinByteIterator, SharedKoin_coreKind, SharedKoin_coreCallbacks<T>, SharedKtor_httpUrl, SharedKtor_httpHttpMethod, SharedKtor_httpOutgoingContent, SharedKtor_ioMemoryCompanion, SharedKtor_ioBufferCompanion, SharedKtor_ioChunkBufferCompanion, SharedKtor_ioInputCompanion, SharedKtor_ioInput, SharedKtor_ioByteReadPacketCompanion, SharedKtor_utilsWeekDayCompanion, SharedKtor_utilsMonthCompanion, SharedKotlinAbstractCoroutineContextElement, SharedKotlinx_coroutines_coreCoroutineDispatcherKey, SharedKtor_httpHeadersBuilder, SharedKtor_client_coreHttpRequestBuilderCompanion, SharedKtor_httpURLBuilder, SharedUi_geometryRectCompanion, SharedUi_unitDpRectCompanion, SharedKtor_httpUrlCompanion, SharedKtor_httpURLProtocol, SharedKtor_httpHttpMethodCompanion, SharedKtor_httpContentType, SharedKotlinCancellationException, SharedKotlinKTypeProjection, SharedKotlinAbstractCoroutineContextKey<B, E>, SharedKtor_utilsStringValuesBuilderImpl, SharedKtor_httpURLBuilderCompanion, SharedKtor_httpURLProtocolCompanion, SharedKtor_httpHeaderValueParam, SharedKtor_httpHeaderValueWithParametersCompanion, SharedKtor_httpHeaderValueWithParameters, SharedKtor_httpContentTypeCompanion, SharedKotlinKVariance, SharedKotlinKTypeProjectionCompanion;
 
-@protocol SharedDatabase, SharedKotlinCoroutineContext, SharedRuntimeSqlDriver, SharedKotlinSuspendFunction1, SharedRuntimeTransacterBase, SharedRuntimeSuspendingTransacter, SharedRuntimeSqlSchema, SharedPlatform, SharedResourceContainer, SharedKotlinAutoCloseable, SharedKotlinx_coroutines_coreCoroutineScope, SharedDeviceService, SharedKotlinx_coroutines_coreFlow, SharedKotlinx_coroutines_coreStateFlow, SharedKotlinx_coroutines_coreMutableStateFlow, SharedUiEvent, SharedKotlinComparable, SharedAuthService, SharedProfileRepository, SharedValidationService, SharedBaseEvent, SharedBaseViewState, SharedResourceService, SharedFavoritesRepository, SharedFridgeMockNetworkService, SharedRecipesService, SharedNewsService, SharedKotlinx_serialization_coreKSerializer, SharedNavigationService, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedKotlinx_coroutines_coreFlowCollector, SharedKtor_ioCloseable, SharedStringDesc, SharedColorDesc, SharedImageDesc, SharedKoin_coreKoinScopeComponent, SharedKoin_coreQualifier, SharedKotlinKClass, SharedKotlinLazy, SharedKotlinCoroutineContextElement, SharedKotlinCoroutineContextKey, SharedRuntimeQueryListener, SharedRuntimeQueryResult, SharedRuntimeSqlPreparedStatement, SharedRuntimeSqlCursor, SharedRuntimeCloseable, SharedKotlinFunction, SharedKotlinIterator, SharedKotlinx_coroutines_coreSharedFlow, SharedKotlinx_coroutines_coreMutableSharedFlow, SharedRuntimeTransactionCallbacks, SharedKtor_httpHeaders, SharedKtor_httpHttpMessage, SharedKtor_ioByteReadChannel, SharedKtor_client_coreHttpClientEngine, SharedKtor_client_coreHttpClientEngineCapability, SharedKtor_utilsAttributes, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKoin_coreScopeCallback, SharedKoin_coreKoinComponent, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedKoin_coreKoinExtension, SharedKotlinMapEntry, SharedKtor_utilsStringValues, SharedKtor_client_coreHttpRequest, SharedKtor_ioReadSession, SharedKotlinAppendable, SharedKtor_client_coreHttpClientPlugin, SharedKotlinx_coroutines_coreDisposableHandle, SharedKotlinSuspendFunction2, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedKotlinx_coroutines_coreJob, SharedKotlinKType, SharedKtor_ioObjectPool, SharedKotlinContinuation, SharedKotlinContinuationInterceptor, SharedKotlinx_coroutines_coreRunnable, SharedKtor_httpHttpMessageBuilder, SharedKtor_httpParameters, SharedKotlinx_coroutines_coreChildHandle, SharedKotlinx_coroutines_coreChildJob, SharedKotlinSequence, SharedKotlinx_coroutines_coreSelectClause0, SharedKtor_utilsStringValuesBuilder, SharedKtor_httpParametersBuilder, SharedKotlinx_coroutines_coreParentJob, SharedKotlinx_coroutines_coreSelectInstance, SharedKotlinx_coroutines_coreSelectClause;
+@protocol SharedDatabase, SharedKotlinCoroutineContext, SharedRuntimeSqlDriver, SharedKotlinSuspendFunction1, SharedRuntimeTransacterBase, SharedRuntimeSuspendingTransacter, SharedRuntimeSqlSchema, SharedPlatform, SharedResourceContainer, SharedKotlinAutoCloseable, SharedKotlinx_coroutines_coreCoroutineScope, SharedDeviceService, SharedKotlinx_coroutines_coreFlow, SharedKotlinx_coroutines_coreStateFlow, SharedKotlinx_coroutines_coreMutableStateFlow, SharedUiEvent, SharedKotlinComparable, SharedAuthService, SharedProfileRepository, SharedValidationService, SharedBaseEvent, SharedBaseViewState, SharedResourceService, SharedFavoritesRepository, SharedFridgeMockNetworkService, SharedRecipesService, SharedNewsService, SharedKotlinx_serialization_coreKSerializer, SharedNavigationService, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedKotlinx_coroutines_coreFlowCollector, SharedKtor_ioCloseable, SharedVoyager_coreScreen, SharedStringDesc, SharedColorDesc, SharedImageDesc, SharedKotlinx_datetimeDateTimeFormat, SharedKotlinx_datetimeDateTimeFormatBuilderWithDate, SharedKotlinx_datetimeDateTimeFormatBuilderWithDateTime, SharedKoin_coreKoinScopeComponent, SharedKoin_coreQualifier, SharedKotlinKClass, SharedKotlinLazy, SharedKotlinCoroutineContextElement, SharedKotlinCoroutineContextKey, SharedRuntimeQueryListener, SharedRuntimeQueryResult, SharedRuntimeSqlPreparedStatement, SharedRuntimeSqlCursor, SharedRuntimeCloseable, SharedKotlinFunction, SharedKotlinIterator, SharedKotlinx_coroutines_coreSharedFlow, SharedKotlinx_coroutines_coreMutableSharedFlow, SharedRuntimeTransactionCallbacks, SharedKtor_httpHeaders, SharedKtor_httpHttpMessage, SharedKtor_ioByteReadChannel, SharedKtor_client_coreHttpClientEngine, SharedKtor_client_coreHttpClientEngineCapability, SharedKtor_utilsAttributes, SharedVoyager_coreStack, SharedRuntime_saveableSaveableStateHolder, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedUi_unitDensity, SharedUi_graphicsShape, SharedFoundationCornerSize, SharedKotlinAppendable, SharedKotlinx_datetimeDateTimeFormatBuilder, SharedKotlinx_datetimeDateTimeFormatBuilderWithTime, SharedKoin_coreScopeCallback, SharedKoin_coreKoinComponent, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedKoin_coreKoinExtension, SharedKotlinMapEntry, SharedKtor_utilsStringValues, SharedKtor_client_coreHttpRequest, SharedKtor_ioReadSession, SharedKtor_client_coreHttpClientPlugin, SharedKotlinx_coroutines_coreDisposableHandle, SharedKotlinSuspendFunction2, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedUi_unitFontScalingLinear, SharedKotlinx_coroutines_coreJob, SharedKotlinKType, SharedKtor_ioObjectPool, SharedKotlinContinuation, SharedKotlinContinuationInterceptor, SharedKotlinx_coroutines_coreRunnable, SharedKtor_httpHttpMessageBuilder, SharedKtor_httpParameters, SharedKotlinx_coroutines_coreChildHandle, SharedKotlinx_coroutines_coreChildJob, SharedKotlinSequence, SharedKotlinx_coroutines_coreSelectClause0, SharedKtor_utilsStringValuesBuilder, SharedKtor_httpParametersBuilder, SharedKotlinx_coroutines_coreParentJob, SharedKotlinx_coroutines_coreSelectInstance, SharedKotlinx_coroutines_coreSelectClause;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -414,6 +414,7 @@ __attribute__((swift_name("MR.strings")))
 @property (readonly) SharedStringResource *scr_fridge_recommend_button __attribute__((swift_name("scr_fridge_recommend_button")));
 @property (readonly) SharedStringResource *scr_fridge_recommendations_title __attribute__((swift_name("scr_fridge_recommendations_title")));
 @property (readonly) SharedStringResource *scr_fridge_screen_title __attribute__((swift_name("scr_fridge_screen_title")));
+@property (readonly) SharedStringResource *scr_fridge_search_placeholder __attribute__((swift_name("scr_fridge_search_placeholder")));
 @property (readonly) SharedStringResource *scr_fridge_tab_title __attribute__((swift_name("scr_fridge_tab_title")));
 @property (readonly) SharedStringResource *scr_news_screen_title __attribute__((swift_name("scr_news_screen_title")));
 @property (readonly) SharedStringResource *scr_news_search_placeholder __attribute__((swift_name("scr_news_search_placeholder")));
@@ -525,8 +526,23 @@ __attribute__((swift_name("DefaultUiEvent.OnBackClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onBackClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedDefaultUiEventOnBackClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -537,8 +553,23 @@ __attribute__((swift_name("DefaultUiEvent.OnScreenCreated")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onScreenCreated __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedDefaultUiEventOnScreenCreated *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -549,8 +580,23 @@ __attribute__((swift_name("DefaultUiEvent.OnScreenDestroyed")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onScreenDestroyed __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedDefaultUiEventOnScreenDestroyed *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -561,8 +607,23 @@ __attribute__((swift_name("DefaultUiEvent.OnScreenResumed")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onScreenResumed __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedDefaultUiEventOnScreenResumed *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -580,9 +641,23 @@ __attribute__((swift_name("ErrorState.AlertError")))
 @interface SharedErrorStateAlertError : SharedErrorState
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message isCancellable:(BOOL)isCancellable positiveButtonText:(NSString *)positiveButtonText positiveAction:(void (^)(void))positiveAction negativeButtonText:(NSString *)negativeButtonText negativeAction:(void (^)(void))negativeAction __attribute__((swift_name("init(title:message:isCancellable:positiveButtonText:positiveAction:negativeButtonText:negativeAction:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedErrorStateAlertErrorCompanion *companion __attribute__((swift_name("companion")));
-- (SharedErrorStateAlertError *)doCopyTitle:(NSString *)title message:(NSString *)message isCancellable:(BOOL)isCancellable positiveButtonText:(NSString *)positiveButtonText positiveAction:(void (^)(void))positiveAction negativeButtonText:(NSString *)negativeButtonText negativeAction:(void (^)(void))negativeAction __attribute__((swift_name("doCopy(title:message:isCancellable:positiveButtonText:positiveAction:negativeButtonText:negativeAction:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) BOOL isCancellable __attribute__((swift_name("isCancellable")));
 @property (readonly) NSString *message __attribute__((swift_name("message")));
@@ -612,9 +687,23 @@ __attribute__((swift_name("ErrorState.ApiAlertError")))
 @interface SharedErrorStateApiAlertError : SharedErrorState
 - (instancetype)initWithTitle:(NSString *)title isCancellable:(BOOL)isCancellable positiveButtonText:(NSString *)positiveButtonText positiveAction:(void (^)(void))positiveAction __attribute__((swift_name("init(title:isCancellable:positiveButtonText:positiveAction:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedErrorStateApiAlertErrorCompanion *companion __attribute__((swift_name("companion")));
-- (SharedErrorStateApiAlertError *)doCopyTitle:(NSString *)title isCancellable:(BOOL)isCancellable positiveButtonText:(NSString *)positiveButtonText positiveAction:(void (^)(void))positiveAction __attribute__((swift_name("doCopy(title:isCancellable:positiveButtonText:positiveAction:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) BOOL isCancellable __attribute__((swift_name("isCancellable")));
 @property (readonly) void (^positiveAction)(void) __attribute__((swift_name("positiveAction")));
@@ -638,9 +727,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LceState")))
 @interface SharedLceState : SharedBase
 - (instancetype)initWithIsLoading:(BOOL)isLoading errorState:(SharedErrorState * _Nullable)errorState isRootScreen:(BOOL)isRootScreen __attribute__((swift_name("init(isLoading:errorState:isRootScreen:)"))) __attribute__((objc_designated_initializer));
-- (SharedLceState *)doCopyIsLoading:(BOOL)isLoading errorState:(SharedErrorState * _Nullable)errorState isRootScreen:(BOOL)isRootScreen __attribute__((swift_name("doCopy(isLoading:errorState:isRootScreen:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedErrorState * _Nullable errorState __attribute__((swift_name("errorState")));
 @property (readonly) BOOL isLoading __attribute__((swift_name("isLoading")));
@@ -716,9 +819,23 @@ __attribute__((swift_name("ButtonData.ImageButton")))
 @interface SharedButtonDataImageButton : SharedButtonData
 - (instancetype)initWithText:(NSString *)text background:(SharedColorResource *)background image:(SharedImageResource * _Nullable)image alignment:(SharedButtonDataAlignment *)alignment __attribute__((swift_name("init(text:background:image:alignment:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedButtonDataImageButtonCompanion *companion __attribute__((swift_name("companion")));
-- (SharedButtonDataImageButton *)doCopyText:(NSString *)text background:(SharedColorResource *)background image:(SharedImageResource * _Nullable)image alignment:(SharedButtonDataAlignment *)alignment __attribute__((swift_name("doCopy(text:background:image:alignment:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 - (SharedButtonData *)updateImageImage:(SharedImageResource *)image __attribute__((swift_name("updateImage(image:)")));
 - (SharedButtonData *)updateTextText:(NSString *)text __attribute__((swift_name("updateText(text:)")));
@@ -745,9 +862,23 @@ __attribute__((swift_name("ButtonData.PrimaryButton")))
 @interface SharedButtonDataPrimaryButton : SharedButtonData
 - (instancetype)initWithText:(NSString *)text imageStart:(SharedImageResource * _Nullable)imageStart background:(SharedColorResource *)background coloredState:(SharedButtonDataColoredState *)coloredState __attribute__((swift_name("init(text:imageStart:background:coloredState:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedButtonDataPrimaryButtonCompanion *companion __attribute__((swift_name("companion")));
-- (SharedButtonDataPrimaryButton *)doCopyText:(NSString *)text imageStart:(SharedImageResource * _Nullable)imageStart background:(SharedColorResource *)background coloredState:(SharedButtonDataColoredState *)coloredState __attribute__((swift_name("doCopy(text:imageStart:background:coloredState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 - (SharedButtonData *)updateImageImage:(SharedImageResource *)image __attribute__((swift_name("updateImage(image:)")));
 - (SharedButtonData *)updateTextText:(NSString *)text __attribute__((swift_name("updateText(text:)")));
@@ -774,9 +905,23 @@ __attribute__((swift_name("ButtonState")))
 @interface SharedButtonState : SharedBase
 - (instancetype)initWithData:(SharedButtonData *)data isEnabled:(BOOL)isEnabled __attribute__((swift_name("init(data:isEnabled:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedButtonStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedButtonState *)doCopyData:(SharedButtonData *)data isEnabled:(BOOL)isEnabled __attribute__((swift_name("doCopy(data:isEnabled:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backgroundColor __attribute__((swift_name("backgroundColor")));
 @property (readonly) SharedButtonDataColoredState *coloredState __attribute__((swift_name("coloredState")));
@@ -802,9 +947,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DropdownFieldState")))
 @interface SharedDropdownFieldState : SharedBase
 - (instancetype)initWithValue:(NSString *)value placeholder:(NSString *)placeholder label:(NSString * _Nullable)label options:(NSArray<NSString *> *)options isEnabled:(BOOL)isEnabled backgroundColor:(SharedColorResource *)backgroundColor textColor:(SharedColorResource *)textColor __attribute__((swift_name("init(value:placeholder:label:options:isEnabled:backgroundColor:textColor:)"))) __attribute__((objc_designated_initializer));
-- (SharedDropdownFieldState *)doCopyValue:(NSString *)value placeholder:(NSString *)placeholder label:(NSString * _Nullable)label options:(NSArray<NSString *> *)options isEnabled:(BOOL)isEnabled backgroundColor:(SharedColorResource *)backgroundColor textColor:(SharedColorResource *)textColor __attribute__((swift_name("doCopy(value:placeholder:label:options:isEnabled:backgroundColor:textColor:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backgroundColor __attribute__((swift_name("backgroundColor")));
 @property (readonly) BOOL isEnabled __attribute__((swift_name("isEnabled")));
@@ -819,9 +978,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TextFieldState")))
 @interface SharedTextFieldState : SharedBase
 - (instancetype)initWithValue:(NSString *)value placeholder:(NSString *)placeholder label:(NSString * _Nullable)label error:(NSString * _Nullable)error isEnabled:(BOOL)isEnabled keyboardType:(SharedTextFieldStateKeyboardType *)keyboardType backgroundColor:(SharedColorResource *)backgroundColor textColor:(SharedColorResource *)textColor __attribute__((swift_name("init(value:placeholder:label:error:isEnabled:keyboardType:backgroundColor:textColor:)"))) __attribute__((objc_designated_initializer));
-- (SharedTextFieldState *)doCopyValue:(NSString *)value placeholder:(NSString *)placeholder label:(NSString * _Nullable)label error:(NSString * _Nullable)error isEnabled:(BOOL)isEnabled keyboardType:(SharedTextFieldStateKeyboardType *)keyboardType backgroundColor:(SharedColorResource *)backgroundColor textColor:(SharedColorResource *)textColor __attribute__((swift_name("doCopy(value:placeholder:label:error:isEnabled:keyboardType:backgroundColor:textColor:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backgroundColor __attribute__((swift_name("backgroundColor")));
 @property (readonly) NSString * _Nullable error __attribute__((swift_name("error")));
@@ -852,9 +1025,23 @@ __attribute__((swift_name("TextFontState")))
 @interface SharedTextFontState : SharedBase
 - (instancetype)initWithFont:(SharedFontResource *)font fontSize:(int32_t)fontSize lineHeight:(int32_t)lineHeight __attribute__((swift_name("init(font:fontSize:lineHeight:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedTextFontStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedTextFontState *)doCopyFont:(SharedFontResource *)font fontSize:(int32_t)fontSize lineHeight:(int32_t)lineHeight __attribute__((swift_name("doCopy(font:fontSize:lineHeight:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedFontResource *font __attribute__((swift_name("font")));
 @property (readonly) int32_t fontSize __attribute__((swift_name("fontSize")));
@@ -879,9 +1066,23 @@ __attribute__((swift_name("TextState")))
 @interface SharedTextState : SharedBase
 - (instancetype)initWithFontState:(SharedTextFontState *)fontState color:(SharedColorResource *)color value:(NSString *)value iconStart:(SharedImageResource * _Nullable)iconStart iconEnd:(SharedImageResource * _Nullable)iconEnd overrideIconsTint:(BOOL)overrideIconsTint __attribute__((swift_name("init(fontState:color:value:iconStart:iconEnd:overrideIconsTint:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedTextStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedTextState *)doCopyFontState:(SharedTextFontState *)fontState color:(SharedColorResource *)color value:(NSString *)value iconStart:(SharedImageResource * _Nullable)iconStart iconEnd:(SharedImageResource * _Nullable)iconEnd overrideIconsTint:(BOOL)overrideIconsTint __attribute__((swift_name("doCopy(fontState:color:value:iconStart:iconEnd:overrideIconsTint:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *color __attribute__((swift_name("color")));
 @property (readonly) SharedTextFontState *fontState __attribute__((swift_name("fontState")));
@@ -909,9 +1110,23 @@ __attribute__((swift_name("TitleBarState")))
 @interface SharedTitleBarState : SharedBase
 - (instancetype)initWithTitle:(SharedTextState *)title isNavigateBackVisible:(BOOL)isNavigateBackVisible backIcon:(SharedImageResource *)backIcon contentColor:(SharedColorResource *)contentColor onDefaultUiEvent:(void (^)(SharedDefaultUiEvent *))onDefaultUiEvent __attribute__((swift_name("init(title:isNavigateBackVisible:backIcon:contentColor:onDefaultUiEvent:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedTitleBarStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedTitleBarState *)doCopyTitle:(SharedTextState *)title isNavigateBackVisible:(BOOL)isNavigateBackVisible backIcon:(SharedImageResource *)backIcon contentColor:(SharedColorResource *)contentColor onDefaultUiEvent:(void (^)(SharedDefaultUiEvent *))onDefaultUiEvent __attribute__((swift_name("doCopy(title:isNavigateBackVisible:backIcon:contentColor:onDefaultUiEvent:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedImageResource *backIcon __attribute__((swift_name("backIcon")));
 @property (readonly) SharedColorResource *contentColor __attribute__((swift_name("contentColor")));
@@ -934,9 +1149,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ArticleDb")))
 @interface SharedArticleDb : SharedBase
 - (instancetype)initWithAuthor:(NSString * _Nullable)author title:(NSString * _Nullable)title description:(NSString * _Nullable)description url:(NSString * _Nullable)url urlToImage:(NSString * _Nullable)urlToImage publishedAt:(NSString * _Nullable)publishedAt content:(NSString * _Nullable)content __attribute__((swift_name("init(author:title:description:url:urlToImage:publishedAt:content:)"))) __attribute__((objc_designated_initializer));
-- (SharedArticleDb *)doCopyAuthor:(NSString * _Nullable)author title:(NSString * _Nullable)title description:(NSString * _Nullable)description url:(NSString * _Nullable)url urlToImage:(NSString * _Nullable)urlToImage publishedAt:(NSString * _Nullable)publishedAt content:(NSString * _Nullable)content __attribute__((swift_name("doCopy(author:title:description:url:urlToImage:publishedAt:content:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable author __attribute__((swift_name("author")));
 @property (readonly) NSString * _Nullable content __attribute__((swift_name("content")));
@@ -1021,9 +1250,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ProfileDb")))
 @interface SharedProfileDb : SharedBase
 - (instancetype)initWithId:(int64_t)id firstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone photoPath:(NSString *)photoPath __attribute__((swift_name("init(id:firstName:lastName:gender:birthDate:country:city:email:phone:photoPath:)"))) __attribute__((objc_designated_initializer));
-- (SharedProfileDb *)doCopyId:(int64_t)id firstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone photoPath:(NSString *)photoPath __attribute__((swift_name("doCopy(id:firstName:lastName:gender:birthDate:country:city:email:phone:photoPath:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *birthDate __attribute__((swift_name("birthDate")));
 @property (readonly) NSString *city __attribute__((swift_name("city")));
@@ -1182,9 +1425,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpData")))
 @interface SharedSignUpData : SharedBase
 - (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone __attribute__((swift_name("init(firstName:lastName:gender:birthDate:country:city:email:phone:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpData *)doCopyFirstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone __attribute__((swift_name("doCopy(firstName:lastName:gender:birthDate:country:city:email:phone:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *birthDate __attribute__((swift_name("birthDate")));
 @property (readonly) NSString *city __attribute__((swift_name("city")));
@@ -1231,9 +1488,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LoginEvents.PhoneChanged")))
 @interface SharedLoginEventsPhoneChanged : SharedLoginEvents
 - (instancetype)initWithPhone:(NSString *)phone __attribute__((swift_name("init(phone:)"))) __attribute__((objc_designated_initializer));
-- (SharedLoginEventsPhoneChanged *)doCopyPhone:(NSString *)phone __attribute__((swift_name("doCopy(phone:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *phone __attribute__((swift_name("phone")));
 @end
@@ -1251,9 +1522,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LoginState")))
 @interface SharedLoginState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithPhone:(NSString *)phone isLoading:(BOOL)isLoading errorMessage:(NSString * _Nullable)errorMessage isPhoneValid:(BOOL)isPhoneValid phoneFieldState:(SharedTextFieldState *)phoneFieldState confirmButtonState:(SharedButtonState *)confirmButtonState signUpButtonState:(SharedTextState *)signUpButtonState errorTextState:(SharedTextState * _Nullable)errorTextState titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(phone:isLoading:errorMessage:isPhoneValid:phoneFieldState:confirmButtonState:signUpButtonState:errorTextState:titleBarState:)"))) __attribute__((objc_designated_initializer));
-- (SharedLoginState *)doCopyPhone:(NSString *)phone isLoading:(BOOL)isLoading errorMessage:(NSString * _Nullable)errorMessage isPhoneValid:(BOOL)isPhoneValid phoneFieldState:(SharedTextFieldState *)phoneFieldState confirmButtonState:(SharedButtonState *)confirmButtonState signUpButtonState:(SharedTextState *)signUpButtonState errorTextState:(SharedTextState * _Nullable)errorTextState titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(phone:isLoading:errorMessage:isPhoneValid:phoneFieldState:confirmButtonState:signUpButtonState:errorTextState:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedButtonState *confirmButtonState __attribute__((swift_name("confirmButtonState")));
 @property (readonly) NSString * _Nullable errorMessage __attribute__((swift_name("errorMessage")));
@@ -1294,9 +1579,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PinEvents.PinChanged")))
 @interface SharedPinEventsPinChanged : SharedPinEvents
 - (instancetype)initWithPin:(NSString *)pin __attribute__((swift_name("init(pin:)"))) __attribute__((objc_designated_initializer));
-- (SharedPinEventsPinChanged *)doCopyPin:(NSString *)pin __attribute__((swift_name("doCopy(pin:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *pin __attribute__((swift_name("pin")));
 @end
@@ -1305,9 +1604,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PinState")))
 @interface SharedPinState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithPin:(NSString *)pin isLoading:(BOOL)isLoading isPinValid:(BOOL)isPinValid errorMessage:(NSString * _Nullable)errorMessage pinFieldState:(SharedTextFieldState *)pinFieldState confirmButtonState:(SharedButtonState *)confirmButtonState helperTextState:(SharedTextState *)helperTextState errorTextState:(SharedTextState * _Nullable)errorTextState titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(pin:isLoading:isPinValid:errorMessage:pinFieldState:confirmButtonState:helperTextState:errorTextState:titleBarState:)"))) __attribute__((objc_designated_initializer));
-- (SharedPinState *)doCopyPin:(NSString *)pin isLoading:(BOOL)isLoading isPinValid:(BOOL)isPinValid errorMessage:(NSString * _Nullable)errorMessage pinFieldState:(SharedTextFieldState *)pinFieldState confirmButtonState:(SharedButtonState *)confirmButtonState helperTextState:(SharedTextState *)helperTextState errorTextState:(SharedTextState * _Nullable)errorTextState titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(pin:isLoading:isPinValid:errorMessage:pinFieldState:confirmButtonState:helperTextState:errorTextState:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedButtonState *confirmButtonState __attribute__((swift_name("confirmButtonState")));
 @property (readonly) NSString * _Nullable errorMessage __attribute__((swift_name("errorMessage")));
@@ -1348,9 +1661,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.BirthDateChanged")))
 @interface SharedSignUpEventsBirthDateChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsBirthDateChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1359,9 +1686,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.CityChanged")))
 @interface SharedSignUpEventsCityChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsCityChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1370,9 +1711,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.CountryChanged")))
 @interface SharedSignUpEventsCountryChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsCountryChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1390,9 +1745,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.EmailChanged")))
 @interface SharedSignUpEventsEmailChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsEmailChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1401,9 +1770,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.FirstNameChanged")))
 @interface SharedSignUpEventsFirstNameChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsFirstNameChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1412,9 +1795,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.GenderChanged")))
 @interface SharedSignUpEventsGenderChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsGenderChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1423,9 +1820,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.LastNameChanged")))
 @interface SharedSignUpEventsLastNameChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsLastNameChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1434,9 +1845,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpEvents.PhoneChanged")))
 @interface SharedSignUpEventsPhoneChanged : SharedSignUpEvents
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpEventsPhoneChanged *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
@@ -1445,9 +1870,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SignUpState")))
 @interface SharedSignUpState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone isLoading:(BOOL)isLoading isFormValid:(BOOL)isFormValid errorMessage:(NSString * _Nullable)errorMessage genderOptions:(NSArray<NSString *> *)genderOptions countryOptions:(NSArray<NSString *> *)countryOptions cityOptions:(NSArray<NSString *> *)cityOptions firstNameField:(SharedTextFieldState *)firstNameField lastNameField:(SharedTextFieldState *)lastNameField genderField:(SharedDropdownFieldState *)genderField birthDateField:(SharedTextFieldState *)birthDateField countryField:(SharedDropdownFieldState *)countryField cityField:(SharedDropdownFieldState *)cityField emailField:(SharedTextFieldState *)emailField phoneField:(SharedTextFieldState *)phoneField createAccountButton:(SharedButtonState *)createAccountButton errorTextState:(SharedTextState * _Nullable)errorTextState titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(firstName:lastName:gender:birthDate:country:city:email:phone:isLoading:isFormValid:errorMessage:genderOptions:countryOptions:cityOptions:firstNameField:lastNameField:genderField:birthDateField:countryField:cityField:emailField:phoneField:createAccountButton:errorTextState:titleBarState:)"))) __attribute__((objc_designated_initializer));
-- (SharedSignUpState *)doCopyFirstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone isLoading:(BOOL)isLoading isFormValid:(BOOL)isFormValid errorMessage:(NSString * _Nullable)errorMessage genderOptions:(NSArray<NSString *> *)genderOptions countryOptions:(NSArray<NSString *> *)countryOptions cityOptions:(NSArray<NSString *> *)cityOptions firstNameField:(SharedTextFieldState *)firstNameField lastNameField:(SharedTextFieldState *)lastNameField genderField:(SharedDropdownFieldState *)genderField birthDateField:(SharedTextFieldState *)birthDateField countryField:(SharedDropdownFieldState *)countryField cityField:(SharedDropdownFieldState *)cityField emailField:(SharedTextFieldState *)emailField phoneField:(SharedTextFieldState *)phoneField createAccountButton:(SharedButtonState *)createAccountButton errorTextState:(SharedTextState * _Nullable)errorTextState titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(firstName:lastName:gender:birthDate:country:city:email:phone:isLoading:isFormValid:errorMessage:genderOptions:countryOptions:cityOptions:firstNameField:lastNameField:genderField:birthDateField:countryField:cityField:emailField:phoneField:createAccountButton:errorTextState:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *birthDate __attribute__((swift_name("birthDate")));
 @property (readonly) SharedTextFieldState *birthDateField __attribute__((swift_name("birthDateField")));
@@ -1534,8 +1973,23 @@ __attribute__((swift_name("FavoriteDetailsEvents.OnOpenClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onOpenClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedFavoriteDetailsEventsOnOpenClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -1544,9 +1998,23 @@ __attribute__((swift_name("FavoriteDetailsState")))
 @interface SharedFavoriteDetailsState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithImageUrl:(NSString * _Nullable)imageUrl dateState:(SharedTextState *)dateState titleState:(SharedTextState *)titleState textState:(SharedTextState *)textState favoriteButton:(SharedButtonState *)favoriteButton openButton:(SharedButtonState *)openButton titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(imageUrl:dateState:titleState:textState:favoriteButton:openButton:titleBarState:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedFavoriteDetailsStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedFavoriteDetailsState *)doCopyImageUrl:(NSString * _Nullable)imageUrl dateState:(SharedTextState *)dateState titleState:(SharedTextState *)titleState textState:(SharedTextState *)textState favoriteButton:(SharedButtonState *)favoriteButton openButton:(SharedButtonState *)openButton titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(imageUrl:dateState:titleState:textState:favoriteButton:openButton:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedTextState *dateState __attribute__((swift_name("dateState")));
 @property (readonly) SharedButtonState *favoriteButton __attribute__((swift_name("favoriteButton")));
@@ -1590,9 +2058,23 @@ __attribute__((swift_name("FavoriteUiState")))
 @interface SharedFavoriteUiState : SharedBase
 - (instancetype)initWithId:(NSString *)id title:(NSString *)title text:(NSString *)text date:(NSString *)date imageUrl:(NSString * _Nullable)imageUrl favorite:(BOOL)favorite cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("init(id:title:text:date:imageUrl:favorite:cellBackground:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedFavoriteUiStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedFavoriteUiState *)doCopyId:(NSString *)id title:(NSString *)title text:(NSString *)text date:(NSString *)date imageUrl:(NSString * _Nullable)imageUrl favorite:(BOOL)favorite cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("doCopy(id:title:text:date:imageUrl:favorite:cellBackground:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *cellBackground __attribute__((swift_name("cellBackground")));
 @property (readonly) NSString *date __attribute__((swift_name("date")));
@@ -1640,9 +2122,23 @@ __attribute__((swift_name("FavoritesListState")))
 @interface SharedFavoritesListState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithFavoritesItems:(NSArray<SharedFavoriteUiState *> *)favoritesItems titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("init(favoritesItems:titleBarState:backGroundColor:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedFavoritesListStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedFavoritesListState *)doCopyFavoritesItems:(NSArray<SharedFavoriteUiState *> *)favoritesItems titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("doCopy(favoritesItems:titleBarState:backGroundColor:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backGroundColor __attribute__((swift_name("backGroundColor")));
 @property (readonly) NSArray<SharedFavoriteUiState *> *favoritesItems __attribute__((swift_name("favoritesItems")));
@@ -1776,9 +2272,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FridgeEvents.OnProductClicked")))
 @interface SharedFridgeEventsOnProductClicked : SharedFridgeEvents
 - (instancetype)initWithProductId:(NSString *)productId __attribute__((swift_name("init(productId:)"))) __attribute__((objc_designated_initializer));
-- (SharedFridgeEventsOnProductClicked *)doCopyProductId:(NSString *)productId __attribute__((swift_name("doCopy(productId:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *productId __attribute__((swift_name("productId")));
 @end
@@ -1787,9 +2297,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FridgeEvents.OnRecipeClicked")))
 @interface SharedFridgeEventsOnRecipeClicked : SharedFridgeEvents
 - (instancetype)initWithRecipeId:(NSString *)recipeId __attribute__((swift_name("init(recipeId:)"))) __attribute__((objc_designated_initializer));
-- (SharedFridgeEventsOnRecipeClicked *)doCopyRecipeId:(NSString *)recipeId __attribute__((swift_name("doCopy(recipeId:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *recipeId __attribute__((swift_name("recipeId")));
 @end
@@ -1801,8 +2325,23 @@ __attribute__((swift_name("FridgeEvents.OnRecommendRecipesClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onRecommendRecipesClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedFridgeEventsOnRecommendRecipesClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -1813,8 +2352,23 @@ __attribute__((swift_name("FridgeEvents.OnRetryClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onRetryClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedFridgeEventsOnRetryClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -1822,9 +2376,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FridgeProductUiState")))
 @interface SharedFridgeProductUiState : SharedBase
 - (instancetype)initWithId:(NSString *)id name:(NSString *)name isSelected:(BOOL)isSelected __attribute__((swift_name("init(id:name:isSelected:)"))) __attribute__((objc_designated_initializer));
-- (SharedFridgeProductUiState *)doCopyId:(NSString *)id name:(NSString *)name isSelected:(BOOL)isSelected __attribute__((swift_name("doCopy(id:name:isSelected:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
 @property (readonly) BOOL isSelected __attribute__((swift_name("isSelected")));
@@ -1836,9 +2404,23 @@ __attribute__((swift_name("FridgeRecommendedRecipeUiState")))
 @interface SharedFridgeRecommendedRecipeUiState : SharedBase
 - (instancetype)initWithId:(NSString *)id title:(NSString *)title description:(NSString *)description duration:(NSString *)duration imageUrl:(NSString *)imageUrl matchedIngredientsText:(NSString *)matchedIngredientsText cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("init(id:title:description:duration:imageUrl:matchedIngredientsText:cellBackground:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedFridgeRecommendedRecipeUiStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedFridgeRecommendedRecipeUiState *)doCopyId:(NSString *)id title:(NSString *)title description:(NSString *)description duration:(NSString *)duration imageUrl:(NSString *)imageUrl matchedIngredientsText:(NSString *)matchedIngredientsText cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("doCopy(id:title:description:duration:imageUrl:matchedIngredientsText:cellBackground:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *cellBackground __attribute__((swift_name("cellBackground")));
 @property (readonly) NSString *description_ __attribute__((swift_name("description_")));
@@ -1868,9 +2450,23 @@ __attribute__((swift_name("FridgeState")))
 @interface SharedFridgeState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithProductsItems:(NSArray<SharedFridgeProductUiState *> *)productsItems recommendationsItems:(NSArray<SharedFridgeRecommendedRecipeUiState *> *)recommendationsItems productsTitleState:(SharedTextState *)productsTitleState recommendationsTitleState:(SharedTextState *)recommendationsTitleState emptyRecommendationsState:(SharedTextState *)emptyRecommendationsState recommendButtonTitle:(NSString *)recommendButtonTitle isRecommendButtonEnabled:(BOOL)isRecommendButtonEnabled hasRecommendationsRequest:(BOOL)hasRecommendationsRequest titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("init(productsItems:recommendationsItems:productsTitleState:recommendationsTitleState:emptyRecommendationsState:recommendButtonTitle:isRecommendButtonEnabled:hasRecommendationsRequest:titleBarState:backGroundColor:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedFridgeStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedFridgeState *)doCopyProductsItems:(NSArray<SharedFridgeProductUiState *> *)productsItems recommendationsItems:(NSArray<SharedFridgeRecommendedRecipeUiState *> *)recommendationsItems productsTitleState:(SharedTextState *)productsTitleState recommendationsTitleState:(SharedTextState *)recommendationsTitleState emptyRecommendationsState:(SharedTextState *)emptyRecommendationsState recommendButtonTitle:(NSString *)recommendButtonTitle isRecommendButtonEnabled:(BOOL)isRecommendButtonEnabled hasRecommendationsRequest:(BOOL)hasRecommendationsRequest titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("doCopy(productsItems:recommendationsItems:productsTitleState:recommendationsTitleState:emptyRecommendationsState:recommendButtonTitle:isRecommendButtonEnabled:hasRecommendationsRequest:titleBarState:backGroundColor:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backGroundColor __attribute__((swift_name("backGroundColor")));
 @property (readonly) SharedTextState *emptyRecommendationsState __attribute__((swift_name("emptyRecommendationsState")));
@@ -1909,9 +2505,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FridgeProduct")))
 @interface SharedFridgeProduct : SharedBase
 - (instancetype)initWithId:(NSString *)id name:(NSString *)name __attribute__((swift_name("init(id:name:)"))) __attribute__((objc_designated_initializer));
-- (SharedFridgeProduct *)doCopyId:(NSString *)id name:(NSString *)name __attribute__((swift_name("doCopy(id:name:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
@@ -1921,9 +2531,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FridgeRecommendedRecipe")))
 @interface SharedFridgeRecommendedRecipe : SharedBase
 - (instancetype)initWithId:(NSString *)id title:(NSString *)title description:(NSString *)description durationMinutes:(int32_t)durationMinutes imageUrl:(NSString *)imageUrl matchedIngredients:(NSArray<NSString *> *)matchedIngredients __attribute__((swift_name("init(id:title:description:durationMinutes:imageUrl:matchedIngredients:)"))) __attribute__((objc_designated_initializer));
-- (SharedFridgeRecommendedRecipe *)doCopyId:(NSString *)id title:(NSString *)title description:(NSString *)description durationMinutes:(int32_t)durationMinutes imageUrl:(NSString *)imageUrl matchedIngredients:(NSArray<NSString *> *)matchedIngredients __attribute__((swift_name("doCopy(id:title:description:durationMinutes:imageUrl:matchedIngredients:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *description_ __attribute__((swift_name("description_")));
 @property (readonly) int32_t durationMinutes __attribute__((swift_name("durationMinutes")));
@@ -1942,9 +2566,23 @@ __attribute__((swift_name("HomeState")))
 @interface SharedHomeState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithTabs:(NSArray<NSString *> *)tabs titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(tabs:titleBarState:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedHomeStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedHomeState *)doCopyTabs:(NSArray<NSString *> *)tabs titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(tabs:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSArray<NSString *> *tabs __attribute__((swift_name("tabs")));
 @property (readonly) SharedTitleBarState *titleBarState __attribute__((swift_name("titleBarState")));
@@ -2006,8 +2644,23 @@ __attribute__((swift_name("NewsDetailsEvents.OnFavoriteClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onFavoriteClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNewsDetailsEventsOnFavoriteClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2018,8 +2671,23 @@ __attribute__((swift_name("NewsDetailsEvents.OnOpenClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onOpenClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNewsDetailsEventsOnOpenClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2028,9 +2696,23 @@ __attribute__((swift_name("NewsDetailsState")))
 @interface SharedNewsDetailsState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithImageUrl:(NSString * _Nullable)imageUrl dateState:(SharedTextState *)dateState titleState:(SharedTextState *)titleState textState:(SharedTextState *)textState favoriteButton:(SharedButtonState *)favoriteButton openButton:(SharedButtonState *)openButton titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(imageUrl:dateState:titleState:textState:favoriteButton:openButton:titleBarState:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedNewsDetailsStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedNewsDetailsState *)doCopyImageUrl:(NSString * _Nullable)imageUrl dateState:(SharedTextState *)dateState titleState:(SharedTextState *)titleState textState:(SharedTextState *)textState favoriteButton:(SharedButtonState *)favoriteButton openButton:(SharedButtonState *)openButton titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(imageUrl:dateState:titleState:textState:favoriteButton:openButton:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedTextState *dateState __attribute__((swift_name("dateState")));
 @property (readonly) SharedButtonState *favoriteButton __attribute__((swift_name("favoriteButton")));
@@ -2093,9 +2775,23 @@ __attribute__((swift_name("NewsListState")))
 @interface SharedNewsListState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithNewsItems:(NSArray<SharedNewsUiState *> *)newsItems searchQuery:(NSString *)searchQuery searchPlaceholder:(NSString *)searchPlaceholder titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("init(newsItems:searchQuery:searchPlaceholder:titleBarState:backGroundColor:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedNewsListStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedNewsListState *)doCopyNewsItems:(NSArray<SharedNewsUiState *> *)newsItems searchQuery:(NSString *)searchQuery searchPlaceholder:(NSString *)searchPlaceholder titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("doCopy(newsItems:searchQuery:searchPlaceholder:titleBarState:backGroundColor:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backGroundColor __attribute__((swift_name("backGroundColor")));
 @property (readonly) NSArray<SharedNewsUiState *> *newsItems __attribute__((swift_name("newsItems")));
@@ -2133,9 +2829,23 @@ __attribute__((swift_name("NewsUiState")))
 @interface SharedNewsUiState : SharedBase
 - (instancetype)initWithId:(NSString *)id title:(NSString *)title text:(NSString *)text date:(NSString *)date imageUrl:(NSString * _Nullable)imageUrl isFavorite:(BOOL)isFavorite cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("init(id:title:text:date:imageUrl:isFavorite:cellBackground:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedNewsUiStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedNewsUiState *)doCopyId:(NSString *)id title:(NSString *)title text:(NSString *)text date:(NSString *)date imageUrl:(NSString * _Nullable)imageUrl isFavorite:(BOOL)isFavorite cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("doCopy(id:title:text:date:imageUrl:isFavorite:cellBackground:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *cellBackground __attribute__((swift_name("cellBackground")));
 @property (readonly) NSString *date __attribute__((swift_name("date")));
@@ -2170,9 +2880,26 @@ __attribute__((swift_name("Article")))
 @interface SharedArticle : SharedBase
 - (instancetype)initWithAuthor:(NSString * _Nullable)author title:(NSString * _Nullable)title description:(NSString * _Nullable)description url:(NSString * _Nullable)url urlToImage:(NSString * _Nullable)urlToImage publishedAt:(NSString * _Nullable)publishedAt content:(NSString * _Nullable)content __attribute__((swift_name("init(author:title:description:url:urlToImage:publishedAt:content:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedArticleCompanion *companion __attribute__((swift_name("companion")));
-- (SharedArticle *)doCopyAuthor:(NSString * _Nullable)author title:(NSString * _Nullable)title description:(NSString * _Nullable)description url:(NSString * _Nullable)url urlToImage:(NSString * _Nullable)urlToImage publishedAt:(NSString * _Nullable)publishedAt content:(NSString * _Nullable)content __attribute__((swift_name("doCopy(author:title:description:url:urlToImage:publishedAt:content:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable author __attribute__((swift_name("author")));
 @property (readonly) NSString * _Nullable content __attribute__((swift_name("content")));
@@ -2190,7 +2917,6 @@ __attribute__((swift_name("Article.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedArticleCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -2203,9 +2929,26 @@ __attribute__((swift_name("NewsList")))
 @interface SharedNewsList : SharedBase
 - (instancetype)initWithStatus:(NSString * _Nullable)status totalResults:(SharedInt * _Nullable)totalResults articles:(NSArray<SharedArticle *> *)articles __attribute__((swift_name("init(status:totalResults:articles:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedNewsListCompanion *companion __attribute__((swift_name("companion")));
-- (SharedNewsList *)doCopyStatus:(NSString * _Nullable)status totalResults:(SharedInt * _Nullable)totalResults articles:(NSArray<SharedArticle *> *)articles __attribute__((swift_name("doCopy(status:totalResults:articles:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSArray<SharedArticle *> *articles __attribute__((swift_name("articles")));
 @property (readonly) NSString * _Nullable status __attribute__((swift_name("status")));
@@ -2219,7 +2962,6 @@ __attribute__((swift_name("NewsList.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNewsListCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2227,9 +2969,23 @@ __attribute__((swift_name("ProfileData")))
 @interface SharedProfileData : SharedBase
 - (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone photoPath:(NSString *)photoPath __attribute__((swift_name("init(firstName:lastName:gender:birthDate:country:city:email:phone:photoPath:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedProfileDataCompanion *companion __attribute__((swift_name("companion")));
-- (SharedProfileData *)doCopyFirstName:(NSString *)firstName lastName:(NSString *)lastName gender:(NSString *)gender birthDate:(NSString *)birthDate country:(NSString *)country city:(NSString *)city email:(NSString *)email phone:(NSString *)phone photoPath:(NSString *)photoPath __attribute__((swift_name("doCopy(firstName:lastName:gender:birthDate:country:city:email:phone:photoPath:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *birthDate __attribute__((swift_name("birthDate")));
 @property (readonly) NSString *city __attribute__((swift_name("city")));
@@ -2263,8 +3019,23 @@ __attribute__((swift_name("ProfileEffect.ShowImageSourceDialog")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)showImageSourceDialog __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedProfileEffectShowImageSourceDialog *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2279,8 +3050,23 @@ __attribute__((swift_name("ProfileEvents.AvatarTapped")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)avatarTapped __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedProfileEventsAvatarTapped *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2291,8 +3077,23 @@ __attribute__((swift_name("ProfileEvents.LogoutTapped")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)logoutTapped __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedProfileEventsLogoutTapped *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2300,9 +3101,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ProfileEvents.PhotoChanged")))
 @interface SharedProfileEventsPhotoChanged : SharedProfileEvents
 - (instancetype)initWithPhotoPath:(NSString *)photoPath __attribute__((swift_name("init(photoPath:)"))) __attribute__((objc_designated_initializer));
-- (SharedProfileEventsPhotoChanged *)doCopyPhotoPath:(NSString *)photoPath __attribute__((swift_name("doCopy(photoPath:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *photoPath __attribute__((swift_name("photoPath")));
 @end
@@ -2362,9 +3177,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ProfileState")))
 @interface SharedProfileState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithFullName:(NSString *)fullName gender:(NSString *)gender birthDate:(NSString *)birthDate location:(NSString *)location email:(NSString *)email phone:(NSString *)phone photoPath:(NSString *)photoPath isMockData:(BOOL)isMockData titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(fullName:gender:birthDate:location:email:phone:photoPath:isMockData:titleBarState:)"))) __attribute__((objc_designated_initializer));
-- (SharedProfileState *)doCopyFullName:(NSString *)fullName gender:(NSString *)gender birthDate:(NSString *)birthDate location:(NSString *)location email:(NSString *)email phone:(NSString *)phone photoPath:(NSString *)photoPath isMockData:(BOOL)isMockData titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(fullName:gender:birthDate:location:email:phone:photoPath:isMockData:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *birthDate __attribute__((swift_name("birthDate")));
 @property (readonly) NSString *email __attribute__((swift_name("email")));
@@ -2429,9 +3258,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RecipeIngredientUiState")))
 @interface SharedRecipeIngredientUiState : SharedBase
 - (instancetype)initWithName:(NSString *)name amount:(NSString *)amount __attribute__((swift_name("init(name:amount:)"))) __attribute__((objc_designated_initializer));
-- (SharedRecipeIngredientUiState *)doCopyName:(NSString *)name amount:(NSString *)amount __attribute__((swift_name("doCopy(name:amount:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *amount __attribute__((swift_name("amount")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
@@ -2441,9 +3284,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RecipeStepUiState")))
 @interface SharedRecipeStepUiState : SharedBase
 - (instancetype)initWithNumber:(int32_t)number text:(NSString *)text duration:(NSString *)duration __attribute__((swift_name("init(number:text:duration:)"))) __attribute__((objc_designated_initializer));
-- (SharedRecipeStepUiState *)doCopyNumber:(int32_t)number text:(NSString *)text duration:(NSString *)duration __attribute__((swift_name("doCopy(number:text:duration:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *duration __attribute__((swift_name("duration")));
 @property (readonly) int32_t number __attribute__((swift_name("number")));
@@ -2461,8 +3318,23 @@ __attribute__((swift_name("RecipesDetailsEvents.OnRetryClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onRetryClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedRecipesDetailsEventsOnRetryClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2471,9 +3343,23 @@ __attribute__((swift_name("RecipesDetailsState")))
 @interface SharedRecipesDetailsState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithImageUrl:(NSString * _Nullable)imageUrl titleState:(SharedTextState *)titleState descriptionState:(SharedTextState *)descriptionState durationState:(SharedTextState *)durationState ingredientsTitleState:(SharedTextState *)ingredientsTitleState ingredientsItems:(NSArray<SharedRecipeIngredientUiState *> *)ingredientsItems ingredientsState:(SharedTextState *)ingredientsState stepsTitleState:(SharedTextState *)stepsTitleState stepsItems:(NSArray<SharedRecipeStepUiState *> *)stepsItems stepsState:(SharedTextState *)stepsState startCookingButtonTitle:(NSString *)startCookingButtonTitle titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("init(imageUrl:titleState:descriptionState:durationState:ingredientsTitleState:ingredientsItems:ingredientsState:stepsTitleState:stepsItems:stepsState:startCookingButtonTitle:titleBarState:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedRecipesDetailsStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedRecipesDetailsState *)doCopyImageUrl:(NSString * _Nullable)imageUrl titleState:(SharedTextState *)titleState descriptionState:(SharedTextState *)descriptionState durationState:(SharedTextState *)durationState ingredientsTitleState:(SharedTextState *)ingredientsTitleState ingredientsItems:(NSArray<SharedRecipeIngredientUiState *> *)ingredientsItems ingredientsState:(SharedTextState *)ingredientsState stepsTitleState:(SharedTextState *)stepsTitleState stepsItems:(NSArray<SharedRecipeStepUiState *> *)stepsItems stepsState:(SharedTextState *)stepsState startCookingButtonTitle:(NSString *)startCookingButtonTitle titleBarState:(SharedTitleBarState *)titleBarState __attribute__((swift_name("doCopy(imageUrl:titleState:descriptionState:durationState:ingredientsTitleState:ingredientsItems:ingredientsState:stepsTitleState:stepsItems:stepsState:startCookingButtonTitle:titleBarState:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedTextState *descriptionState __attribute__((swift_name("descriptionState")));
 @property (readonly) SharedTextState *durationState __attribute__((swift_name("durationState")));
@@ -2515,9 +3401,23 @@ __attribute__((swift_name("RecipeUiState")))
 @interface SharedRecipeUiState : SharedBase
 - (instancetype)initWithId:(NSString *)id title:(NSString *)title text:(NSString *)text duration:(NSString *)duration imageUrl:(NSString *)imageUrl cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("init(id:title:text:duration:imageUrl:cellBackground:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedRecipeUiStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedRecipeUiState *)doCopyId:(NSString *)id title:(NSString *)title text:(NSString *)text duration:(NSString *)duration imageUrl:(NSString *)imageUrl cellBackground:(SharedColorResource *)cellBackground __attribute__((swift_name("doCopy(id:title:text:duration:imageUrl:cellBackground:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *cellBackground __attribute__((swift_name("cellBackground")));
 @property (readonly) NSString *duration __attribute__((swift_name("duration")));
@@ -2558,8 +3458,23 @@ __attribute__((swift_name("RecipesListEvents.OnRetryClicked")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)onRetryClicked __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedRecipesListEventsOnRetryClicked *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2568,9 +3483,23 @@ __attribute__((swift_name("RecipesListState")))
 @interface SharedRecipesListState : SharedBase <SharedBaseViewState>
 - (instancetype)initWithRecipesItems:(NSArray<SharedRecipeUiState *> *)recipesItems titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("init(recipesItems:titleBarState:backGroundColor:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedRecipesListStateCompanion *companion __attribute__((swift_name("companion")));
-- (SharedRecipesListState *)doCopyRecipesItems:(NSArray<SharedRecipeUiState *> *)recipesItems titleBarState:(SharedTitleBarState *)titleBarState backGroundColor:(SharedColorResource *)backGroundColor __attribute__((swift_name("doCopy(recipesItems:titleBarState:backGroundColor:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedColorResource *backGroundColor __attribute__((swift_name("backGroundColor")));
 @property (readonly) NSArray<SharedRecipeUiState *> *recipesItems __attribute__((swift_name("recipesItems")));
@@ -2603,9 +3532,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Recipe")))
 @interface SharedRecipe : SharedBase
 - (instancetype)initWithId:(NSString *)id title:(NSString *)title description:(NSString *)description durationMinutes:(int32_t)durationMinutes imageUrl:(NSString *)imageUrl ingredients:(NSArray<SharedRecipeIngredient *> *)ingredients steps:(NSArray<SharedRecipeStep *> *)steps __attribute__((swift_name("init(id:title:description:durationMinutes:imageUrl:ingredients:steps:)"))) __attribute__((objc_designated_initializer));
-- (SharedRecipe *)doCopyId:(NSString *)id title:(NSString *)title description:(NSString *)description durationMinutes:(int32_t)durationMinutes imageUrl:(NSString *)imageUrl ingredients:(NSArray<SharedRecipeIngredient *> *)ingredients steps:(NSArray<SharedRecipeStep *> *)steps __attribute__((swift_name("doCopy(id:title:description:durationMinutes:imageUrl:ingredients:steps:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *description_ __attribute__((swift_name("description_")));
 @property (readonly) int32_t durationMinutes __attribute__((swift_name("durationMinutes")));
@@ -2620,9 +3563,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RecipeIngredient")))
 @interface SharedRecipeIngredient : SharedBase
 - (instancetype)initWithName:(NSString *)name amount:(NSString *)amount __attribute__((swift_name("init(name:amount:)"))) __attribute__((objc_designated_initializer));
-- (SharedRecipeIngredient *)doCopyName:(NSString *)name amount:(NSString *)amount __attribute__((swift_name("doCopy(name:amount:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *amount __attribute__((swift_name("amount")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
@@ -2632,9 +3589,23 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RecipeStep")))
 @interface SharedRecipeStep : SharedBase
 - (instancetype)initWithText:(NSString *)text durationMinutes:(SharedInt * _Nullable)durationMinutes __attribute__((swift_name("init(text:durationMinutes:)"))) __attribute__((objc_designated_initializer));
-- (SharedRecipeStep *)doCopyText:(NSString *)text durationMinutes:(SharedInt * _Nullable)durationMinutes __attribute__((swift_name("doCopy(text:durationMinutes:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedInt * _Nullable durationMinutes __attribute__((swift_name("durationMinutes")));
 @property (readonly) NSString *text __attribute__((swift_name("text")));
@@ -2657,7 +3628,11 @@ __attribute__((swift_name("NavigationAction.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(SharedKotlinArray<id<SharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
 @end
 
@@ -2673,10 +3648,29 @@ __attribute__((swift_name("NavigationAction.NavigateBack")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)navigateBack __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateBack *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(SharedKotlinArray<id<SharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2700,7 +3694,6 @@ __attribute__((swift_name("NavigationAction.NavigateToFavoritesDetailsCompanion"
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToFavoritesDetailsCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -2715,10 +3708,29 @@ __attribute__((swift_name("NavigationAction.NavigateToLogin")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)navigateToLogin __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToLogin *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(SharedKotlinArray<id<SharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2734,10 +3746,29 @@ __attribute__((swift_name("NavigationAction.NavigateToMain")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)navigateToMain __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToMain *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(SharedKotlinArray<id<SharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2761,7 +3792,6 @@ __attribute__((swift_name("NavigationAction.NavigateToNewsDetailsCompanion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToNewsDetailsCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -2776,10 +3806,29 @@ __attribute__((swift_name("NavigationAction.NavigateToPin")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)navigateToPin __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToPin *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(SharedKotlinArray<id<SharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2803,7 +3852,6 @@ __attribute__((swift_name("NavigationAction.NavigateToRecipesDetailsCompanion"))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToRecipesDetailsCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -2818,10 +3866,29 @@ __attribute__((swift_name("NavigationAction.NavigateToSignUp")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)navigateToSignUp __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedNavigationActionNavigateToSignUp *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(SharedKotlinArray<id<SharedKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -2848,6 +3915,20 @@ __attribute__((swift_name("NavigationServiceImpl")))
 - (void)setPreviousBackStackEntryKey:(NSString *)key value:(id _Nullable)value __attribute__((swift_name("setPreviousBackStackEntry(key:value:)")));
 @property (readonly) id<SharedKotlinx_coroutines_coreStateFlow> currentDestination __attribute__((swift_name("currentDestination")));
 @property (readonly) SharedCommonFlow<SharedNavigationAction *> *navigationFlow __attribute__((swift_name("navigationFlow")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("VoyagerNavigationService")))
+@interface SharedVoyagerNavigationService : SharedBase <SharedNavigationService>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)clearCurrentBackStackEntryKey:(NSString *)key __attribute__((swift_name("clearCurrentBackStackEntry(key:)")));
+- (id _Nullable)getCurrentBackStackEntryKey:(NSString *)key __attribute__((swift_name("getCurrentBackStackEntry(key:)")));
+- (void)navigateAction:(SharedNavigationAction *)action __attribute__((swift_name("navigate(action:)")));
+- (void)navigateBack __attribute__((swift_name("navigateBack()")));
+- (void)setNavigatorNavigator:(SharedVoyager_navigatorNavigator *)navigator __attribute__((swift_name("setNavigator(navigator:)")));
+- (void)setPreviousBackStackEntryKey:(NSString *)key value:(id _Nullable)value __attribute__((swift_name("setPreviousBackStackEntry(key:value:)")));
+@property (readonly) id<SharedKotlinx_coroutines_coreStateFlow> currentDestination __attribute__((swift_name("currentDestination")));
 @end
 
 __attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
@@ -2920,12 +4001,114 @@ __attribute__((swift_name("CommonFlow")))
 - (instancetype)initWithOrigin:(id<SharedKotlinx_coroutines_coreFlow>)origin __attribute__((swift_name("init(origin:)"))) __attribute__((objc_designated_initializer));
 
 /**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)collectCollector:(id<SharedKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
 - (id<SharedKtor_ioCloseable>)watchBlock:(void (^)(T _Nullable))block __attribute__((swift_name("watch(block:)")));
 - (id<SharedKtor_ioCloseable>)watchSingleBlock:(void (^)(T _Nullable))block __attribute__((swift_name("watchSingle(block:)")));
+@end
+
+__attribute__((swift_name("Voyager_coreScreen")))
+@protocol SharedVoyager_coreScreen
+@required
+@property (readonly) NSString *key __attribute__((swift_name("key")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LoginScreen")))
+@interface SharedLoginScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)loginScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedLoginScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PinScreen")))
+@interface SharedPinScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)pinScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedPinScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SignUpScreen")))
+@interface SharedSignUpScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)signUpScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedSignUpScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("FavoritesListScreen")))
+@interface SharedFavoritesListScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)favoritesListScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedFavoritesListScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("FridgeScreen")))
+@interface SharedFridgeScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)fridgeScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedFridgeScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HomeScreen")))
+@interface SharedHomeScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)homeScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedHomeScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("NewsListScreen")))
+@interface SharedNewsListScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)newsListScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedNewsListScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ProfileScreen")))
+@interface SharedProfileScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)profileScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedProfileScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RecipesListScreen")))
+@interface SharedRecipesListScreen : SharedBase <SharedVoyager_coreScreen>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)recipesListScreen __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedRecipesListScreen *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppShapes")))
+@interface SharedAppShapes : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)appShapes __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedAppShapes *shared __attribute__((swift_name("shared")));
+@property (readonly) SharedFoundationRoundedCornerShape *primary __attribute__((swift_name("primary")));
+@property (readonly) SharedFoundationRoundedCornerShape *primaryBottom __attribute__((swift_name("primaryBottom")));
+@property (readonly) SharedFoundationRoundedCornerShape *primaryTop __attribute__((swift_name("primaryTop")));
+@property (readonly) SharedFoundationRoundedCornerShape *rounded __attribute__((swift_name("rounded")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3272,9 +4455,26 @@ __attribute__((swift_name("ApiError")))
 @interface SharedApiError : SharedBase
 - (instancetype)initWithStatus:(SharedInt * _Nullable)status name:(NSString * _Nullable)name message:(NSString * _Nullable)message __attribute__((swift_name("init(status:name:message:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedApiErrorCompanion *companion __attribute__((swift_name("companion")));
-- (SharedApiError *)doCopyStatus:(SharedInt * _Nullable)status name:(NSString * _Nullable)name message:(NSString * _Nullable)message __attribute__((swift_name("doCopy(status:name:message:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @property (readonly) NSString * _Nullable name __attribute__((swift_name("name")));
@@ -3288,7 +4488,6 @@ __attribute__((swift_name("ApiError.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedApiErrorCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -3301,9 +4500,26 @@ __attribute__((swift_name("ApiErrorWrapper")))
 @interface SharedApiErrorWrapper : SharedBase
 - (instancetype)initWithError:(SharedApiError * _Nullable)error __attribute__((swift_name("init(error:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) SharedApiErrorWrapperCompanion *companion __attribute__((swift_name("companion")));
-- (SharedApiErrorWrapper *)doCopyError:(SharedApiError * _Nullable)error __attribute__((swift_name("doCopy(error:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   kotlin.native.HiddenFromObjC
+ *   kotlin.native.HiddenFromObjC
+*/
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) SharedApiError * _Nullable error __attribute__((swift_name("error")));
 @end
@@ -3315,7 +4531,6 @@ __attribute__((swift_name("ApiErrorWrapper.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedApiErrorWrapperCompanion *shared __attribute__((swift_name("shared")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 @interface SharedButtonState (Extensions)
@@ -3420,8 +4635,9 @@ __attribute__((swift_name("Kotlinx_datetimeLocalDate.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedKotlinx_datetimeLocalDateCompanion *shared __attribute__((swift_name("shared")));
+- (id<SharedKotlinx_datetimeDateTimeFormat>)FormatBlock:(void (^)(id<SharedKotlinx_datetimeDateTimeFormatBuilderWithDate>))block __attribute__((swift_name("Format(block:)")));
 - (SharedKotlinx_datetimeLocalDate *)fromEpochDaysEpochDays:(int32_t)epochDays __attribute__((swift_name("fromEpochDays(epochDays:)")));
-- (SharedKotlinx_datetimeLocalDate *)parseIsoString:(NSString *)isoString __attribute__((swift_name("parse(isoString:)")));
+- (SharedKotlinx_datetimeLocalDate *)parseInput:(id)input format:(id<SharedKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("parse(input:format:)")));
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -3436,7 +4652,8 @@ __attribute__((swift_name("Kotlinx_datetimeLocalDateTime.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedKotlinx_datetimeLocalDateTimeCompanion *shared __attribute__((swift_name("shared")));
-- (SharedKotlinx_datetimeLocalDateTime *)parseIsoString:(NSString *)isoString __attribute__((swift_name("parse(isoString:)")));
+- (id<SharedKotlinx_datetimeDateTimeFormat>)FormatBuilder:(void (^)(id<SharedKotlinx_datetimeDateTimeFormatBuilderWithDateTime>))builder __attribute__((swift_name("Format(builder:)")));
+- (SharedKotlinx_datetimeLocalDateTime *)parseInput:(id)input format:(id<SharedKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("parse(input:format:)")));
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -3486,6 +4703,12 @@ __attribute__((swift_name("Koin_coreKoin")))
 - (id)getObjCClass:(Class)objCClass __attribute__((swift_name("get(objCClass:)")));
 - (id)getObjCProtocol:(Protocol *)objCProtocol __attribute__((swift_name("get(objCProtocol:)")));
 - (id)getObjCClass:(Class)objCClass parameter:(id _Nullable)parameter __attribute__((swift_name("get(objCClass:parameter:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("App_iosKt")))
+@interface SharedApp_iosKt : SharedBase
++ (UIViewController *)MainViewController __attribute__((swift_name("MainViewController()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3859,6 +5082,58 @@ __attribute__((swift_name("Ktor_client_coreHttpClient")))
 @property (readonly) SharedKtor_client_coreHttpSendPipeline *sendPipeline __attribute__((swift_name("sendPipeline")));
 @end
 
+__attribute__((swift_name("Voyager_coreStack")))
+@protocol SharedVoyager_coreStack
+@required
+- (void)clearEvent __attribute__((swift_name("clearEvent()")));
+- (void)plusAssignItem:(id _Nullable)item __attribute__((swift_name("plusAssign(item:)")));
+- (void)plusAssignItems:(NSArray<id> *)items __attribute__((swift_name("plusAssign(items:)")));
+- (BOOL)pop __attribute__((swift_name("pop()")));
+- (void)popAll __attribute__((swift_name("popAll()")));
+- (BOOL)popUntilPredicate:(SharedBoolean *(^)(id _Nullable))predicate __attribute__((swift_name("popUntil(predicate:)")));
+- (void)pushItem:(id _Nullable)item __attribute__((swift_name("push(item:)")));
+- (void)pushItems:(NSArray<id> *)items __attribute__((swift_name("push(items:)")));
+- (void)replaceItem:(id _Nullable)item __attribute__((swift_name("replace(item:)")));
+- (void)replaceAllItem:(id _Nullable)item __attribute__((swift_name("replaceAll(item:)")));
+- (void)replaceAllItems:(NSArray<id> *)items __attribute__((swift_name("replaceAll(items:)")));
+@property (readonly) BOOL canPop __attribute__((swift_name("canPop")));
+@property (readonly) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+@property (readonly) NSArray<id> *items __attribute__((swift_name("items")));
+@property (readonly) SharedVoyager_coreStackEvent *lastEvent __attribute__((swift_name("lastEvent")));
+@property (readonly) id _Nullable lastItemOrNull __attribute__((swift_name("lastItemOrNull")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Voyager_navigatorNavigator")))
+@interface SharedVoyager_navigatorNavigator : SharedBase <SharedVoyager_coreStack>
+- (instancetype)initWithScreens:(NSArray<id<SharedVoyager_coreScreen>> *)screens key:(NSString *)key stateHolder:(id<SharedRuntime_saveableSaveableStateHolder>)stateHolder disposeBehavior:(SharedVoyager_navigatorNavigatorDisposeBehavior *)disposeBehavior parent:(SharedVoyager_navigatorNavigator * _Nullable)parent __attribute__((swift_name("init(screens:key:stateHolder:disposeBehavior:parent:)"))) __attribute__((objc_designated_initializer));
+- (void)clearEvent __attribute__((swift_name("clearEvent()")));
+- (void)disposeScreen:(id<SharedVoyager_coreScreen>)screen __attribute__((swift_name("dispose(screen:)")));
+- (void)plusAssignItem:(id<SharedVoyager_coreScreen>)item __attribute__((swift_name("plusAssign(item:)")));
+- (void)plusAssignItems:(NSArray<id<SharedVoyager_coreScreen>> *)items __attribute__((swift_name("plusAssign(items:)")));
+- (BOOL)pop __attribute__((swift_name("pop()")));
+- (void)popAll __attribute__((swift_name("popAll()")));
+- (BOOL)popUntilPredicate:(SharedBoolean *(^)(id<SharedVoyager_coreScreen>))predicate __attribute__((swift_name("popUntil(predicate:)")));
+- (void)popUntilRoot __attribute__((swift_name("popUntilRoot()")));
+- (void)pushItem:(id<SharedVoyager_coreScreen>)item __attribute__((swift_name("push(item:)")));
+- (void)pushItems:(NSArray<id<SharedVoyager_coreScreen>> *)items __attribute__((swift_name("push(items:)")));
+- (void)replaceItem:(id<SharedVoyager_coreScreen>)item __attribute__((swift_name("replace(item:)")));
+- (void)replaceAllItem:(id<SharedVoyager_coreScreen>)item __attribute__((swift_name("replaceAll(item:)")));
+- (void)replaceAllItems:(NSArray<id<SharedVoyager_coreScreen>> *)items __attribute__((swift_name("replaceAll(items:)")));
+@property (readonly) BOOL canPop __attribute__((swift_name("canPop")));
+@property (readonly) SharedVoyager_navigatorNavigatorDisposeBehavior *disposeBehavior __attribute__((swift_name("disposeBehavior")));
+@property (readonly) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+@property (readonly) NSArray<id<SharedVoyager_coreScreen>> *items __attribute__((swift_name("items")));
+@property (readonly) NSString *key __attribute__((swift_name("key")));
+@property (readonly) SharedVoyager_coreStackEvent *lastEvent __attribute__((swift_name("lastEvent")));
+@property (readonly) id<SharedVoyager_coreScreen> lastItem __attribute__((swift_name("lastItem")));
+@property (readonly) id<SharedVoyager_coreScreen> _Nullable lastItemOrNull __attribute__((swift_name("lastItemOrNull")));
+@property (readonly) int32_t level __attribute__((swift_name("level")));
+@property (readonly) SharedVoyager_navigatorNavigator * _Nullable parent __attribute__((swift_name("parent")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
 __attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
 @protocol SharedKotlinx_serialization_coreEncoder
 @required
@@ -4054,6 +5329,41 @@ __attribute__((swift_name("Kotlinx_datetimeLocalDateTime")))
 @property (readonly) int32_t year __attribute__((swift_name("year")));
 @end
 
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+__attribute__((swift_name("Ui_graphicsShape")))
+@protocol SharedUi_graphicsShape
+@required
+- (SharedUi_graphicsOutline *)createOutlineSize:(int64_t)size layoutDirection:(SharedUi_unitLayoutDirection *)layoutDirection density:(id<SharedUi_unitDensity>)density __attribute__((swift_name("createOutline(size:layoutDirection:density:)")));
+@end
+
+__attribute__((swift_name("FoundationCornerBasedShape")))
+@interface SharedFoundationCornerBasedShape : SharedBase <SharedUi_graphicsShape>
+- (instancetype)initWithTopStart:(id<SharedFoundationCornerSize>)topStart topEnd:(id<SharedFoundationCornerSize>)topEnd bottomEnd:(id<SharedFoundationCornerSize>)bottomEnd bottomStart:(id<SharedFoundationCornerSize>)bottomStart __attribute__((swift_name("init(topStart:topEnd:bottomEnd:bottomStart:)"))) __attribute__((objc_designated_initializer));
+- (SharedFoundationCornerBasedShape *)doCopyAll:(id<SharedFoundationCornerSize>)all __attribute__((swift_name("doCopy(all:)")));
+- (SharedFoundationCornerBasedShape *)doCopyTopStart:(id<SharedFoundationCornerSize>)topStart topEnd:(id<SharedFoundationCornerSize>)topEnd bottomEnd:(id<SharedFoundationCornerSize>)bottomEnd bottomStart:(id<SharedFoundationCornerSize>)bottomStart __attribute__((swift_name("doCopy(topStart:topEnd:bottomEnd:bottomStart:)")));
+- (SharedUi_graphicsOutline *)createOutlineSize:(int64_t)size layoutDirection:(SharedUi_unitLayoutDirection *)layoutDirection density:(id<SharedUi_unitDensity>)density __attribute__((swift_name("createOutline(size:layoutDirection:density:)")));
+- (SharedUi_graphicsOutline *)createOutlineSize:(int64_t)size topStart:(float)topStart topEnd:(float)topEnd bottomEnd:(float)bottomEnd bottomStart:(float)bottomStart layoutDirection:(SharedUi_unitLayoutDirection *)layoutDirection __attribute__((swift_name("createOutline(size:topStart:topEnd:bottomEnd:bottomStart:layoutDirection:)")));
+@property (readonly) id<SharedFoundationCornerSize> bottomEnd __attribute__((swift_name("bottomEnd")));
+@property (readonly) id<SharedFoundationCornerSize> bottomStart __attribute__((swift_name("bottomStart")));
+@property (readonly) id<SharedFoundationCornerSize> topEnd __attribute__((swift_name("topEnd")));
+@property (readonly) id<SharedFoundationCornerSize> topStart __attribute__((swift_name("topStart")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("FoundationRoundedCornerShape")))
+@interface SharedFoundationRoundedCornerShape : SharedFoundationCornerBasedShape
+- (instancetype)initWithTopStart:(id<SharedFoundationCornerSize>)topStart topEnd:(id<SharedFoundationCornerSize>)topEnd bottomEnd:(id<SharedFoundationCornerSize>)bottomEnd bottomStart:(id<SharedFoundationCornerSize>)bottomStart __attribute__((swift_name("init(topStart:topEnd:bottomEnd:bottomStart:)"))) __attribute__((objc_designated_initializer));
+- (SharedFoundationRoundedCornerShape *)doCopyTopStart:(id<SharedFoundationCornerSize>)topStart topEnd:(id<SharedFoundationCornerSize>)topEnd bottomEnd:(id<SharedFoundationCornerSize>)bottomEnd bottomStart:(id<SharedFoundationCornerSize>)bottomStart __attribute__((swift_name("doCopy(topStart:topEnd:bottomEnd:bottomStart:)")));
+- (SharedUi_graphicsOutline *)createOutlineSize:(int64_t)size topStart:(float)topStart topEnd:(float)topEnd bottomEnd:(float)bottomEnd bottomStart:(float)bottomStart layoutDirection:(SharedUi_unitLayoutDirection *)layoutDirection __attribute__((swift_name("createOutline(size:topStart:topEnd:bottomEnd:bottomStart:layoutDirection:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinObjCErrorException")))
 @interface SharedKotlinObjCErrorException : SharedKotlinException
@@ -4064,6 +5374,52 @@ __attribute__((swift_name("KotlinObjCErrorException")))
 - (instancetype)initWithCause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("Kotlinx_datetimeDateTimeFormat")))
+@protocol SharedKotlinx_datetimeDateTimeFormat
+@required
+- (NSString *)formatValue:(id _Nullable)value __attribute__((swift_name("format(value:)")));
+- (id<SharedKotlinAppendable>)formatToAppendable:(id<SharedKotlinAppendable>)appendable value:(id _Nullable)value __attribute__((swift_name("formatTo(appendable:value:)")));
+- (id _Nullable)parseInput:(id)input __attribute__((swift_name("parse(input:)")));
+- (id _Nullable)parseOrNullInput:(id)input __attribute__((swift_name("parseOrNull(input:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_datetimeDateTimeFormatBuilder")))
+@protocol SharedKotlinx_datetimeDateTimeFormatBuilder
+@required
+- (void)charsValue:(NSString *)value __attribute__((swift_name("chars(value:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_datetimeDateTimeFormatBuilderWithDate")))
+@protocol SharedKotlinx_datetimeDateTimeFormatBuilderWithDate <SharedKotlinx_datetimeDateTimeFormatBuilder>
+@required
+- (void)dateFormat:(id<SharedKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("date(format:)")));
+- (void)dayOfMonthPadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("dayOfMonth(padding:)")));
+- (void)dayOfWeekNames:(SharedKotlinx_datetimeDayOfWeekNames *)names __attribute__((swift_name("dayOfWeek(names:)")));
+- (void)monthNameNames:(SharedKotlinx_datetimeMonthNames *)names __attribute__((swift_name("monthName(names:)")));
+- (void)monthNumberPadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("monthNumber(padding:)")));
+- (void)yearPadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("year(padding:)")));
+- (void)yearTwoDigitsBaseYear:(int32_t)baseYear __attribute__((swift_name("yearTwoDigits(baseYear:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_datetimeDateTimeFormatBuilderWithTime")))
+@protocol SharedKotlinx_datetimeDateTimeFormatBuilderWithTime <SharedKotlinx_datetimeDateTimeFormatBuilder>
+@required
+- (void)amPmHourPadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("amPmHour(padding:)")));
+- (void)amPmMarkerAm:(NSString *)am pm:(NSString *)pm __attribute__((swift_name("amPmMarker(am:pm:)")));
+- (void)hourPadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("hour(padding:)")));
+- (void)minutePadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("minute(padding:)")));
+- (void)secondPadding:(SharedKotlinx_datetimePadding *)padding __attribute__((swift_name("second(padding:)")));
+- (void)secondFractionFixedLength:(int32_t)fixedLength __attribute__((swift_name("secondFraction(fixedLength:)")));
+- (void)secondFractionMinLength:(int32_t)minLength maxLength:(int32_t)maxLength __attribute__((swift_name("secondFraction(minLength:maxLength:)")));
+- (void)timeFormat:(id<SharedKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("time(format:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_datetimeDateTimeFormatBuilderWithDateTime")))
+@protocol SharedKotlinx_datetimeDateTimeFormatBuilderWithDateTime <SharedKotlinx_datetimeDateTimeFormatBuilderWithDate, SharedKotlinx_datetimeDateTimeFormatBuilderWithTime>
+@required
+- (void)dateTimeFormat:(id<SharedKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("dateTime(format:)")));
 @end
 
 __attribute__((swift_name("Koin_coreLockable")))
@@ -4173,10 +5529,10 @@ __attribute__((swift_name("Koin_coreParametersHolder")))
 - (id _Nullable)getOrNull __attribute__((swift_name("getOrNull()")));
 - (id _Nullable)getOrNullClazz:(id<SharedKotlinKClass>)clazz __attribute__((swift_name("getOrNull(clazz:)")));
 - (SharedKoin_coreParametersHolder *)insertIndex:(int32_t)index value:(id)value __attribute__((swift_name("insert(index:value:)")));
-- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (BOOL)isEmpty_ __attribute__((swift_name("isEmpty()")));
 - (BOOL)isNotEmpty __attribute__((swift_name("isNotEmpty()")));
 - (void)setI:(int32_t)i t:(id _Nullable)t __attribute__((swift_name("set(i:t:)")));
-- (int32_t)size __attribute__((swift_name("size()")));
+- (int32_t)size_ __attribute__((swift_name("size()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property int32_t index __attribute__((swift_name("index")));
 @property (readonly) SharedBoolean * _Nullable useIndexedValues __attribute__((swift_name("useIndexedValues")));
@@ -4394,7 +5750,7 @@ __attribute__((swift_name("Ktor_utilsStringValues")))
 - (void)forEachBody:(void (^)(NSString *, NSArray<NSString *> *))body __attribute__((swift_name("forEach(body:)")));
 - (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
 - (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
-- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (BOOL)isEmpty_ __attribute__((swift_name("isEmpty()")));
 - (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
 @property (readonly) BOOL caseInsensitiveName __attribute__((swift_name("caseInsensitiveName")));
 @end
@@ -4732,7 +6088,7 @@ __attribute__((swift_name("Ktor_utilsPipeline")))
 - (void)resetFromFrom:(SharedKtor_utilsPipeline<TSubject, TContext> *)from __attribute__((swift_name("resetFrom(from:)")));
 @property (readonly) id<SharedKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
-@property (readonly, getter=isEmpty_) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+@property (readonly) BOOL isEmpty __attribute__((swift_name("isEmpty")));
 @property (readonly) NSArray<SharedKtor_utilsPipelinePhase *> *items __attribute__((swift_name("items")));
 @end
 
@@ -4774,6 +6130,38 @@ __attribute__((swift_name("Ktor_client_coreHttpSendPipeline")))
 - (instancetype)initWithPhase:(SharedKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<SharedKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedKtor_client_coreHttpSendPipelinePhases *companion __attribute__((swift_name("companion")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Voyager_coreStackEvent")))
+@interface SharedVoyager_coreStackEvent : SharedKotlinEnum<SharedVoyager_coreStackEvent *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) SharedVoyager_coreStackEvent *push __attribute__((swift_name("push")));
+@property (class, readonly) SharedVoyager_coreStackEvent *replace __attribute__((swift_name("replace")));
+@property (class, readonly) SharedVoyager_coreStackEvent *pop __attribute__((swift_name("pop")));
+@property (class, readonly) SharedVoyager_coreStackEvent *idle __attribute__((swift_name("idle")));
++ (SharedKotlinArray<SharedVoyager_coreStackEvent *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedVoyager_coreStackEvent *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((swift_name("Runtime_saveableSaveableStateHolder")))
+@protocol SharedRuntime_saveableSaveableStateHolder
+@required
+- (void)removeStateKey:(id)key __attribute__((swift_name("removeState(key:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Voyager_navigatorNavigatorDisposeBehavior")))
+@interface SharedVoyager_navigatorNavigatorDisposeBehavior : SharedBase
+- (instancetype)initWithDisposeNestedNavigators:(BOOL)disposeNestedNavigators disposeSteps:(BOOL)disposeSteps __attribute__((swift_name("init(disposeNestedNavigators:disposeSteps:)"))) __attribute__((objc_designated_initializer));
+- (SharedVoyager_navigatorNavigatorDisposeBehavior *)doCopyDisposeNestedNavigators:(BOOL)disposeNestedNavigators disposeSteps:(BOOL)disposeSteps __attribute__((swift_name("doCopy(disposeNestedNavigators:disposeSteps:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL disposeNestedNavigators __attribute__((swift_name("disposeNestedNavigators")));
+@property (readonly) BOOL disposeSteps __attribute__((swift_name("disposeSteps")));
 @end
 
 __attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
@@ -4906,6 +6294,7 @@ __attribute__((swift_name("Kotlinx_datetimeMonth")))
 @property (class, readonly) SharedKotlinx_datetimeMonth *november __attribute__((swift_name("november")));
 @property (class, readonly) SharedKotlinx_datetimeMonth *december __attribute__((swift_name("december")));
 + (SharedKotlinArray<SharedKotlinx_datetimeMonth *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedKotlinx_datetimeMonth *> *entries __attribute__((swift_name("entries")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -4922,6 +6311,7 @@ __attribute__((swift_name("Kotlinx_datetimeDayOfWeek")))
 @property (class, readonly) SharedKotlinx_datetimeDayOfWeek *saturday __attribute__((swift_name("saturday")));
 @property (class, readonly) SharedKotlinx_datetimeDayOfWeek *sunday __attribute__((swift_name("sunday")));
 + (SharedKotlinArray<SharedKotlinx_datetimeDayOfWeek *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedKotlinx_datetimeDayOfWeek *> *entries __attribute__((swift_name("entries")));
 @end
 
 
@@ -4945,6 +6335,190 @@ __attribute__((swift_name("Kotlinx_datetimeLocalTime")))
 @property (readonly) int32_t minute __attribute__((swift_name("minute")));
 @property (readonly) int32_t nanosecond __attribute__((swift_name("nanosecond")));
 @property (readonly) int32_t second __attribute__((swift_name("second")));
+@end
+
+__attribute__((swift_name("Ui_graphicsOutline")))
+@interface SharedUi_graphicsOutline : SharedBase
+@property (readonly) SharedUi_geometryRect *bounds __attribute__((swift_name("bounds")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ui_unitLayoutDirection")))
+@interface SharedUi_unitLayoutDirection : SharedKotlinEnum<SharedUi_unitLayoutDirection *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) SharedUi_unitLayoutDirection *ltr __attribute__((swift_name("ltr")));
+@property (class, readonly) SharedUi_unitLayoutDirection *rtl __attribute__((swift_name("rtl")));
++ (SharedKotlinArray<SharedUi_unitLayoutDirection *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedUi_unitLayoutDirection *> *entries __attribute__((swift_name("entries")));
+@end
+
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Immutable
+ *   androidx.annotation.RestrictTo(value=[Scope.LIBRARY_GROUP])
+*/
+__attribute__((swift_name("Ui_unitFontScalingLinear")))
+@protocol SharedUi_unitFontScalingLinear
+@required
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (float)toDp__:(int64_t)receiver __attribute__((swift_name("toDp(___:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int64_t)toSp__:(float)receiver __attribute__((swift_name("toSp(___:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float fontScale __attribute__((swift_name("fontScale")));
+@end
+
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Immutable
+*/
+__attribute__((swift_name("Ui_unitDensity")))
+@protocol SharedUi_unitDensity <SharedUi_unitFontScalingLinear>
+@required
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int32_t)roundToPx:(float)receiver __attribute__((swift_name("roundToPx(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int32_t)roundToPx_:(int64_t)receiver __attribute__((swift_name("roundToPx(__:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (float)toDp:(float)receiver __attribute__((swift_name("toDp(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (float)toDp_:(int32_t)receiver __attribute__((swift_name("toDp(__:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int64_t)toDpSize:(int64_t)receiver __attribute__((swift_name("toDpSize(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (float)toPx:(float)receiver __attribute__((swift_name("toPx(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (float)toPx_:(int64_t)receiver __attribute__((swift_name("toPx(__:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)toRect:(SharedUi_unitDpRect *)receiver __attribute__((swift_name("toRect(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int64_t)toSize:(int64_t)receiver __attribute__((swift_name("toSize(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int64_t)toSp:(float)receiver __attribute__((swift_name("toSp(_:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (int64_t)toSp_:(int32_t)receiver __attribute__((swift_name("toSp(__:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float density __attribute__((swift_name("density")));
+@end
+
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Immutable
+*/
+__attribute__((swift_name("FoundationCornerSize")))
+@protocol SharedFoundationCornerSize
+@required
+- (float)toPxShapeSize:(int64_t)shapeSize density:(id<SharedUi_unitDensity>)density __attribute__((swift_name("toPx(shapeSize:density:)")));
+@end
+
+__attribute__((swift_name("KotlinAppendable")))
+@protocol SharedKotlinAppendable
+@required
+- (id<SharedKotlinAppendable>)appendValue:(unichar)value __attribute__((swift_name("append(value:)")));
+- (id<SharedKotlinAppendable>)appendValue_:(id _Nullable)value __attribute__((swift_name("append(value_:)")));
+- (id<SharedKotlinAppendable>)appendValue:(id _Nullable)value startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex __attribute__((swift_name("append(value:startIndex:endIndex:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_datetimePadding")))
+@interface SharedKotlinx_datetimePadding : SharedKotlinEnum<SharedKotlinx_datetimePadding *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) SharedKotlinx_datetimePadding *none __attribute__((swift_name("none")));
+@property (class, readonly) SharedKotlinx_datetimePadding *zero __attribute__((swift_name("zero")));
+@property (class, readonly) SharedKotlinx_datetimePadding *space __attribute__((swift_name("space")));
++ (SharedKotlinArray<SharedKotlinx_datetimePadding *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedKotlinx_datetimePadding *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_datetimeDayOfWeekNames")))
+@interface SharedKotlinx_datetimeDayOfWeekNames : SharedBase
+- (instancetype)initWithNames:(NSArray<NSString *> *)names __attribute__((swift_name("init(names:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMonday:(NSString *)monday tuesday:(NSString *)tuesday wednesday:(NSString *)wednesday thursday:(NSString *)thursday friday:(NSString *)friday saturday:(NSString *)saturday sunday:(NSString *)sunday __attribute__((swift_name("init(monday:tuesday:wednesday:thursday:friday:saturday:sunday:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedKotlinx_datetimeDayOfWeekNamesCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<NSString *> *names __attribute__((swift_name("names")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_datetimeMonthNames")))
+@interface SharedKotlinx_datetimeMonthNames : SharedBase
+- (instancetype)initWithNames:(NSArray<NSString *> *)names __attribute__((swift_name("init(names:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithJanuary:(NSString *)january february:(NSString *)february march:(NSString *)march april:(NSString *)april may:(NSString *)may june:(NSString *)june july:(NSString *)july august:(NSString *)august september:(NSString *)september october:(NSString *)october november:(NSString *)november december:(NSString *)december __attribute__((swift_name("init(january:february:march:april:may:june:july:august:september:october:november:december:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedKotlinx_datetimeMonthNamesCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<NSString *> *names __attribute__((swift_name("names")));
 @end
 
 __attribute__((swift_name("Koin_coreScopeCallback")))
@@ -5257,14 +6831,6 @@ __attribute__((swift_name("Ktor_ioReadSession")))
 - (int32_t)discardN:(int32_t)n __attribute__((swift_name("discard(n:)")));
 - (SharedKtor_ioChunkBuffer * _Nullable)requestAtLeast:(int32_t)atLeast __attribute__((swift_name("request(atLeast:)")));
 @property (readonly) int32_t availableForRead __attribute__((swift_name("availableForRead")));
-@end
-
-__attribute__((swift_name("KotlinAppendable")))
-@protocol SharedKotlinAppendable
-@required
-- (id<SharedKotlinAppendable>)appendValue:(unichar)value __attribute__((swift_name("append(value:)")));
-- (id<SharedKotlinAppendable>)appendValue_:(id _Nullable)value __attribute__((swift_name("append(value_:)")));
-- (id<SharedKotlinAppendable>)appendValue:(id _Nullable)value startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex __attribute__((swift_name("append(value:startIndex:endIndex:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -5616,11 +7182,200 @@ __attribute__((swift_name("Kotlinx_datetimeLocalTime.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) SharedKotlinx_datetimeLocalTimeCompanion *shared __attribute__((swift_name("shared")));
+- (id<SharedKotlinx_datetimeDateTimeFormat>)FormatBuilder:(void (^)(id<SharedKotlinx_datetimeDateTimeFormatBuilderWithTime>))builder __attribute__((swift_name("Format(builder:)")));
 - (SharedKotlinx_datetimeLocalTime *)fromMillisecondOfDayMillisecondOfDay:(int32_t)millisecondOfDay __attribute__((swift_name("fromMillisecondOfDay(millisecondOfDay:)")));
 - (SharedKotlinx_datetimeLocalTime *)fromNanosecondOfDayNanosecondOfDay:(int64_t)nanosecondOfDay __attribute__((swift_name("fromNanosecondOfDay(nanosecondOfDay:)")));
 - (SharedKotlinx_datetimeLocalTime *)fromSecondOfDaySecondOfDay:(int32_t)secondOfDay __attribute__((swift_name("fromSecondOfDay(secondOfDay:)")));
-- (SharedKotlinx_datetimeLocalTime *)parseIsoString:(NSString *)isoString __attribute__((swift_name("parse(isoString:)")));
+- (SharedKotlinx_datetimeLocalTime *)parseInput:(id)input format:(id<SharedKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("parse(input:format:)")));
 - (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Immutable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ui_geometryRect")))
+@interface SharedUi_geometryRect : SharedBase
+- (instancetype)initWithLeft:(float)left top:(float)top right:(float)right bottom:(float)bottom __attribute__((swift_name("init(left:top:right:bottom:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedUi_geometryRectCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)containsOffset:(int64_t)offset __attribute__((swift_name("contains(offset:)")));
+- (SharedUi_geometryRect *)doCopyLeft:(float)left top:(float)top right:(float)right bottom:(float)bottom __attribute__((swift_name("doCopy(left:top:right:bottom:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)deflateDelta:(float)delta __attribute__((swift_name("deflate(delta:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)inflateDelta:(float)delta __attribute__((swift_name("inflate(delta:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)intersectOther:(SharedUi_geometryRect *)other __attribute__((swift_name("intersect(other:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)intersectOtherLeft:(float)otherLeft otherTop:(float)otherTop otherRight:(float)otherRight otherBottom:(float)otherBottom __attribute__((swift_name("intersect(otherLeft:otherTop:otherRight:otherBottom:)")));
+- (BOOL)overlapsOther:(SharedUi_geometryRect *)other __attribute__((swift_name("overlaps(other:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)translateOffset:(int64_t)offset __attribute__((swift_name("translate(offset:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+- (SharedUi_geometryRect *)translateTranslateX:(float)translateX translateY:(float)translateY __attribute__((swift_name("translate(translateX:translateY:)")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float bottom __attribute__((swift_name("bottom")));
+@property (readonly) int64_t bottomCenter __attribute__((swift_name("bottomCenter")));
+@property (readonly) int64_t bottomLeft __attribute__((swift_name("bottomLeft")));
+@property (readonly) int64_t bottomRight __attribute__((swift_name("bottomRight")));
+@property (readonly) int64_t center __attribute__((swift_name("center")));
+@property (readonly) int64_t centerLeft __attribute__((swift_name("centerLeft")));
+@property (readonly) int64_t centerRight __attribute__((swift_name("centerRight")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float height __attribute__((swift_name("height")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) BOOL isFinite __attribute__((swift_name("isFinite")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) BOOL isInfinite __attribute__((swift_name("isInfinite")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float left __attribute__((swift_name("left")));
+@property (readonly) float maxDimension __attribute__((swift_name("maxDimension")));
+@property (readonly) float minDimension __attribute__((swift_name("minDimension")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float right __attribute__((swift_name("right")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) int64_t size __attribute__((swift_name("size")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float top __attribute__((swift_name("top")));
+@property (readonly) int64_t topCenter __attribute__((swift_name("topCenter")));
+@property (readonly) int64_t topLeft __attribute__((swift_name("topLeft")));
+@property (readonly) int64_t topRight __attribute__((swift_name("topRight")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float width __attribute__((swift_name("width")));
+@end
+
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Immutable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ui_unitDpRect")))
+@interface SharedUi_unitDpRect : SharedBase
+- (instancetype)initWithOrigin:(int64_t)origin size:(int64_t)size __attribute__((swift_name("init(origin:size:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithLeft:(float)left top:(float)top right:(float)right bottom:(float)bottom __attribute__((swift_name("init(left:top:right:bottom:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedUi_unitDpRectCompanion *companion __attribute__((swift_name("companion")));
+- (SharedUi_unitDpRect *)doCopyLeft:(float)left top:(float)top right:(float)right bottom:(float)bottom __attribute__((swift_name("doCopy(left:top:right:bottom:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float bottom __attribute__((swift_name("bottom")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float left __attribute__((swift_name("left")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float right __attribute__((swift_name("right")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) float top __attribute__((swift_name("top")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_datetimeDayOfWeekNames.Companion")))
+@interface SharedKotlinx_datetimeDayOfWeekNamesCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKotlinx_datetimeDayOfWeekNamesCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) SharedKotlinx_datetimeDayOfWeekNames *ENGLISH_ABBREVIATED __attribute__((swift_name("ENGLISH_ABBREVIATED")));
+@property (readonly) SharedKotlinx_datetimeDayOfWeekNames *ENGLISH_FULL __attribute__((swift_name("ENGLISH_FULL")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_datetimeMonthNames.Companion")))
+@interface SharedKotlinx_datetimeMonthNamesCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKotlinx_datetimeMonthNamesCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) SharedKotlinx_datetimeMonthNames *ENGLISH_ABBREVIATED __attribute__((swift_name("ENGLISH_ABBREVIATED")));
+@property (readonly) SharedKotlinx_datetimeMonthNames *ENGLISH_FULL __attribute__((swift_name("ENGLISH_FULL")));
 @end
 
 __attribute__((swift_name("KotlinByteIterator")))
@@ -5892,7 +7647,7 @@ __attribute__((swift_name("Ktor_utilsStringValuesBuilder")))
 - (NSSet<id<SharedKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
 - (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
 - (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
-- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (BOOL)isEmpty_ __attribute__((swift_name("isEmpty()")));
 - (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
 - (void)removeName:(NSString *)name __attribute__((swift_name("remove(name:)")));
 - (BOOL)removeName:(NSString *)name value:(NSString *)value __attribute__((swift_name("remove(name:value:)")));
@@ -5916,7 +7671,7 @@ __attribute__((swift_name("Ktor_utilsStringValuesBuilderImpl")))
 - (NSSet<id<SharedKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
 - (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
 - (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
-- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (BOOL)isEmpty_ __attribute__((swift_name("isEmpty()")));
 - (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
 - (void)removeName:(NSString *)name __attribute__((swift_name("remove(name:)")));
 - (BOOL)removeName:(NSString *)name value:(NSString *)value __attribute__((swift_name("remove(name:value:)")));
@@ -5989,6 +7744,30 @@ __attribute__((swift_name("Ktor_httpURLBuilder")))
 @property SharedKtor_httpURLProtocol *protocol __attribute__((swift_name("protocol")));
 @property BOOL trailingQuery __attribute__((swift_name("trailingQuery")));
 @property NSString * _Nullable user __attribute__((swift_name("user")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ui_geometryRect.Companion")))
+@interface SharedUi_geometryRectCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedUi_geometryRectCompanion *shared __attribute__((swift_name("shared")));
+
+/**
+ * @note annotations
+ *   androidx.compose.runtime.Stable
+*/
+@property (readonly) SharedUi_geometryRect *Zero __attribute__((swift_name("Zero")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ui_unitDpRect.Companion")))
+@interface SharedUi_unitDpRectCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedUi_unitDpRectCompanion *shared __attribute__((swift_name("shared")));
 @end
 
 __attribute__((objc_subclassing_restricted))

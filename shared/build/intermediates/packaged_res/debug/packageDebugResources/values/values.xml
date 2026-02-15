@@ -55,6 +55,7 @@
     <string name="scr_fridge_recommend_button">Рекомендовать рецепты</string>
     <string name="scr_fridge_recommendations_title">Подходящие рецепты</string>
     <string name="scr_fridge_screen_title">Холодильник</string>
+    <string name="scr_fridge_search_placeholder">Поиск продуктов</string>
     <string name="scr_fridge_tab_title">Холодильник</string>
     <string name="scr_news_screen_title">News</string>
     <string name="scr_news_search_placeholder">Поиск по заголовку</string>
