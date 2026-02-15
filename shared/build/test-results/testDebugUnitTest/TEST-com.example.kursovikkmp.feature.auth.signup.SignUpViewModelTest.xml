@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" tests="42" skipped="0" failures="2" errors="0" timestamp="2026-02-15T06:50:54" hostname="MacBook-Pro-Dmitrij-3.local" time="0.205">
+  <properties/>
+  <testcase name="formValidation_whenFirstNameTooShort_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.011"/>
+  <testcase name="formValidation_whenLastNameTooShort_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="lastNameChanged_updatesLastNameField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="lastNameChanged_updatesLastNameValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="state_afterFailedSignUp_errorTextStateIsSet" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.006"/>
+  <testcase name="formValidation_whenFirstNameTooShort_buttonIsDisabled" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.005"/>
+  <testcase name="phoneChanged_truncatesTo15Digits" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="cityChanged_updatesCityField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="cityChanged_updatesCityValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.0"/>
+  <testcase name="phoneChanged_updatesPhoneField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="phoneChanged_updatesPhoneValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="phoneChanged_filtersNonDigits" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="createAccountTapped_whenFails_doesNotNavigate" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="formValidation_whenPhoneEmpty_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.005"/>
+  <testcase name="formValidation_whenAllFieldsValid_isFormValidIsTrue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="formValidation_whenCountryEmpty_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="state_whenSignUpStarts_buttonBecomesDisabled" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.017">
+    <failure message="java.lang.AssertionError: Expected value to be false." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be false.
+	at org.junit.Assert.fail(Assert.java:89)
+	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:694)
+	at kotlin.test.junit.JUnitAsserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:704)
+	at kotlin.test.junit.JUnitAsserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertFalse(Assertions.kt:58)
+	at kotlin.test.AssertionsKt.assertFalse(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertFalse$default(Assertions.kt:56)
+	at kotlin.test.AssertionsKt.assertFalse$default(Unknown Source)
+	at com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest$state_whenSignUpStarts_buttonBecomesDisabled$1$1.invokeSuspend(SignUpViewModelTest.kt:590)
+	at _COROUTINE._BOUNDARY._(CoroutineDebugging.kt:42)
+	at app.cash.turbine.FlowKt$turbineScope$2$scopeFn$1.invokeSuspend(flow.kt:83)
+	at app.cash.turbine.FlowKt$turbineScope$2.invokeSuspend(flow.kt:88)
+	at app.cash.turbine.CoroutinesKt$reportTurbines$2.invokeSuspend(coroutines.kt:89)
+	at com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest$state_whenSignUpStarts_buttonBecomesDisabled$1.invokeSuspend(SignUpViewModelTest.kt:584)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)
+Caused by: java.lang.AssertionError: Expected value to be false.
+	at org.junit.Assert.fail(Assert.java:89)
+	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:694)
+	at kotlin.test.junit.JUnitAsserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:704)
+	at kotlin.test.junit.JUnitAsserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertFalse(Assertions.kt:58)
+	at kotlin.test.AssertionsKt.assertFalse(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertFalse$default(Assertions.kt:56)
+	at kotlin.test.AssertionsKt.assertFalse$default(Unknown Source)
+	at com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest$state_whenSignUpStarts_buttonBecomesDisabled$1$1.invokeSuspend(SignUpViewModelTest.kt:590)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:35)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:101)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
+	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)
+	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)
+	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:159)
+	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0$default(Unknown Source)
+	at com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest.state_whenSignUpStarts_buttonBecomesDisabled(SignUpViewModelTest.kt:579)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:181)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:130)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:101)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:61)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="formValidation_whenCityEmpty_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="emailChanged_updatesEmailField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="state_afterFailedSignUp_errorMessageIsSet" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="emailChanged_updatesEmailValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="state_afterFailedSignUp_isLoadingIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="createAccountTapped_whenFormValid_callsAuthService" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.006"/>
+  <testcase name="countryChanged_updatesCountryField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="countryChanged_updatesCountryValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.0"/>
+  <testcase name="createAccountTapped_whenSuccess_navigatesToPin" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.051"/>
+  <testcase name="state_afterSuccessfulSignUp_isLoadingIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.013"/>
+  <testcase name="genderChanged_updatesGenderField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.004"/>
+  <testcase name="genderChanged_updatesGenderValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="formValidation_whenEmailEmpty_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.003"/>
+  <testcase name="formValidation_whenGenderEmpty_isFormValidIsFalse" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="formValidation_whenAllFieldsValid_buttonIsEnabled" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="firstNameChanged_clearsErrorMessage" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.001"/>
+  <testcase name="createAccountTapped_whenFormInvalid_doesNotCallAuthService" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.0"/>
+  <testcase name="state_initialState_hasCorrectDefaults" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002">
+    <failure message="java.lang.AssertionError: Expected value to be false." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be false.
+	at org.junit.Assert.fail(Assert.java:89)
+	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:694)
+	at kotlin.test.junit.JUnitAsserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:704)
+	at kotlin.test.junit.JUnitAsserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertFalse(Assertions.kt:58)
+	at kotlin.test.AssertionsKt.assertFalse(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertFalse$default(Assertions.kt:56)
+	at kotlin.test.AssertionsKt.assertFalse$default(Unknown Source)
+	at com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest.state_initialState_hasCorrectDefaults(SignUpViewModelTest.kt:556)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:181)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:130)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:101)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:61)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="birthDateChanged_updatesBirthDateField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.009"/>
+  <testcase name="birthDateChanged_updatesBirthDateValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="createAccountTapped_whenFails_showsErrorMessage" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="firstNameChanged_updatesFirstNameField" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="firstNameChanged_updatesFirstNameValue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.002"/>
+  <testcase name="backButtonTapped_navigatesBack" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.01"/>
+  <testcase name="state_whenSignUpStarts_isLoadingBecomesTrue" classname="com.example.kursovikkmp.feature.auth.signup.SignUpViewModelTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

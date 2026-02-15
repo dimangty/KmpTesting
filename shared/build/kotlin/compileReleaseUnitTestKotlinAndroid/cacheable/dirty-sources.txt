@@ -1,0 +1,12 @@
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/news/list/NewsListViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/home/HomeViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/favorites/list/FavoritesListViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/auth/pin/PinViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/auth/signup/SignUpViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/news/details/NewsDetailsViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/recipes/list/RecipesListViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/favorites/details/FavoriteDetailsViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/recipes/details/RecipesDetailsViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/auth/login/LoginViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/fridge/list/FridgeViewModelTest.kt
+/Users/dmitrijbykov/Documents/AndroidStudio/KursovikKMP/shared/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
