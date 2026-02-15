@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kursovikkmp.gpt.feature.home.HomeViewModelCommonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-15T07:19:31" hostname="MacBook-Pro-Dmitrij-3.local" time="0.002">
+  <properties/>
+  <testcase name="initScreenData_updatesTabsState" classname="com.example.kursovikkmp.gpt.feature.home.HomeViewModelCommonTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,4 @@
+com.example.kursovikkmp.android.test.androidApp-androidTest-0 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/androidApp/build/generated/res/resValues/androidTest/debug
+com.example.kursovikkmp.android.test.androidApp-mergeDebugAndroidTestResources-1 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/androidApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.kursovikkmp.android.test.androidApp-mergeDebugAndroidTestResources-2 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/androidApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.kursovikkmp.android.test.androidApp-debugAndroidTest-3 /Users/dmitrijbykov/Documents/AndroidStudio/UnitUITest/TestingKMP/androidApp/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

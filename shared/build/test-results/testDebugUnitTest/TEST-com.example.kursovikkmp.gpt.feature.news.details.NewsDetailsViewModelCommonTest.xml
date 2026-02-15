@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kursovikkmp.gpt.feature.news.details.NewsDetailsViewModelCommonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-15T07:19:31" hostname="MacBook-Pro-Dmitrij-3.local" time="0.007">
+  <properties/>
+  <testcase name="initScreenData_loadsArticleState" classname="com.example.kursovikkmp.gpt.feature.news.details.NewsDetailsViewModelCommonTest" time="0.004"/>
+  <testcase name="favoriteClicked_insertsWhenNotFavorite" classname="com.example.kursovikkmp.gpt.feature.news.details.NewsDetailsViewModelCommonTest" time="0.002"/>
+  <testcase name="openClicked_opensArticleUrl" classname="com.example.kursovikkmp.gpt.feature.news.details.NewsDetailsViewModelCommonTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
