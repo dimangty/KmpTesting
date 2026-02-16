@@ -29,15 +29,10 @@ kotlin {
     )
 
     // Only include iosX64 on non-ARM64 Macs (Intel Macs)
-    // Use sysctl to detect actual hardware architecture (bypasses Rosetta translation)
-    val isArm64Mac = try {
-        val process = Runtime.getRuntime().exec(arrayOf("sysctl", "-n", "hw.optional.arm64"))
-        val result = process.inputStream.bufferedReader().readText().trim()
-        process.waitFor()
-        result == "1"
-    } catch (e: Exception) {
-        false
-    }
+    // Use configuration cache compatible approach to detect architecture
+    val isArm64Mac = providers.exec {
+        commandLine("sysctl", "-n", "hw.optional.arm64")
+    }.standardOutput.asText.map { it.trim() == "1" }.getOrElse(false)
 
     if (!isArm64Mac) {
         iosTargets.add(iosX64())
