@@ -14,7 +14,6 @@ import kotlin.test.Test
 import kotlin.test.Ignore
 import kotlin.test.assertTrue
 
-
 @Ignore
 class LoginScreenTest {
 
