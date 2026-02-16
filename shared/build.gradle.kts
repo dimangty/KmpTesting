@@ -23,11 +23,27 @@ kotlin {
         }
     }
 
-    listOf(
-        iosX64(),
+    val iosTargets = mutableListOf(
         iosArm64(),
         iosSimulatorArm64()
-    ).forEach {
+    )
+
+    // Only include iosX64 on non-ARM64 Macs (Intel Macs)
+    // Use sysctl to detect actual hardware architecture (bypasses Rosetta translation)
+    val isArm64Mac = try {
+        val process = Runtime.getRuntime().exec(arrayOf("sysctl", "-n", "hw.optional.arm64"))
+        val result = process.inputStream.bufferedReader().readText().trim()
+        process.waitFor()
+        result == "1"
+    } catch (e: Exception) {
+        false
+    }
+
+    if (!isArm64Mac) {
+        iosTargets.add(iosX64())
+    }
+
+    iosTargets.forEach {
         it.binaries.framework {
             baseName = "shared"
             isStatic = false
@@ -134,3 +150,4 @@ sqldelight {
     }
     linkSqlite = true
 }
+
