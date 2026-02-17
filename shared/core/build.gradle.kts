@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.serialization)
     alias(libs.plugins.sqldelight)
+    id("dev.icerock.mobile.multiplatform-resources")
 }
 
 kotlin {
@@ -24,15 +25,8 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "shared"
+            baseName = "core"
             isStatic = false
-            export(projects.shared.core)
-            export(projects.shared.news)
-            export(projects.shared.favorites)
-            export(projects.shared.fridge)
-            export(projects.shared.home)
-            export(projects.shared.profile)
-            export(projects.shared.recipe)
             export("dev.icerock.moko:resources:0.24.3")
             export("dev.icerock.moko:graphics:0.9.0")
         }
@@ -40,13 +34,18 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            api(projects.shared.core)
-            api(projects.shared.news)
-            api(projects.shared.favorites)
-            api(projects.shared.fridge)
-            api(projects.shared.home)
-            api(projects.shared.profile)
-            api(projects.shared.recipe)
+            implementation(libs.sqldelight.coroutines.extensions)
+            api(libs.moko.resources)
+            api(libs.ktor.client.core)
+            api(libs.ktor.client.logging)
+            api(libs.ktor.client.negotiation)
+            api(libs.ktor.serialization.kotlinx.json)
+            api(libs.kotlinx.serialization.core)
+            api(libs.koin.core)
+            api(libs.androidx.lifecycle.viewmodel)
+            api(libs.datetime)
+            api(libs.napier)
+            implementation(libs.touchLab)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -55,13 +54,23 @@ kotlin {
         }
         androidMain.dependencies {
             implementation(libs.koin.android)
+            implementation(libs.ktor.client.okhttp)
+            implementation(libs.sqldelight.android.driver)
             implementation(libs.androidx.navigation.compose)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.ios)
+            implementation(libs.sqldelight.native.driver)
         }
     }
 }
 
+multiplatformResources {
+    resourcesPackage.set("com.example.kursovikkmp")
+}
+
 android {
-    namespace = "com.example.kursovikkmp"
+    namespace = "com.example.kursovikkmp.core"
     compileSdk = 35
     defaultConfig {
         minSdk = 28
@@ -73,5 +82,11 @@ android {
 }
 
 sqldelight {
+    databases {
+        create("Database") {
+            packageName.set("com.example.kursovikkmp")
+            generateAsync.set(true)
+        }
+    }
     linkSqlite = true
 }

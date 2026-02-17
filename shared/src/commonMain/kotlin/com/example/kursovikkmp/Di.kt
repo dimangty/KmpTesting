@@ -18,10 +18,6 @@ import org.koin.core.module.dsl.factoryOf
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
-const val IO_DISPATCHER_NAME = "ioDispatcher"
-const val MAIN_DISPATCHER_NAME = "mainDispatcher"
-const val DEFAULT_DISPATCHER_NAME = "defaultDispatcher"
-const val DEFAULT_SCOPE = "defaultScope"
 
 val sharedModule: Module
     get() = module {

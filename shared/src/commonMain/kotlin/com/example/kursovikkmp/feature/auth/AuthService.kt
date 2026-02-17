@@ -4,29 +4,6 @@ import com.example.kursovikkmp.feature.profile.ProfileData
 import com.example.kursovikkmp.feature.profile.ProfileRepository
 import kotlinx.coroutines.delay
 
-sealed class AuthError : Exception() {
-    object InvalidPhone : AuthError()
-    object InvalidData : AuthError()
-}
-
-data class SignUpData(
-    val firstName: String,
-    val lastName: String,
-    val gender: String,
-    val birthDate: String,
-    val country: String,
-    val city: String,
-    val email: String,
-    val phone: String
-)
-
-interface AuthService {
-    suspend fun login(phone: String): Result<Unit>
-    suspend fun signUp(data: SignUpData): Result<Unit>
-    suspend fun verifyPin(pin: String): Result<Unit>
-    suspend fun logout()
-}
-
 class AuthServiceImpl(
     private val profileRepository: ProfileRepository
 ) : AuthService {
