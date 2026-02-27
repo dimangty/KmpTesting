@@ -54,7 +54,11 @@ fun BottomNavigationBar() {
     val currentRoute = currentDestination?.route
     val navigationService: NavigationServiceImpl by inject(NavigationServiceImpl::class.java)
     val defaultTabs = listOf("News", "Favorites", "Рецепты", "Холодильник")
-    val tabs = if (homeState.tabs.size >= 4) homeState.tabs else defaultTabs
+    val tabs = if (homeState.tabResources.size >= 4) {
+        homeState.tabResources.map { org.jetbrains.compose.resources.stringResource(it) }
+    } else {
+        defaultTabs
+    }
     val bottomNavigationItems = listOf(
         BottomNavigationUiItem(
             label = tabs[0],

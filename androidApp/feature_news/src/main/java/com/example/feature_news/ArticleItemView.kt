@@ -22,8 +22,6 @@ import com.example.core.AppShapes
 import com.example.core.MyButton
 import com.example.core.MyText
 import com.example.core.VSpacer
-import com.example.core.extensions.COMPOSE_PREVIEW_BACKGROUND_COLOR
-import com.example.core.extensions.color
 import com.example.kursovikkmp.feature.news.list.NewsUiState
 
 @Composable
@@ -35,7 +33,7 @@ fun ArticleItemView(article: NewsUiState,
         .clip(AppShapes.rounded)
         .clickable { onClicked(article.title) },
         colors = CardDefaults.cardColors(
-            containerColor = article.cellBackground.color(), //Card background color
+            containerColor = article.cellBackground, //Card background color
             contentColor = Color.Gray  //Card content color,e.g.text
         )
     ) {
@@ -68,7 +66,7 @@ fun ArticleItemView(article: NewsUiState,
     }
 }
 
-@Preview(showBackground = true, backgroundColor = COMPOSE_PREVIEW_BACKGROUND_COLOR)
+@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
 @Composable
 private fun PreviewArticleItemView() {
     MaterialTheme {

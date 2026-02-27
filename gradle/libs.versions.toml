@@ -1,12 +1,11 @@
 [versions]
 agp = "8.7.1"
-kotlin = "2.1.0"
-compose = "1.5.4"
+kotlin = "2.2.0"
+compose = "1.10.1"
 compose-material = "1.6.1"
 compose-material3 = "1.1.2"
 androidx-activityCompose = "1.8.0"
 koin = "4.0.0"
-moko-resources = "0.26.0"
 sqldelight = "2.0.0"
 kotlinx-serialization = "1.6.2"
 ktor = "2.3.6"
@@ -51,9 +50,6 @@ sqldelight-native-driver = { module = "app.cash.sqldelight:native-driver", versi
 sqldelight-desktop-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight"}
 napier = { module = "io.github.aakira:napier", version.ref = "napier" }
 
-moko-resources = { module = "dev.icerock.moko:resources", version.ref = "moko-resources" }
-moko-resources-generator = { module = "dev.icerock.moko:resources-generator", version.ref = "moko-resources" }
-
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 
 kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
@@ -85,6 +81,7 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight"}
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

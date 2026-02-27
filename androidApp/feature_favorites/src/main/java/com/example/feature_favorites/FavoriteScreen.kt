@@ -18,8 +18,6 @@ import androidx.compose.ui.unit.dp
 import com.example.core.BaseScreen
 import com.example.core.Toolbar
 import com.example.core.VSpacer
-import com.example.core.extensions.COMPOSE_PREVIEW_BACKGROUND_COLOR
-import com.example.core.extensions.color
 import com.example.kursovikkmp.feature.favorites.list.FavoritesListEvents
 import com.example.kursovikkmp.feature.favorites.list.FavoritesListState
 import com.example.kursovikkmp.feature.favorites.list.FavoritesListViewModel
@@ -44,7 +42,7 @@ fun FavoriteScreen() {
 fun FavoriteScreenView(
     state: FavoritesListState,
     onUiEvent: (FavoritesListEvents) -> Unit) {
-    Column(modifier = Modifier.fillMaxSize().background(state.backGroundColor.color()),) {
+    Column(modifier = Modifier.fillMaxSize().background(state.backGroundColor),) {
         Toolbar(toolbarState = state.titleBarState)
         Column(
             verticalArrangement = Arrangement.SpaceBetween) {
@@ -81,7 +79,7 @@ fun FavoriteScreenView(
     }
 }
 
-@Preview(showBackground = true, backgroundColor = COMPOSE_PREVIEW_BACKGROUND_COLOR)
+@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
 @Composable
 private fun PreviewFavoriteScreenView() {
     MaterialTheme {

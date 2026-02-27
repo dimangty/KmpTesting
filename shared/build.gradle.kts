@@ -33,8 +33,6 @@ kotlin {
             export(projects.shared.home)
             export(projects.shared.profile)
             export(projects.shared.recipe)
-            export("dev.icerock.moko:resources:0.26.0")
-            export("dev.icerock.moko:graphics:0.10.0")
         }
     }
 

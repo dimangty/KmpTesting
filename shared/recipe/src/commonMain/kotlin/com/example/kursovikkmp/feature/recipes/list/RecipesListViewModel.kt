@@ -1,13 +1,14 @@
 package com.example.kursovikkmp.feature.recipes.list
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.updateValue
 import com.example.kursovikkmp.feature.recipes.RecipesService
 import com.example.kursovikkmp.feature.recipes.model.Recipe
 import com.example.kursovikkmp.navigation.NavigationAction
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
 
 class RecipesListViewModel(
     private val recipesService: RecipesService
@@ -30,7 +31,7 @@ class RecipesListViewModel(
     override fun initToolbar() {
         var titleBar = state.titleBarState.copy()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_recipes_screen_title)),
+            titleResource = AppResources.strings.scr_recipes_screen_title,
             isNavigateBackVisible = false
         )
         updateState { copy(titleBarState = titleBar) }

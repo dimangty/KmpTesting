@@ -1,7 +1,8 @@
 package com.example.kursovikkmp.feature.home
 
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
+import com.example.kursovikkmp.resources.AppResources
+
 
 class HomeViewModel(): BaseViewModel<HomeState, HomeEvents>() {
     init {
@@ -14,10 +15,12 @@ class HomeViewModel(): BaseViewModel<HomeState, HomeEvents>() {
     }
 
     override fun initScreenData() {
-        updateState { copy(tabs = listOf(getString(MR.strings.scr_news_tab_title),
-                                        getString(MR.strings.scr_favorite_tab_title),
-                                        getString(MR.strings.scr_recipes_tab_title),
-                                        getString(MR.strings.scr_fridge_tab_title)))}
+        updateState { copy(tabResources = listOf(
+            AppResources.strings.scr_news_tab_title,
+            AppResources.strings.scr_favorite_tab_title,
+            AppResources.strings.scr_recipes_tab_title,
+            AppResources.strings.scr_fridge_tab_title
+        ))}
     }
 
     override fun initialState(): HomeState = HomeState.getMock()

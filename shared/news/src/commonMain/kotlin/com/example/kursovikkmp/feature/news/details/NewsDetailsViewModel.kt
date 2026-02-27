@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.news.details
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateImage
@@ -10,6 +9,8 @@ import com.example.kursovikkmp.feature.favorites.list.FavoritesRepository
 import com.example.kursovikkmp.feature.news.NewsService
 import com.example.kursovikkmp.feature.news.model.Article
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
 
 class NewsDetailsViewModel(private val title: String,
                            private val newsService: NewsService,
@@ -20,7 +21,7 @@ class NewsDetailsViewModel(private val title: String,
     override fun initToolbar() {
         var titleBar = TitleBarState.getMock()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_news_screen_title)),
+            titleResource = AppResources.strings.scr_news_screen_title,
             isNavigateBackVisible = true,
             onDefaultUiEvent = ::onDefaultUiEvent
         )
@@ -60,7 +61,7 @@ class NewsDetailsViewModel(private val title: String,
 
     private suspend fun checkFavorite(title: String) {
         val check = favoritesRepository.check(title)
-        val image = if (check) MR.images.favorite_on_icon else MR.images.favorite_off_icon
+        val image = if (check) AppResources.drawable.favorite_on_icon else AppResources.drawable.favorite_off_icon
         updateState { copy(favoriteButton = favoriteButton.updateImage(image)) }
     }
 
@@ -72,7 +73,7 @@ class NewsDetailsViewModel(private val title: String,
             favoritesRepository.delete(title)
         }
 
-        val image = if (check) MR.images.favorite_off_icon else MR.images.favorite_on_icon
+        val image = if (check) AppResources.drawable.favorite_off_icon else AppResources.drawable.favorite_on_icon
         updateState { copy(favoriteButton = favoriteButton.updateImage(image)) }
     }
 

@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.auth.login
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.ButtonState
 import com.example.kursovikkmp.common.view.TextFieldState
@@ -12,6 +11,10 @@ import com.example.kursovikkmp.feature.auth.AuthService
 import com.example.kursovikkmp.feature.auth.ValidationService
 import com.example.kursovikkmp.navigation.NavigationAction
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.getString
+import com.example.kursovikkmp.resources.AppColors
 
 class LoginViewModel(
     private val authService: AuthService,
@@ -33,17 +36,9 @@ class LoginViewModel(
     }
 
     override fun initialState() = LoginState(
-        phoneFieldState = TextFieldState(
-            value = "",
-            placeholder = getString(MR.strings.phone_number),
-            keyboardType = TextFieldState.KeyboardType.Phone
-        ),
-        confirmButtonState = ButtonState.primary(
-            value = getString(MR.strings.confirm),
-            background = MR.colors.grey
-        ).updateEnabled(false),
-        signUpButtonState = TextState.latoMedium(14, MR.colors.primary)
-            .updateValue(getString(MR.strings.sign_up))
+        phoneFieldPlaceholderResource = AppResources.strings.phone_number,
+        confirmButtonResource = AppResources.strings.confirm,
+        signUpButtonResource = AppResources.strings.sign_up
     )
 
     override fun onEvent(event: LoginEvents) {
@@ -58,10 +53,9 @@ class LoginViewModel(
                         isPhoneValid = isValid,
                         errorMessage = null,
                         errorTextState = null,
-                        confirmButtonState = ButtonState.primary(
-                            value = confirmButtonState.title,
-                            background = if (isValid) MR.colors.primary else MR.colors.grey
-                        ).updateEnabled(isValid && !isLoading)
+                        confirmButtonState = confirmButtonState.copy(
+                            isEnabled = isValid && !isLoading
+                        )
                     )
                 }
             }
@@ -94,10 +88,9 @@ class LoginViewModel(
                     updateState {
                         copy(
                             isLoading = false,
-                            confirmButtonState = ButtonState.primary(
-                                value = confirmButtonState.title,
-                                background = if (isPhoneValid) MR.colors.primary else MR.colors.grey
-                            ).updateEnabled(isPhoneValid)
+                            confirmButtonState = confirmButtonState.copy(
+                                isEnabled = isPhoneValid
+                            )
                         )
                     }
                     navigate(NavigationAction.NavigateToPin)
@@ -108,11 +101,10 @@ class LoginViewModel(
                         copy(
                             isLoading = false,
                             errorMessage = errorMsg,
-                            errorTextState = TextState.latoRegular(12, MR.colors.red).updateValue(errorMsg),
-                            confirmButtonState = ButtonState.primary(
-                                value = confirmButtonState.title,
-                                background = if (isPhoneValid) MR.colors.primary else MR.colors.grey
-                            ).updateEnabled(isPhoneValid)
+                            errorTextState = TextState.latoRegular(12, AppColors.red).updateValue(errorMsg),
+                            confirmButtonState = confirmButtonState.copy(
+                                isEnabled = isPhoneValid
+                            )
                         )
                     }
                 }

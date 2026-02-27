@@ -15,10 +15,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.core.extensions.color
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.common.view.ButtonData
 import com.example.kursovikkmp.common.view.ButtonState
+import com.example.kursovikkmp.resources.AppResources
 
 @Composable
 fun MyButton(
@@ -61,12 +60,11 @@ private fun PrimaryButton(
             .background(
                 color = if (state.coloredState == ButtonData.ColoredState.Colored) {
                     state.backgroundColor
-                        .color()
                         .copy(
                             alpha = if (state.isEnabled) 1f else 0.5f
                         )
                 } else {
-                    state.backgroundColor.color()
+                    state.backgroundColor
                 }
             )
             .clickable(
@@ -107,7 +105,7 @@ private fun MyButtonPreview() {
         Column(modifier = Modifier.padding(16.dp)) {
             PrimaryButton(state = ButtonState.primary("Text"))
             VSpacer(8.dp)
-            ImageButton(state = ButtonState.image(image = MR.images.favorite_on_icon))
+            ImageButton(state = ButtonState.image(image = AppResources.drawable.favorite_on_icon))
         }
     }
 }

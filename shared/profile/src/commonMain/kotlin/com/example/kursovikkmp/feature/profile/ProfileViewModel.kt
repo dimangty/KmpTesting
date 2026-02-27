@@ -1,6 +1,5 @@
 package com.example.kursovikkmp.feature.profile
 
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.updateValue
 import com.example.kursovikkmp.feature.auth.AuthService
@@ -9,6 +8,8 @@ import com.example.kursovikkmp.shared.common.extension.asCommonFlow
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
 
 class ProfileViewModel(
     private val profileRepository: ProfileRepository,
@@ -21,7 +22,7 @@ class ProfileViewModel(
     override fun initToolbar() {
         var titleBar = state.titleBarState.copy()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_profile_tab_title)),
+            titleResource = AppResources.strings.scr_profile_tab_title,
             isNavigateBackVisible = false
         )
         updateState { copy(titleBarState = titleBar) }

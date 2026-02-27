@@ -20,15 +20,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.core.extensions.color
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.DefaultUiEvent
 import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.TitleBarState
+import com.example.kursovikkmp.resources.AppColors
+import com.example.kursovikkmp.resources.AppResources
+import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 
 private val ToolbarHeight = 40.dp
 
@@ -39,24 +40,26 @@ fun Toolbar(
 ) {
     ToolbarWithContent(
         onNavigateBackClicked = { toolbarState.onDefaultUiEvent(DefaultUiEvent.OnBackClicked) },
-        navigateBackIcon = toolbarState.backIcon.drawableResId,
+        navigateBackIcon = toolbarState.backIcon,
         modifier = modifier,
-        title = toolbarState.title,
+        titleState = toolbarState,
         isNavigateBackVisible = toolbarState.isNavigateBackVisible,
-        contentColor = toolbarState.contentColor.color(),
+        contentColor = toolbarState.contentColor,
     )
 }
 
 @Composable
 fun ToolbarWithContent(
     onNavigateBackClicked: () -> Unit,
-    title: TextState,
-    contentColor: Color = MR.colors.white.color(),
-    navigateBackIcon: Int = MR.images.ic_titlebar_back.drawableResId,
+    titleState: TitleBarState,
+    contentColor: Color = AppColors.white,
+    navigateBackIcon: org.jetbrains.compose.resources.DrawableResource = AppResources.drawable.ic_titlebar_back,
     modifier: Modifier = Modifier,
     isNavigateBackVisible: Boolean = true,
     endContent: @Composable RowScope.() -> Unit = {},
 ) {
+    val titleText = titleState.titleResource?.let { stringResource(it) } ?: titleState.title.value
+
     Column {
         Spacer(
             Modifier
@@ -69,9 +72,9 @@ fun ToolbarWithContent(
                 .height(ToolbarHeight),
             contentAlignment = Alignment.CenterStart,
         ) {
-            if (title.value.isNotBlank()) {
+            if (titleText.isNotBlank()) {
                 MyText(
-                    state = title,
+                    state = titleState.title.copy(value = titleText),
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                     modifier = Modifier

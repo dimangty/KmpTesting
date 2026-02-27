@@ -1,6 +1,6 @@
 package com.example.kursovikkmp.feature.news.list
 
-import com.example.kursovikkmp.MR
+import androidx.compose.ui.graphics.Color
 import com.example.kursovikkmp.base.BaseViewState
 import com.example.kursovikkmp.common.view.ButtonData
 import com.example.kursovikkmp.common.view.ButtonState
@@ -8,15 +8,19 @@ import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.getMock
 import com.example.kursovikkmp.common.view.updateValue
-import dev.icerock.moko.resources.ColorResource
-import dev.icerock.moko.resources.ImageResource
+import com.example.kursovikkmp.resources.AppColors
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.StringResource
 
 data class NewsListState(
     val newsItems: List<NewsUiState> = listOf(),
     val searchQuery: String = "",
     val searchPlaceholder: String = "",
+    val searchPlaceholderResource: StringResource? = null,
     override val titleBarState: TitleBarState = TitleBarState.getMock(),
-    val backGroundColor: ColorResource = MR.colors.grey,
+    val backGroundColor: Color = AppColors.grey,
 ) : BaseViewState {
     companion object {
         fun getMock() = NewsListState().run {
@@ -34,12 +38,12 @@ data class NewsUiState(
     val date: String = "",
     val imageUrl: String? = "",
     val isFavorite: Boolean = false,
-    val cellBackground: ColorResource = MR.colors.white,
+    val cellBackground: Color = AppColors.white,
 ) {
-    val titleState: TextState = TextState.latoSemibold(17, MR.colors.black).updateValue(title)
-    val textState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(text)
-    val dateState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(date)
-    val favoriteButton: ButtonState = ButtonState.image(image = if(isFavorite)  MR.images.favorite_on_icon else MR.images.favorite_off_icon)
+    val titleState: TextState = TextState.latoSemibold(17, AppColors.black).updateValue(title)
+    val textState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(text)
+    val dateState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(date)
+    val favoriteButton: ButtonState = ButtonState.image(image = if(isFavorite) AppResources.drawable.favorite_on_icon else AppResources.drawable.favorite_off_icon)
 
     companion object {
         fun getMock() = NewsUiState().run {

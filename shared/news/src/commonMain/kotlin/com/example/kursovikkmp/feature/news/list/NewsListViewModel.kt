@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.news.list
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateValue
@@ -19,6 +18,9 @@ import io.ktor.http.isSuccess
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.getString
 
 class NewsListViewModel(private val newsService: NewsService,
                         private val favoritesRepository: FavoritesRepository): BaseViewModel<NewsListState, NewsListEvents>() {
@@ -53,12 +55,12 @@ class NewsListViewModel(private val newsService: NewsService,
 
     override fun initToolbar() {
         var titleBar = state.titleBarState.copy()
-        titleBar = titleBar.copy(title = titleBar.title.updateValue(getString(MR.strings.scr_news_screen_title)),
+        titleBar = titleBar.copy(titleResource = AppResources.strings.scr_news_screen_title,
                                  isNavigateBackVisible = false)
         updateState {
             copy(
                 titleBarState = titleBar,
-                searchPlaceholder = getString(MR.strings.scr_news_search_placeholder)
+                searchPlaceholderResource = AppResources.strings.scr_news_search_placeholder
             )
         }
     }

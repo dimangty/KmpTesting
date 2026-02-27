@@ -1,16 +1,16 @@
 package com.example.kursovikkmp.feature.recipes.list
 
-import com.example.kursovikkmp.MR
+import androidx.compose.ui.graphics.Color
 import com.example.kursovikkmp.base.BaseViewState
 import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateValue
-import dev.icerock.moko.resources.ColorResource
+import com.example.kursovikkmp.resources.AppColors
 
 data class RecipesListState(
     val recipesItems: List<RecipeUiState> = listOf(),
     override val titleBarState: TitleBarState = TitleBarState.getMock(),
-    val backGroundColor: ColorResource = MR.colors.grey
+    val backGroundColor: Color = AppColors.grey
 ) : BaseViewState {
     companion object {
         fun getMock() = RecipesListState(
@@ -28,11 +28,11 @@ data class RecipeUiState(
     val text: String = "",
     val duration: String = "",
     val imageUrl: String = "",
-    val cellBackground: ColorResource = MR.colors.white
+    val cellBackground: Color = AppColors.white
 ) {
-    val titleState: TextState = TextState.latoSemibold(17, MR.colors.black).updateValue(title)
-    val textState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(text)
-    val durationState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(duration)
+    val titleState: TextState = TextState.latoSemibold(17, AppColors.black).updateValue(title)
+    val textState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(text)
+    val durationState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(duration)
 
     companion object {
         fun getMock() = RecipeUiState(

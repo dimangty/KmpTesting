@@ -1,8 +1,10 @@
 package com.example.kursovikkmp.common.view
 
-import com.example.kursovikkmp.MR
-import dev.icerock.moko.resources.ColorResource
-import dev.icerock.moko.resources.ImageResource
+import androidx.compose.ui.graphics.Color
+import com.example.kursovikkmp.resources.AppColors
+import kursovikkmp.shared.core.generated.resources.Res
+import kursovikkmp.shared.core.generated.resources.*
+import org.jetbrains.compose.resources.DrawableResource
 
 @Suppress("MagicNumber")
 data class ButtonState(
@@ -12,10 +14,10 @@ data class ButtonState(
     val textState: TextState
         get() = data.textState
 
-    val backgroundColor: ColorResource
+    val backgroundColor: Color
         get() = data.color
 
-    val image: ImageResource?
+    val image: DrawableResource?
         get() = when (data) {
             is ButtonData.PrimaryButton -> textState.iconStart
             is ButtonData.ImageButton -> data.image
@@ -37,17 +39,25 @@ data class ButtonState(
 
         fun primary(
             value: String = "",
-            image: ImageResource? = null,
-            background: ColorResource = MR.colors.primary,
+            image: DrawableResource? = null,
+            background: Color = AppColors.primary,
             coloredState: ButtonData.ColoredState = ButtonData.ColoredState.Colored,
-        ) = ButtonState(data = ButtonData.PrimaryButton(value, image, background, coloredState))
+            isEnabled: Boolean = true,
+        ) = ButtonState(
+            data = ButtonData.PrimaryButton(value, image, background, coloredState),
+            isEnabled = isEnabled
+        )
 
         fun image(
             value: String = "",
-            image: ImageResource? = null,
-            background: ColorResource = MR.colors.white,
+            image: DrawableResource? = null,
+            background: Color = AppColors.white,
             coloredState: ButtonData.ColoredState = ButtonData.ColoredState.Colored,
-        ) = ButtonState(data = ButtonData.ImageButton(value, background, image))
+            isEnabled: Boolean = true,
+        ) = ButtonState(
+            data = ButtonData.ImageButton(value, background, image),
+            isEnabled = isEnabled
+        )
 
 
     }
@@ -61,7 +71,7 @@ fun ButtonState.updateValue(value: String) = this.copy(data = this.data.updateTe
 
 fun ButtonState.getMock(value: String = "") = this.updateValue(value.ifEmpty { "Button" })
 
-fun ButtonState.updateImage(image: ImageResource) = when (this.data) {
+fun ButtonState.updateImage(image: DrawableResource) = when (this.data) {
     is ButtonData.PrimaryButton -> this.copy(data = this.data.updateImage(image))
     is ButtonData.ImageButton -> this.copy(data = this.data.updateImage(image))
 }
@@ -69,35 +79,35 @@ fun ButtonState.updateImage(image: ImageResource) = when (this.data) {
 @Suppress("MagicNumber")
 sealed class ButtonData(open val text: String) {
 
-    open val textState: TextState = TextState.latoMedium(14, MR.colors.white)
-    open val color: ColorResource = MR.colors.primary
+    open val textState: TextState = TextState.latoMedium(14, AppColors.white)
+    open val color: Color = AppColors.primary
 
     enum class ColoredState { Colored, Transparent }
 
     data class PrimaryButton(
         override val text: String,
-        val imageStart: ImageResource? = null,
-        val background: ColorResource,
+        val imageStart: DrawableResource? = null,
+        val background: Color,
         val coloredState: ColoredState = ColoredState.Colored,
     ) : ButtonData(text) {
         override val textState: TextState
-            get() = TextState.latoMedium(14, MR.colors.white).copy(iconStart = imageStart)
+            get() = TextState.latoMedium(14, AppColors.white).copy(iconStart = imageStart)
                 .updateValue(text)
 
         override fun updateText(text: String): ButtonData {
             return this.copy(text = text)
         }
 
-        fun updateImage(image: ImageResource): ButtonData {
+        fun updateImage(image: DrawableResource): ButtonData {
             return this.copy(imageStart = image)
         }
 
-        override val color: ColorResource
+        override val color: Color
             get() = background
 
         companion object {
             fun getMock() = PrimaryButton("Button",
-                                          background = MR.colors.red)
+                                          background = AppColors.red)
         }
     }
 
@@ -105,8 +115,8 @@ sealed class ButtonData(open val text: String) {
 
     data class ImageButton(
         override val text: String,
-        val background: ColorResource,
-        val image: ImageResource? = null,
+        val background: Color,
+        val image: DrawableResource? = null,
         val alignment: Alignment = Alignment.Center,
     ) : ButtonData(text) {
         override val textState: TextState
@@ -116,17 +126,17 @@ sealed class ButtonData(open val text: String) {
             return this.copy(text = text)
         }
 
-        override val color: ColorResource
+        override val color: Color
             get() = background
 
-        fun updateImage(image: ImageResource): ButtonData {
+        fun updateImage(image: DrawableResource): ButtonData {
             return this.copy(image = image)
         }
 
         companion object {
             fun getMock() = ImageButton("Button",
-                                        image = MR.images.favorite_off_icon,
-                                        background = MR.colors.black)
+                                        image = Res.drawable.favorite_off_icon,
+                                        background = AppColors.black)
         }
     }
 

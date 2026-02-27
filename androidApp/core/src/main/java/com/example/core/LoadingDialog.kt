@@ -13,8 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import com.example.core.extensions.color
-import com.example.kursovikkmp.MR
+import com.example.kursovikkmp.resources.AppColors
 
 @Composable
 fun LoadingDialog() {
@@ -34,8 +33,8 @@ fun LoadingDialog() {
             CircularProgressIndicator(
                 modifier = Modifier.size(64.dp),
                 strokeWidth = 6.dp,
-                color = MR.colors.red.color(),
-                trackColor = MR.colors.loader_background.color().copy(alpha = 0.2f),
+                color = AppColors.red,
+                trackColor = AppColors.loader_background.copy(alpha = 0.2f),
             )
         }
     }

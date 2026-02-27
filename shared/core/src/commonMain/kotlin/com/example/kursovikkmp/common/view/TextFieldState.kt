@@ -1,7 +1,7 @@
 package com.example.kursovikkmp.common.view
 
-import com.example.kursovikkmp.MR
-import dev.icerock.moko.resources.ColorResource
+import androidx.compose.ui.graphics.Color
+import com.example.kursovikkmp.resources.AppColors
 
 data class TextFieldState(
     val value: String = "",
@@ -10,8 +10,8 @@ data class TextFieldState(
     val error: String? = null,
     val isEnabled: Boolean = true,
     val keyboardType: KeyboardType = KeyboardType.Text,
-    val backgroundColor: ColorResource = MR.colors.white,
-    val textColor: ColorResource = MR.colors.black,
+    val backgroundColor: Color = AppColors.white,
+    val textColor: Color = AppColors.black,
 ) {
     enum class KeyboardType {
         Text,
@@ -33,8 +33,8 @@ data class DropdownFieldState(
     val label: String? = null,
     val options: List<String> = emptyList(),
     val isEnabled: Boolean = true,
-    val backgroundColor: ColorResource = MR.colors.white,
-    val textColor: ColorResource = MR.colors.black,
+    val backgroundColor: Color = AppColors.white,
+    val textColor: Color = AppColors.black,
 )
 
 fun DropdownFieldState.updateValue(value: String) = this.copy(value = value)

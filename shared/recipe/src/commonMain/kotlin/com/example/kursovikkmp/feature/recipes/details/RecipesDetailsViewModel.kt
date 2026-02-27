@@ -1,12 +1,15 @@
 package com.example.kursovikkmp.feature.recipes.details
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateValue
 import com.example.kursovikkmp.feature.recipes.RecipesService
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.StringResource
+import org.jetbrains.compose.resources.getString
 
 class RecipesDetailsViewModel(
     private val recipeId: String,
@@ -16,7 +19,7 @@ class RecipesDetailsViewModel(
     override fun initToolbar() {
         var titleBar = TitleBarState.getMock()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_recipe_details_screen_title)),
+            titleResource = AppResources.strings.scr_recipe_details_screen_title,
             isNavigateBackVisible = true,
             onDefaultUiEvent = ::onDefaultUiEvent
         )
@@ -56,7 +59,7 @@ class RecipesDetailsViewModel(
                     titleState = titleState.updateValue(recipe.title),
                     descriptionState = descriptionState.updateValue(recipe.description),
                     durationState = durationState.updateValue("⏱ ${recipe.durationMinutes} мин"),
-                    ingredientsTitleState = ingredientsTitleState.updateValue(getString(MR.strings.scr_recipe_ingredients_title)),
+                    ingredientsTitleResource = AppResources.strings.scr_recipe_ingredients_title,
                     ingredientsItems = recipe.ingredients.map { item ->
                         RecipeIngredientUiState(
                             name = item.name,
@@ -64,7 +67,7 @@ class RecipesDetailsViewModel(
                         )
                     },
                     ingredientsState = ingredientsState.updateValue(recipe.ingredients.joinToString("\n") { "• ${it.name}" }),
-                    stepsTitleState = stepsTitleState.updateValue(getString(MR.strings.scr_recipe_steps_title)),
+                    stepsTitleResource = AppResources.strings.scr_recipe_steps_title,
                     stepsItems = recipe.steps.mapIndexed { index, step ->
                         RecipeStepUiState(
                             number = index + 1,

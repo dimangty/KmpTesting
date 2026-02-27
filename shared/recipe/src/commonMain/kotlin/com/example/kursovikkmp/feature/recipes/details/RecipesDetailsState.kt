@@ -1,22 +1,27 @@
 package com.example.kursovikkmp.feature.recipes.details
 
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewState
 import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateValue
+import com.example.kursovikkmp.resources.AppColors
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.StringResource
 
 data class RecipesDetailsState(
     val imageUrl: String? = null,
-    val titleState: TextState = TextState.latoSemibold(22, MR.colors.black),
-    val descriptionState: TextState = TextState.latoRegular(14, MR.colors.black),
-    val durationState: TextState = TextState.latoRegular(13, MR.colors.black),
-    val ingredientsTitleState: TextState = TextState.latoSemibold(17, MR.colors.black),
+    val titleState: TextState = TextState.latoSemibold(22, AppColors.black),
+    val descriptionState: TextState = TextState.latoRegular(14, AppColors.black),
+    val durationState: TextState = TextState.latoRegular(13, AppColors.black),
+    val ingredientsTitleResource: StringResource? = null,
+    val ingredientsTitleState: TextState = TextState.latoSemibold(17, AppColors.black),
     val ingredientsItems: List<RecipeIngredientUiState> = emptyList(),
-    val ingredientsState: TextState = TextState.latoRegular(14, MR.colors.black),
-    val stepsTitleState: TextState = TextState.latoSemibold(17, MR.colors.black),
+    val ingredientsState: TextState = TextState.latoRegular(14, AppColors.black),
+    val stepsTitleResource: StringResource? = null,
+    val stepsTitleState: TextState = TextState.latoSemibold(17, AppColors.black),
     val stepsItems: List<RecipeStepUiState> = emptyList(),
-    val stepsState: TextState = TextState.latoRegular(14, MR.colors.black),
+    val stepsState: TextState = TextState.latoRegular(14, AppColors.black),
     val startCookingButtonTitle: String = "Начать готовить",
     override val titleBarState: TitleBarState = TitleBarState.getMock()
 ) : BaseViewState {

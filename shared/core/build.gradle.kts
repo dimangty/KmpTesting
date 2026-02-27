@@ -5,7 +5,8 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.serialization)
     alias(libs.plugins.sqldelight)
-    id("dev.icerock.mobile.multiplatform-resources")
+    alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.compose.compiler)
 }
 
 kotlin {
@@ -27,15 +28,16 @@ kotlin {
         it.binaries.framework {
             baseName = "core"
             isStatic = false
-            export("dev.icerock.moko:resources:0.26.0")
-            export("dev.icerock.moko:graphics:0.10.0")
         }
     }
 
     sourceSets {
         commonMain.dependencies {
             implementation(libs.sqldelight.coroutines.extensions)
-            api(libs.moko.resources)
+            api(compose.runtime)
+            api(compose.ui)
+            api(compose.foundation)
+            api(compose.components.resources)
             api(libs.ktor.client.core)
             api(libs.ktor.client.logging)
             api(libs.ktor.client.negotiation)
@@ -63,10 +65,6 @@ kotlin {
             implementation(libs.sqldelight.native.driver)
         }
     }
-}
-
-multiplatformResources {
-    resourcesPackage.set("com.example.kursovikkmp")
 }
 
 android {

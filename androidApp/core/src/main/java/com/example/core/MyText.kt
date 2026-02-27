@@ -13,14 +13,16 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
-import com.example.core.extensions.color
-import com.example.core.extensions.textStyle
-import com.example.kursovikkmp.MR
+import androidx.compose.ui.unit.sp
 import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.updateValue
+import com.example.kursovikkmp.resources.AppColors
+import org.jetbrains.compose.resources.Font
+import org.jetbrains.compose.resources.painterResource
 
 @Composable
 fun MyText(
@@ -41,13 +43,13 @@ fun MyText(
         val iconStart = state.iconStart
         if (iconStart != null) {
             Icon(
-                painter = painterResource(id = iconStart.drawableResId),
+                painter = painterResource(iconStart),
                 contentDescription = null,
                 modifier = Modifier
                     .padding(end = 8.dp)
                     .then(iconStartModifier),
                 tint = if (state.overrideIconsTint) {
-                    state.color.color().copy(
+                    state.color.copy(
                         alpha = if (applyDisabledAlpha) 0.5f else 1f
                     )
                 } else {
@@ -58,26 +60,30 @@ fun MyText(
 
         Text(
             text = state.value,
-            color = state.color.color().copy(
+            color = state.color.copy(
                 alpha = if (applyDisabledAlpha) 0.5f else 1f
             ),
             letterSpacing = TextUnit(letterSpacing, TextUnitType.Sp),
             maxLines = maxLines,
             overflow = overflow,
-            style = state.fontState.textStyle(),
+            style = androidx.compose.ui.text.TextStyle(
+                fontFamily = FontFamily(Font(state.fontState.font)),
+                fontSize = state.fontState.fontSize.sp,
+                lineHeight = state.fontState.lineHeight.sp,
+            ),
             textAlign = textAlign,
         )
 
         val iconEnd = state.iconEnd
         if (iconEnd != null) {
             Icon(
-                painter = painterResource(id = iconEnd.drawableResId),
+                painter = painterResource(iconEnd),
                 contentDescription = null,
                 modifier = Modifier
                     .padding(start = if (state.value.isNotEmpty()) 4.dp else 0.dp)
                     .then(iconEndModifier),
                 tint = if (state.overrideIconsTint) {
-                    state.color.color().copy(
+                    state.color.copy(
                         alpha = if (applyDisabledAlpha) 0.5f else 1f
                     )
                 } else {
@@ -93,7 +99,7 @@ fun MyText(
 private fun MyTextPreview() {
     MaterialTheme  {
         MyText(
-            state = TextState.latoMedium(14, MR.colors.black).updateValue("Text"),
+            state = TextState.latoMedium(14, AppColors.black).updateValue("Text"),
         )
     }
 }

@@ -1,23 +1,26 @@
 package com.example.kursovikkmp.feature.fridge.list
 
-import com.example.kursovikkmp.MR
+import androidx.compose.ui.graphics.Color
 import com.example.kursovikkmp.base.BaseViewState
 import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateValue
-import dev.icerock.moko.resources.ColorResource
+import com.example.kursovikkmp.resources.AppColors
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.StringResource
 
 data class FridgeState(
     val productsItems: List<FridgeProductUiState> = emptyList(),
     val recommendationsItems: List<FridgeRecommendedRecipeUiState> = emptyList(),
-    val productsTitleState: TextState = TextState.latoSemibold(17, MR.colors.black),
-    val recommendationsTitleState: TextState = TextState.latoSemibold(17, MR.colors.black),
-    val emptyRecommendationsState: TextState = TextState.latoRegular(14, MR.colors.black),
-    val recommendButtonTitle: String = "Рекомендовать рецепты",
+    val productsTitleResource: StringResource? = null,
+    val recommendationsTitleResource: StringResource? = null,
+    val emptyRecommendationsResource: StringResource? = null,
+    val recommendButtonTitleResource: StringResource? = null,
     val isRecommendButtonEnabled: Boolean = false,
     val hasRecommendationsRequest: Boolean = false,
     override val titleBarState: TitleBarState = TitleBarState.getMock(),
-    val backGroundColor: ColorResource = MR.colors.grey
+    val backGroundColor: Color = AppColors.grey
 ) : BaseViewState {
     companion object {
         fun getMock() = FridgeState(
@@ -31,9 +34,10 @@ data class FridgeState(
             ),
             isRecommendButtonEnabled = true,
             hasRecommendationsRequest = true,
-            productsTitleState = TextState.latoSemibold(17, MR.colors.black).updateValue("Продукты в холодильнике"),
-            recommendationsTitleState = TextState.latoSemibold(17, MR.colors.black).updateValue("Подходящие рецепты"),
-            emptyRecommendationsState = TextState.latoRegular(14, MR.colors.black).updateValue("По выбранным продуктам рецепты не найдены")
+            productsTitleResource = AppResources.strings.scr_fridge_products_title,
+            recommendationsTitleResource = AppResources.strings.scr_fridge_recommendations_title,
+            emptyRecommendationsResource = AppResources.strings.scr_fridge_empty_recommendations,
+            recommendButtonTitleResource = AppResources.strings.scr_fridge_recommend_button
         )
     }
 }
@@ -51,12 +55,12 @@ data class FridgeRecommendedRecipeUiState(
     val duration: String,
     val imageUrl: String,
     val matchedIngredientsText: String,
-    val cellBackground: ColorResource = MR.colors.white
+    val cellBackground: Color = AppColors.white
 ) {
-    val titleState: TextState = TextState.latoSemibold(17, MR.colors.black).updateValue(title)
-    val descriptionState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(description)
-    val durationState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(duration)
-    val matchedState: TextState = TextState.latoRegular(12, MR.colors.black).updateValue(matchedIngredientsText)
+    val titleState: TextState = TextState.latoSemibold(17, AppColors.black).updateValue(title)
+    val descriptionState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(description)
+    val durationState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(duration)
+    val matchedState: TextState = TextState.latoRegular(12, AppColors.black).updateValue(matchedIngredientsText)
 
     companion object {
         fun getMock() = FridgeRecommendedRecipeUiState(

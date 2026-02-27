@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.favorites.details
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.TitleBarState
 import com.example.kursovikkmp.common.view.updateValue
@@ -11,6 +10,8 @@ import com.example.kursovikkmp.feature.news.model.Article
 import com.example.kursovikkmp.feature.news.model.toDateString
 import com.example.kursovikkmp.feature.news.model.toEntity
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
 
 class FavoriteDetailsViewModel(
     private val title: String,
@@ -21,7 +22,7 @@ class FavoriteDetailsViewModel(
     override fun initToolbar() {
         var titleBar = TitleBarState.getMock()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_favorite_screen_title)),
+            titleResource = AppResources.strings.scr_favorite_screen_title,
             isNavigateBackVisible = true,
             onDefaultUiEvent = ::onDefaultUiEvent
         )

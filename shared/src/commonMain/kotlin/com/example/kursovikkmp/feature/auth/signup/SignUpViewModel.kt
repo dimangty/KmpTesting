@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.auth.signup
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.ButtonState
 import com.example.kursovikkmp.common.view.DropdownFieldState
@@ -14,6 +13,10 @@ import com.example.kursovikkmp.feature.auth.SignUpData
 import com.example.kursovikkmp.feature.auth.ValidationService
 import com.example.kursovikkmp.navigation.NavigationAction
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.getString
+import com.example.kursovikkmp.resources.AppColors
 
 class SignUpViewModel(
     private val authService: AuthService,
@@ -23,7 +26,7 @@ class SignUpViewModel(
     override fun initToolbar() {
         var titleBar = state.titleBarState.copy()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.sign_up_title)),
+            titleResource = AppResources.strings.sign_up_title,
             isNavigateBackVisible = true
         )
         updateState { copy(titleBarState = titleBar) }
@@ -44,50 +47,15 @@ class SignUpViewModel(
             genderOptions = genderOptions,
             countryOptions = countryOptions,
             cityOptions = cityOptions,
-            firstNameField = TextFieldState(
-                value = "",
-                placeholder = getString(MR.strings.first_name),
-                keyboardType = TextFieldState.KeyboardType.Text
-            ),
-            lastNameField = TextFieldState(
-                value = "",
-                placeholder = getString(MR.strings.last_name),
-                keyboardType = TextFieldState.KeyboardType.Text
-            ),
-            genderField = DropdownFieldState(
-                value = "",
-                placeholder = getString(MR.strings.gender),
-                options = genderOptions
-            ),
-            birthDateField = TextFieldState(
-                value = "",
-                placeholder = getString(MR.strings.birth_date),
-                keyboardType = TextFieldState.KeyboardType.Text
-            ),
-            countryField = DropdownFieldState(
-                value = "",
-                placeholder = getString(MR.strings.country),
-                options = countryOptions
-            ),
-            cityField = DropdownFieldState(
-                value = "",
-                placeholder = getString(MR.strings.city),
-                options = cityOptions
-            ),
-            emailField = TextFieldState(
-                value = "",
-                placeholder = getString(MR.strings.email),
-                keyboardType = TextFieldState.KeyboardType.Email
-            ),
-            phoneField = TextFieldState(
-                value = "",
-                placeholder = getString(MR.strings.phone),
-                keyboardType = TextFieldState.KeyboardType.Phone
-            ),
-            createAccountButton = ButtonState.primary(
-                value = getString(MR.strings.create_account),
-                background = MR.colors.grey
-            ).updateEnabled(false)
+            firstNamePlaceholderResource = AppResources.strings.first_name,
+            lastNamePlaceholderResource = AppResources.strings.last_name,
+            genderPlaceholderResource = AppResources.strings.gender,
+            birthDatePlaceholderResource = AppResources.strings.birth_date,
+            countryPlaceholderResource = AppResources.strings.country,
+            cityPlaceholderResource = AppResources.strings.city,
+            emailPlaceholderResource = AppResources.strings.email,
+            phonePlaceholderResource = AppResources.strings.phone,
+            createAccountButtonResource = AppResources.strings.create_account
         )
     }
 
@@ -206,10 +174,9 @@ class SignUpViewModel(
         updateState {
             copy(
                 isFormValid = isValid,
-                createAccountButton = ButtonState.primary(
-                    value = createAccountButton.title,
-                    background = if (isValid) MR.colors.primary else MR.colors.grey
-                ).updateEnabled(isValid && !isLoading)
+                createAccountButton = createAccountButton.copy(
+                    isEnabled = isValid && !isLoading
+                )
             )
         }
     }
@@ -217,10 +184,9 @@ class SignUpViewModel(
     private fun updateButton() {
         updateState {
             copy(
-                createAccountButton = ButtonState.primary(
-                    value = createAccountButton.title,
-                    background = if (isFormValid) MR.colors.primary else MR.colors.grey
-                ).updateEnabled(isFormValid && !isLoading)
+                createAccountButton = createAccountButton.copy(
+                    isEnabled = isFormValid && !isLoading
+                )
             )
         }
     }
@@ -255,12 +221,12 @@ class SignUpViewModel(
                     navigate(NavigationAction.NavigateToPin)
                 }
                 .onFailure { error ->
-                    val errorMsg = getString(MR.strings.sign_up_failed)
+                    val errorMsg = getString(AppResources.strings.sign_up_failed)
                     updateState {
                         copy(
                             isLoading = false,
                             errorMessage = errorMsg,
-                            errorTextState = TextState.latoRegular(12, MR.colors.red).updateValue(errorMsg)
+                            errorTextState = TextState.latoRegular(12, AppColors.red).updateValue(errorMsg)
                         )
                     }
                     validateForm()

@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(./gradlew shared:testDebugUnitTest:*)"
+      "Bash(./gradlew shared:testDebugUnitTest:*)",
+      "Bash(./gradlew:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(tree:*)"
     ]
   }
 }

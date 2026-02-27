@@ -23,7 +23,6 @@ import com.example.core.MyButton
 import com.example.core.MyText
 import com.example.core.Toolbar
 import com.example.core.VSpacer
-import com.example.core.extensions.COMPOSE_PREVIEW_BACKGROUND_COLOR
 import com.example.kursovikkmp.feature.news.details.NewsDetailsEvents
 import com.example.kursovikkmp.feature.news.details.NewsDetailsState
 import com.example.kursovikkmp.feature.news.details.NewsDetailsViewModel
@@ -104,7 +103,7 @@ fun NewsDetailsView(
     }
 }
 
-@Preview(showBackground = true, backgroundColor = COMPOSE_PREVIEW_BACKGROUND_COLOR)
+@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
 @Composable
 private fun PreviewNewsDetailsView() {
     MaterialTheme  {

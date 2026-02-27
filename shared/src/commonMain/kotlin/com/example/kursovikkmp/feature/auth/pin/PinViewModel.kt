@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.auth.pin
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.view.ButtonState
 import com.example.kursovikkmp.common.view.TextFieldState
@@ -11,6 +10,10 @@ import com.example.kursovikkmp.common.view.updateValue
 import com.example.kursovikkmp.feature.auth.AuthService
 import com.example.kursovikkmp.navigation.NavigationAction
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
+import org.jetbrains.compose.resources.getString
+import com.example.kursovikkmp.resources.AppColors
 
 class PinViewModel(
     private val authService: AuthService
@@ -25,18 +28,9 @@ class PinViewModel(
     }
 
     override fun initialState(): PinState = PinState(
-        pinFieldState = TextFieldState(
-            value = "",
-            placeholder = getString(MR.strings.pin_placeholder),
-            keyboardType = TextFieldState.KeyboardType.Number
-        ),
-        confirmButtonState = ButtonState.primary(
-            value = getString(MR.strings.confirm_pin),
-            background = MR.colors.grey
-        ).updateEnabled(false),
-        helperTextState = TextState.latoRegular(12, MR.colors.grey).updateValue(
-            getString(MR.strings.pin_helper_text)
-        )
+        pinPlaceholderResource = AppResources.strings.pin_placeholder,
+        confirmButtonResource = AppResources.strings.confirm_pin,
+        helperTextResource = AppResources.strings.pin_helper_text
     )
 
     override fun onEvent(event: PinEvents) {
@@ -51,10 +45,9 @@ class PinViewModel(
                         errorMessage = null,
                         errorTextState = null,
                         pinFieldState = pinFieldState.updateValue(filteredPin),
-                        confirmButtonState = ButtonState.primary(
-                            value = confirmButtonState.title,
-                            background = if (isValid) MR.colors.primary else MR.colors.grey
-                        ).updateEnabled(isValid && !isLoading)
+                        confirmButtonState = confirmButtonState.copy(
+                            isEnabled = isValid && !isLoading
+                        )
                     )
                 }
             }
@@ -83,19 +76,23 @@ class PinViewModel(
                     updateState {
                         copy(
                             isLoading = false,
-                            confirmButtonState = confirmButtonState.updateEnabled(isPinValid)
+                            confirmButtonState = confirmButtonState.copy(
+                                isEnabled = isPinValid
+                            )
                         )
                     }
                     navigate(NavigationAction.NavigateToMain)
                 }
                 .onFailure {
-                    val errorMsg = getString(MR.strings.invalid_pin)
+                    val errorMsg = getString(AppResources.strings.invalid_pin)
                     updateState {
                         copy(
                             isLoading = false,
                             errorMessage = errorMsg,
-                            errorTextState = TextState.latoRegular(12, MR.colors.red).updateValue(errorMsg),
-                            confirmButtonState = confirmButtonState.updateEnabled(isPinValid)
+                            errorTextState = TextState.latoRegular(12, AppColors.red).updateValue(errorMsg),
+                            confirmButtonState = confirmButtonState.copy(
+                                isEnabled = isPinValid
+                            )
                         )
                     }
                 }

@@ -63,7 +63,10 @@ private fun FridgeScreenView(
             .padding(horizontal = 16.dp, vertical = 12.dp)
     ) {
         item {
-            Text(text = state.productsTitleState.value, style = MaterialTheme.typography.titleMedium)
+            Text(
+                text = state.productsTitleResource?.let { org.jetbrains.compose.resources.stringResource(it) } ?: "",
+                style = MaterialTheme.typography.titleMedium
+            )
             Spacer(modifier = Modifier.height(8.dp))
         }
 
@@ -80,20 +83,23 @@ private fun FridgeScreenView(
                 enabled = state.isRecommendButtonEnabled,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(state.recommendButtonTitle)
+                Text(state.recommendButtonTitleResource?.let { org.jetbrains.compose.resources.stringResource(it) } ?: "")
             }
             Spacer(modifier = Modifier.height(16.dp))
         }
 
         if (state.hasRecommendationsRequest) {
             item {
-                Text(text = state.recommendationsTitleState.value, style = MaterialTheme.typography.titleMedium)
+                Text(
+                    text = state.recommendationsTitleResource?.let { org.jetbrains.compose.resources.stringResource(it) } ?: "",
+                    style = MaterialTheme.typography.titleMedium
+                )
                 Spacer(modifier = Modifier.height(8.dp))
             }
 
             if (state.recommendationsItems.isEmpty()) {
                 item {
-                    Text(text = state.emptyRecommendationsState.value)
+                    Text(text = state.emptyRecommendationsResource?.let { org.jetbrains.compose.resources.stringResource(it) } ?: "")
                     Spacer(modifier = Modifier.height(8.dp))
                     TextButton(onClick = { onUiEvent(FridgeEvents.OnRetryClicked) }) {
                         Text("Повторить")

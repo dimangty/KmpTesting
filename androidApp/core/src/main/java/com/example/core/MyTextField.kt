@@ -13,9 +13,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.core.extensions.color
-import com.example.core.extensions.string
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.common.view.TextFieldState
 
 @Composable

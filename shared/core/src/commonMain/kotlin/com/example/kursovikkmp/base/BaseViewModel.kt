@@ -5,7 +5,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.kursovikkmp.common.mvvm.ErrorState
 import com.example.kursovikkmp.common.mvvm.LceStateManager
 import com.example.kursovikkmp.feature.device.DeviceService
-import com.example.kursovikkmp.feature.device.ResourceService
 import com.example.kursovikkmp.navigation.NavigationAction
 import com.example.kursovikkmp.navigation.NavigationService
 import com.example.kursovikkmp.shared.common.extension.asCommonFlow
@@ -19,7 +18,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import dev.icerock.moko.resources.StringResource
 import org.koin.mp.KoinPlatform.getKoin
 import org.koin.mp.KoinPlatformTools
 import kotlin.experimental.ExperimentalObjCName
@@ -30,8 +28,6 @@ import kotlin.native.ObjCName
 abstract class BaseViewModel<State: BaseViewState, Event: BaseEvent> : ViewModel() {
 
     private val navigationService by getKoin().inject<NavigationService>()
-    private val resourceService
-            by getKoin().inject<ResourceService>()
 
     val deviceService by getKoin().inject<DeviceService>()
 
@@ -162,10 +158,6 @@ abstract class BaseViewModel<State: BaseViewState, Event: BaseEvent> : ViewModel
                 _navigationEffect.emit(NavigationAction.NavigateBack)
             }
         }
-    }
-
-    protected fun getString(stringRes: StringResource): String {
-        return resourceService.getString(stringRes)
     }
 
     abstract fun initialState(): State

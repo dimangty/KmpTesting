@@ -1,7 +1,6 @@
 package com.example.kursovikkmp.feature.favorites.list
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
 import com.example.kursovikkmp.common.mvvm.ErrorState
 import com.example.kursovikkmp.common.view.TitleBarState
@@ -10,6 +9,8 @@ import com.example.kursovikkmp.feature.news.model.Article
 import com.example.kursovikkmp.feature.news.model.toDateString
 import com.example.kursovikkmp.navigation.NavigationAction
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
 
 class FavoritesListViewModel(private val favoritesRepository: FavoritesRepository) :
     BaseViewModel<FavoritesListState, FavoritesListEvents>() {
@@ -26,7 +27,7 @@ class FavoritesListViewModel(private val favoritesRepository: FavoritesRepositor
     override fun initToolbar() {
         var titleBar = TitleBarState.getMock()
         titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_favorite_screen_title)),
+            titleResource = AppResources.strings.scr_favorite_screen_title,
             isNavigateBackVisible = false
         )
         updateState { copy(titleBarState = titleBar) }

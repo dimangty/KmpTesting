@@ -1,8 +1,8 @@
 package com.example.kursovikkmp.common.mvvm
 
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.common.view.TextState
 import com.example.kursovikkmp.common.view.updateValue
+import com.example.kursovikkmp.resources.AppColors
 
 sealed class ErrorState {
     data class ApiAlertError(
@@ -15,8 +15,8 @@ sealed class ErrorState {
             fun getMock() = ApiAlertError(title = "Title")
         }
 
-        val titleState: TextState = TextState.latoSemibold(17, MR.colors.black).updateValue(title)
-        val positiveState: TextState = TextState.latoSemibold(13, MR.colors.primary).updateValue(positiveButtonText)
+        val titleState: TextState = TextState.latoSemibold(17, AppColors.black).updateValue(title)
+        val positiveState: TextState = TextState.latoSemibold(13, AppColors.primary).updateValue(positiveButtonText)
     }
 
     data class AlertError(
@@ -33,11 +33,11 @@ sealed class ErrorState {
             fun getMock() = AlertError(title = "Title", message = "Message")
         }
 
-        val titleState: TextState = TextState.latoSemibold(17, MR.colors.black).updateValue(title)
-        val textState: TextState = TextState.latoRegular(13, MR.colors.black).updateValue(message)
+        val titleState: TextState = TextState.latoSemibold(17, AppColors.black).updateValue(title)
+        val textState: TextState = TextState.latoRegular(13, AppColors.black).updateValue(message)
         val positiveState: TextState =
-            TextState.latoSemibold(15, MR.colors.primary).updateValue(positiveButtonText)
+            TextState.latoSemibold(15, AppColors.primary).updateValue(positiveButtonText)
         val negativeState: TextState =
-            TextState.latoSemibold(15, MR.colors.red).updateValue(negativeButtonText)
+            TextState.latoSemibold(15, AppColors.red).updateValue(negativeButtonText)
     }
 }

@@ -17,8 +17,6 @@ import androidx.compose.ui.unit.dp
 import com.example.core.BaseScreen
 import com.example.core.Toolbar
 import com.example.core.VSpacer
-import com.example.core.extensions.COMPOSE_PREVIEW_BACKGROUND_COLOR
-import com.example.core.extensions.color
 import com.example.kursovikkmp.feature.news.list.NewsListEvents
 import com.example.kursovikkmp.feature.news.list.NewsListState
 import com.example.kursovikkmp.feature.news.list.NewsListViewModel
@@ -50,7 +48,7 @@ fun NewsScreenView(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = state.backGroundColor.color())
+            .background(color = state.backGroundColor)
     ) {
         Toolbar(toolbarState = state.titleBarState)
         OutlinedTextField(
@@ -77,7 +75,7 @@ fun NewsScreenView(
 
 }
 
-@Preview(showBackground = true, backgroundColor = COMPOSE_PREVIEW_BACKGROUND_COLOR)
+@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
 @Composable
 private fun PreviewNewsScreenView() {
     MaterialTheme {

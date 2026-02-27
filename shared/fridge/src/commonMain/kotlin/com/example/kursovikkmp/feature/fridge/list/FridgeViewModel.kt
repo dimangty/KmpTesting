@@ -1,12 +1,12 @@
 package com.example.kursovikkmp.feature.fridge.list
 
 import androidx.lifecycle.viewModelScope
-import com.example.kursovikkmp.MR
 import com.example.kursovikkmp.base.BaseViewModel
-import com.example.kursovikkmp.common.view.updateValue
 import com.example.kursovikkmp.feature.fridge.FridgeMockNetworkService
 import com.example.kursovikkmp.navigation.NavigationAction
 import kotlinx.coroutines.launch
+import com.example.kursovikkmp.resources.AppResources
+
 
 class FridgeViewModel(
     private val fridgeMockNetworkService: FridgeMockNetworkService
@@ -19,19 +19,16 @@ class FridgeViewModel(
     }
 
     override fun initToolbar() {
-        var titleBar = state.titleBarState.copy()
-        titleBar = titleBar.copy(
-            title = titleBar.title.updateValue(getString(MR.strings.scr_fridge_screen_title)),
-            isNavigateBackVisible = false
-        )
-
         updateState {
             copy(
-                titleBarState = titleBar,
-                productsTitleState = productsTitleState.updateValue(getString(MR.strings.scr_fridge_products_title)),
-                recommendationsTitleState = recommendationsTitleState.updateValue(getString(MR.strings.scr_fridge_recommendations_title)),
-                emptyRecommendationsState = emptyRecommendationsState.updateValue(getString(MR.strings.scr_fridge_empty_recommendations)),
-                recommendButtonTitle = getString(MR.strings.scr_fridge_recommend_button)
+                titleBarState = titleBarState.copy(
+                    titleResource = AppResources.strings.scr_fridge_screen_title,
+                    isNavigateBackVisible = false
+                ),
+                productsTitleResource = AppResources.strings.scr_fridge_products_title,
+                recommendationsTitleResource = AppResources.strings.scr_fridge_recommendations_title,
+                emptyRecommendationsResource = AppResources.strings.scr_fridge_empty_recommendations,
+                recommendButtonTitleResource = AppResources.strings.scr_fridge_recommend_button
             )
         }
     }
