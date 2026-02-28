@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.kursovikkmp.feature.recipes.list.RecipesListViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-15T07:19:31" hostname="MacBook-Pro-Dmitrij-3.local" time="0.006">
-  <properties/>
-  <testcase name="onRetryClicked_loadsRecipes" classname="com.example.kursovikkmp.feature.recipes.list.RecipesListViewModelTest" time="0.004"/>
-  <testcase name="onItemClicked_navigatesToRecipesDetails" classname="com.example.kursovikkmp.feature.recipes.list.RecipesListViewModelTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

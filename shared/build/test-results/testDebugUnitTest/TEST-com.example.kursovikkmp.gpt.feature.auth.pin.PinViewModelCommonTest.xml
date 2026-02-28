@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.kursovikkmp.gpt.feature.auth.pin.PinViewModelCommonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-15T07:19:31" hostname="MacBook-Pro-Dmitrij-3.local" time="0.009">
-  <properties/>
-  <testcase name="confirmTapped_whenPinValid_navigatesToMain" classname="com.example.kursovikkmp.gpt.feature.auth.pin.PinViewModelCommonTest" time="0.003"/>
-  <testcase name="confirmTapped_whenVerifyFails_showsError" classname="com.example.kursovikkmp.gpt.feature.auth.pin.PinViewModelCommonTest" time="0.002"/>
-  <testcase name="pinChanged_updatesFilteredPinAndButtonState" classname="com.example.kursovikkmp.gpt.feature.auth.pin.PinViewModelCommonTest" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
