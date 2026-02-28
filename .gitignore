@@ -1,0 +1,6 @@
+# Generated build artifacts
+/.gradle/
+/.kotlin/
+/build/
+**/build/
+**/DerivedData/
