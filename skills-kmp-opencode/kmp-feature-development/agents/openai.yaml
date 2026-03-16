@@ -1,0 +1,4 @@
+interface:
+  display_name: "KMP Feature Development"
+  short_description: "Build full KMP features across shared, Android, iOS"
+  default_prompt: "Use $kmp-feature-development to implement a new KMP feature end-to-end in this repository style."

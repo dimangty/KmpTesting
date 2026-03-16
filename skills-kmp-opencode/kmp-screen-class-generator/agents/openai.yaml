@@ -1,0 +1,4 @@
+interface:
+  display_name: "KMP Screen Class Generator"
+  short_description: "Scaffold KMP screen classes by screen name"
+  default_prompt: "Use $kmp-screen-class-generator to scaffold KMP screen files by screen name for shared, Compose, and SwiftUI layers."

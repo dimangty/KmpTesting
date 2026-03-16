@@ -16,6 +16,13 @@
             <option value="$PROJECT_DIR$/androidApp/feature_favorites" />
             <option value="$PROJECT_DIR$/androidApp/feature_news" />
             <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/core" />
+            <option value="$PROJECT_DIR$/shared/favorites" />
+            <option value="$PROJECT_DIR$/shared/fridge" />
+            <option value="$PROJECT_DIR$/shared/home" />
+            <option value="$PROJECT_DIR$/shared/news" />
+            <option value="$PROJECT_DIR$/shared/profile" />
+            <option value="$PROJECT_DIR$/shared/recipe" />
           </set>
         </option>
       </GradleProjectSettings>

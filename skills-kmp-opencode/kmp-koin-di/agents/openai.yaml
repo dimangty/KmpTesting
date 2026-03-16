@@ -1,0 +1,4 @@
+interface:
+  display_name: "KMP Koin DI"
+  short_description: "Configure Koin modules for shared, Android, and iOS"
+  default_prompt: "Use $kmp-koin-di to register and troubleshoot dependencies in shared, Android, and iOS Koin modules."

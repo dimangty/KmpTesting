@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jetpack Compose KMP"
+  short_description: "Compose screens with shared state/events and BaseScreen"
+  default_prompt: "Use $jetpack-compose-kmp to build or refactor a Compose screen wired to shared ViewModel and BaseScreen."

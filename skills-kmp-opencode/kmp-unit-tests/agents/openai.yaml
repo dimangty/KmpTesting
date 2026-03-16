@@ -1,0 +1,4 @@
+interface:
+  display_name: "KMP Unit Tests"
+  short_description: "Write stable commonTest ViewModel tests with Turbine"
+  default_prompt: "Use $kmp-unit-tests to create or fix shared/commonTest ViewModel tests with Koin fakes and Turbine."

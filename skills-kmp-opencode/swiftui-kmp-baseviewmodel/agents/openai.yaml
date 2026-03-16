@@ -1,0 +1,4 @@
+interface:
+  display_name: "SwiftUI KMP BaseViewModel"
+  short_description: "Bridge SwiftUI screens to shared KMP ViewModels"
+  default_prompt: "Use $swiftui-kmp-baseviewmodel to add or refactor a SwiftUI screen using BaseViewModel and shared flows."
