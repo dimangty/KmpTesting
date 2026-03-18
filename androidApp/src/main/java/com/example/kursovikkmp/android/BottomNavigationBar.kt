@@ -207,6 +207,10 @@ fun BottomNavigationBar() {
                 )
             }
 
+            composable<NavigationAction.NavigateToKitchenTips> {
+                KitchenTipsScreen()
+            }
+
             composable<NavigationAction.NavigateToSignUp> {
                 navController.navigate(Screens.SignUp.route)
             }
