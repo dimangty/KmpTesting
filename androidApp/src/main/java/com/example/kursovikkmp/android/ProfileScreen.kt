@@ -23,6 +23,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -112,6 +113,7 @@ fun ProfileScreen() {
     ProfileScreenView(
         state = state,
         onAvatarClick = { viewModel.pushEvent(ProfileEvents.AvatarTapped) },
+        onKitchenTipsClick = { viewModel.pushEvent(ProfileEvents.KitchenTipsTapped) },
         onLogoutClick = { viewModel.pushEvent(ProfileEvents.LogoutTapped) }
     )
 }
@@ -120,6 +122,7 @@ fun ProfileScreen() {
 private fun ProfileScreenView(
     state: ProfileState,
     onAvatarClick: () -> Unit,
+    onKitchenTipsClick: () -> Unit,
     onLogoutClick: () -> Unit
 ) {
     Column(
@@ -173,6 +176,28 @@ private fun ProfileScreenView(
                 ProfileRow("Location", state.location)
                 ProfileRow("Email", state.email)
                 ProfileRow("Phone", state.phone)
+            }
+        }
+
+        Card(modifier = Modifier.fillMaxWidth()) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Text(
+                    text = "Kitchen Tips",
+                    style = MaterialTheme.typography.titleMedium
+                )
+                Text(
+                    text = "Open a compact planning screen with a weekly cooking checklist.",
+                    style = MaterialTheme.typography.bodyMedium
+                )
+                OutlinedButton(
+                    onClick = onKitchenTipsClick,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text("Open screen")
+                }
             }
         }
 

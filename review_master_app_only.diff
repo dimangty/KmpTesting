@@ -1,0 +1,377 @@
+diff --git a/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt b/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt
+index e412674..6445e35 100644
+--- a/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt
++++ b/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt
+@@ -207,6 +207,10 @@ fun BottomNavigationBar() {
+                 )
+             }
+ 
++            composable<NavigationAction.NavigateToKitchenTips> {
++                KitchenTipsScreen()
++            }
++
+             composable<NavigationAction.NavigateToSignUp> {
+                 navController.navigate(Screens.SignUp.route)
+             }
+diff --git a/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt b/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt
+index aa61f41..83fbc19 100644
+--- a/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt
++++ b/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt
+@@ -23,6 +23,7 @@ import androidx.compose.material3.AlertDialog
+ import androidx.compose.material3.Button
+ import androidx.compose.material3.Card
+ import androidx.compose.material3.MaterialTheme
++import androidx.compose.material3.OutlinedButton
+ import androidx.compose.material3.Text
+ import androidx.compose.material3.TextButton
+ import androidx.compose.runtime.Composable
+@@ -112,6 +113,7 @@ fun ProfileScreen() {
+     ProfileScreenView(
+         state = state,
+         onAvatarClick = { viewModel.pushEvent(ProfileEvents.AvatarTapped) },
++        onKitchenTipsClick = { viewModel.pushEvent(ProfileEvents.KitchenTipsTapped) },
+         onLogoutClick = { viewModel.pushEvent(ProfileEvents.LogoutTapped) }
+     )
+ }
+@@ -120,6 +122,7 @@ fun ProfileScreen() {
+ private fun ProfileScreenView(
+     state: ProfileState,
+     onAvatarClick: () -> Unit,
++    onKitchenTipsClick: () -> Unit,
+     onLogoutClick: () -> Unit
+ ) {
+     Column(
+@@ -176,6 +179,28 @@ private fun ProfileScreenView(
+             }
+         }
+ 
++        Card(modifier = Modifier.fillMaxWidth()) {
++            Column(
++                modifier = Modifier.padding(16.dp),
++                verticalArrangement = Arrangement.spacedBy(8.dp)
++            ) {
++                Text(
++                    text = "Kitchen Tips",
++                    style = MaterialTheme.typography.titleMedium
++                )
++                Text(
++                    text = "Open a compact planning screen with a weekly cooking checklist.",
++                    style = MaterialTheme.typography.bodyMedium
++                )
++                OutlinedButton(
++                    onClick = onKitchenTipsClick,
++                    modifier = Modifier.fillMaxWidth()
++                ) {
++                    Text("Open screen")
++                }
++            }
++        }
++
+         Button(
+             onClick = onLogoutClick,
+             modifier = Modifier.fillMaxWidth()
+diff --git a/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist b/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist
+index fa59f97..56b5955 100644
+--- a/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist
++++ b/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -4,7 +4,7 @@
+ <dict>
+ 	<key>SchemeUserState</key>
+ 	<dict>
+-		<key>iosApp.xcscheme</key>
++		<key>iosApp.xcscheme_^#shared#^_</key>
+ 		<dict>
+ 			<key>orderHint</key>
+ 			<integer>0</integer>
+diff --git a/iosApp/iosApp/Common/Services/NavigationService.swift b/iosApp/iosApp/Common/Services/NavigationService.swift
+index e069835..98bf071 100644
+--- a/iosApp/iosApp/Common/Services/NavigationService.swift
++++ b/iosApp/iosApp/Common/Services/NavigationService.swift
+@@ -13,6 +13,7 @@ enum NavigationDestination: Hashable {
+     case signUp
+     case pin
+     case main
++    case kitchenTips
+     case newsDetails(title: String)
+     case favoriteDetails(title: String)
+     case recipesDetails(recipeId: String)
+@@ -57,6 +58,9 @@ class NavigationService: ObservableObject {
+         case is NavigationAction.NavigateToMain:
+             replace(with: .main)
+ 
++        case is NavigationAction.NavigateToKitchenTips:
++            navigate(to: .kitchenTips)
++
+         case let navAction as NavigationAction.NavigateToNewsDetails:
+             navigate(to: .newsDetails(title: navAction.title))
+ 
+diff --git a/iosApp/iosApp/ContentView.swift b/iosApp/iosApp/ContentView.swift
+index 4233e8e..31a6f47 100644
+--- a/iosApp/iosApp/ContentView.swift
++++ b/iosApp/iosApp/ContentView.swift
+@@ -21,6 +21,8 @@ struct ContentView: View {
+                         PinView()
+                     case .main:
+                         HomeRootView()
++                    case .kitchenTips:
++                        KitchenTipsView()
+                     case .newsDetails(let title):
+                         NewsDetailsView(title: title)
+                     case .favoriteDetails(let title):
+diff --git a/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift b/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift
+index 82aa8c9..d4cdfdf 100644
+--- a/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift
++++ b/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift
+@@ -64,6 +64,23 @@ struct ProfileTabView: View {
+                 .background(Color(.secondarySystemBackground))
+                 .clipShape(RoundedRectangle(cornerRadius: 12))
+ 
++                VStack(alignment: .leading, spacing: 8) {
++                    Text("Kitchen Tips")
++                        .font(.headline)
++                    Text("Open a compact planning screen with a weekly cooking checklist.")
++                        .font(.body)
++                        .foregroundStyle(.secondary)
++
++                    Button("Open screen") {
++                        viewModel.onEvent(event: .KitchenTipsTapped())
++                    }
++                    .buttonStyle(.bordered)
++                }
++                .frame(maxWidth: .infinity, alignment: .leading)
++                .padding(16)
++                .background(Color(.secondarySystemBackground))
++                .clipShape(RoundedRectangle(cornerRadius: 12))
++
+                 Button("Logout") {
+                     viewModel.onEvent(event: .LogoutTapped())
+                 }
+@@ -138,6 +155,75 @@ struct ProfileTabView: View {
+     }
+ }
+ 
++struct KitchenTipsView: View {
++
++    @StateObject private var viewModel = KitchenTipsScreenViewModel()
++
++    var body: some View {
++        VStack(spacing: 0) {
++            CustomNavigationStateView(titleBar: viewModel.state.titleBarState) {
++                viewModel.navigationService?.navigateBack()
++            }
++
++            ScrollView {
++                VStack(spacing: 16) {
++                    VStack(alignment: .leading, spacing: 10) {
++                        Text(viewModel.state.heroTitle)
++                            .font(.title2)
++                            .bold()
++                        Text(viewModel.state.heroDescription)
++                            .font(.body)
++                    }
++                    .frame(maxWidth: .infinity, alignment: .leading)
++                    .padding(20)
++                    .background(Color(red: 0.91, green: 0.96, blue: 0.92))
++                    .clipShape(RoundedRectangle(cornerRadius: 20))
++
++                    VStack(alignment: .leading, spacing: 12) {
++                        Text("Quick checklist")
++                            .font(.headline)
++
++                        ForEach(0 ..< viewModel.state.checklist.count, id: \.self) { index in
++                            HStack(alignment: .top, spacing: 10) {
++                                Text("\(index + 1).")
++                                    .font(.headline)
++                                Text(viewModel.state.checklist[index])
++                                    .font(.body)
++                            }
++                        }
++                    }
++                    .frame(maxWidth: .infinity, alignment: .leading)
++                    .padding(20)
++                    .background(Color(.secondarySystemBackground))
++                    .clipShape(RoundedRectangle(cornerRadius: 20))
++
++                    ForEach(0 ..< viewModel.state.tipCards.count, id: \.self) { index in
++                        let item = viewModel.state.tipCards[index]
++                        VStack(alignment: .leading, spacing: 8) {
++                            Text("Tip \(index + 1)")
++                                .font(.caption)
++                                .foregroundStyle(.blue)
++                            Text(item.title)
++                                .font(.headline)
++                            Text(item.description)
++                                .font(.body)
++                        }
++                        .frame(maxWidth: .infinity, alignment: .leading)
++                        .padding(20)
++                        .background(Color(.secondarySystemBackground))
++                        .clipShape(RoundedRectangle(cornerRadius: 20))
++                    }
++                }
++                .padding(16)
++            }
++        }
++        .navigationBarHidden(true)
++        .onAppear {
++            viewModel.sendViewAppearedEvent()
++        }
++    }
++}
++
+ private final class ProfileScreenViewModel: BaseViewModel<shared.ProfileViewModel, ProfileState> {
+ 
+     required override init() {
+@@ -157,6 +243,13 @@ private final class ProfileScreenViewModel: BaseViewModel<shared.ProfileViewMode
+     }
+ }
+ 
++private final class KitchenTipsScreenViewModel: BaseViewModel<shared.KitchenTipsViewModel, KitchenTipsState> {
++
++    required override init() {
++        super.init()
++    }
++}
++
+ private struct PhotoPicker: UIViewControllerRepresentable {
+ 
+     let sourceType: UIImagePickerController.SourceType
+diff --git a/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt b/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt
+index aa9bc59..254ce04 100644
+--- a/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt
++++ b/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt
+@@ -67,7 +67,8 @@ class NavigationServiceImpl : NavigationService {
+                 when (action) {
+                     is NavigationAction.NavigateToFavoritesDetails,
+                     is NavigationAction.NavigateToNewsDetails,
+-                    is NavigationAction.NavigateToRecipesDetails -> {
++                    is NavigationAction.NavigateToRecipesDetails,
++                    NavigationAction.NavigateToKitchenTips -> {
+                         navigate(action)
+                     }
+ 
+diff --git a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt
+index fdc1c6a..e9ec991 100644
+--- a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt
++++ b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt
+@@ -9,4 +9,3 @@ class Greeting {
+ }
+ 
+ 
+-
+diff --git a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt
+index 2f90a84..a1945fc 100644
+--- a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt
++++ b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt
+@@ -26,6 +26,9 @@ sealed class NavigationAction {
+     @Serializable
+     class NavigateToRecipesDetails(val recipeId: String) : NavigationAction()
+ 
++    @Serializable
++    data object NavigateToKitchenTips : NavigationAction()
++
+     @Serializable
+     data object NavigateBack : NavigationAction()
+ 
+diff --git a/shared/core/src/commonMain/moko-resources/base/strings.xml b/shared/core/src/commonMain/moko-resources/base/strings.xml
+index d992b5c..afbe6f6 100644
+--- a/shared/core/src/commonMain/moko-resources/base/strings.xml
++++ b/shared/core/src/commonMain/moko-resources/base/strings.xml
+@@ -16,6 +16,7 @@
+     <string name="scr_recipe_details_screen_title">Рецепт</string>
+     <string name="scr_recipe_ingredients_title">Ингредиенты</string>
+     <string name="scr_recipe_steps_title">Шаги</string>
++    <string name="scr_kitchen_tips_title">Kitchen Tips</string>
+     <string name="scr_details_open_button">Open</string>
+ 
+     <!-- Login Screen -->
+diff --git a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt
+index cb9b426..c6d71f5 100644
+--- a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt
++++ b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt
+@@ -5,5 +5,6 @@ import com.example.kursovikkmp.base.BaseEvent
+ sealed class ProfileEvents : BaseEvent {
+     data object AvatarTapped : ProfileEvents()
+     data class PhotoChanged(val photoPath: String) : ProfileEvents()
++    data object KitchenTipsTapped : ProfileEvents()
+     data object LogoutTapped : ProfileEvents()
+ }
+diff --git a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt
+index 845a982..bac6a71 100644
+--- a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt
++++ b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt
+@@ -48,6 +48,10 @@ class ProfileViewModel(
+                 }
+             }
+ 
++            ProfileEvents.KitchenTipsTapped -> {
++                navigate(NavigationAction.NavigateToKitchenTips)
++            }
++
+             ProfileEvents.LogoutTapped -> {
+                 viewModelScope.launch {
+                     authService.logout()
+diff --git a/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt b/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
+index 3b57e93..566b62a 100644
+--- a/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
++++ b/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
+@@ -208,6 +208,19 @@ class ProfileViewModelTest {
+         }
+     }
+ 
++    @Test
++    fun kitchenTipsTapped_navigatesToKitchenTips() = runTest {
++        viewModel.navigationEffectFlow.test {
++            // When
++            viewModel.pushEvent(ProfileEvents.KitchenTipsTapped)
++            testDispatcher.scheduler.advanceUntilIdle()
++
++            // Then
++            val navigationAction = awaitItem()
++            assertEquals(NavigationAction.NavigateToKitchenTips, navigationAction)
++        }
++    }
++
+     // ==================== Mock Implementations ====================
+ 
+     private class ProfileRepositoryFake : ProfileRepository {
+diff --git a/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt b/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt
+index a2bf860..8764745 100644
+--- a/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt
++++ b/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt
+@@ -15,6 +15,7 @@ import com.example.kursovikkmp.feature.auth.pin.PinViewModel
+ import com.example.kursovikkmp.feature.auth.signup.SignUpViewModel
+ import com.example.kursovikkmp.feature.fridge.list.FridgeViewModel
+ import com.example.kursovikkmp.feature.profile.ProfileViewModel
++import com.example.kursovikkmp.feature.profile.tips.KitchenTipsViewModel
+ import com.example.kursovikkmp.feature.recipes.details.RecipesDetailsViewModel
+ import com.example.kursovikkmp.feature.recipes.list.RecipesListViewModel
+ import com.example.kursovikkmp.navigation.NavigationService
+@@ -41,6 +42,7 @@ internal actual val vmModule: Module = module {
+     viewModelOf(::PinViewModel)
+     viewModelOf(::SignUpViewModel)
+     viewModelOf(::ProfileViewModel)
++    viewModelOf(::KitchenTipsViewModel)
+     viewModelOf(::RecipesListViewModel)
+     viewModelOf(::RecipesDetailsViewModel)
+     viewModelOf(::FridgeViewModel)
+diff --git a/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt b/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt
+index 810929c..92b5cea 100644
+--- a/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt
++++ b/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt
+@@ -17,6 +17,7 @@ import com.example.kursovikkmp.feature.auth.pin.PinViewModel
+ import com.example.kursovikkmp.feature.auth.signup.SignUpViewModel
+ import com.example.kursovikkmp.feature.fridge.list.FridgeViewModel
+ import com.example.kursovikkmp.feature.profile.ProfileViewModel
++import com.example.kursovikkmp.feature.profile.tips.KitchenTipsViewModel
+ import com.example.kursovikkmp.feature.recipes.details.RecipesDetailsViewModel
+ import com.example.kursovikkmp.feature.recipes.list.RecipesListViewModel
+ import com.example.kursovikkmp.navigation.NavigationService
+@@ -67,6 +68,7 @@ internal actual val vmModule: Module = module {
+     factoryOf(::PinViewModel)
+     factoryOf(::SignUpViewModel)
+     factoryOf(::ProfileViewModel)
++    factoryOf(::KitchenTipsViewModel)
+     factoryOf(::RecipesListViewModel)
+     factoryOf(::RecipesDetailsViewModel)
+     factoryOf(::FridgeViewModel)

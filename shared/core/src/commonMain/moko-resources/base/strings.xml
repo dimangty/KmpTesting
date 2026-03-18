@@ -16,6 +16,7 @@
     <string name="scr_recipe_details_screen_title">Рецепт</string>
     <string name="scr_recipe_ingredients_title">Ингредиенты</string>
     <string name="scr_recipe_steps_title">Шаги</string>
+    <string name="scr_kitchen_tips_title">Kitchen Tips</string>
     <string name="scr_details_open_button">Open</string>
 
     <!-- Login Screen -->

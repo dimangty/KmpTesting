@@ -67,7 +67,8 @@ class NavigationServiceImpl : NavigationService {
                 when (action) {
                     is NavigationAction.NavigateToFavoritesDetails,
                     is NavigationAction.NavigateToNewsDetails,
-                    is NavigationAction.NavigateToRecipesDetails -> {
+                    is NavigationAction.NavigateToRecipesDetails,
+                    NavigationAction.NavigateToKitchenTips -> {
                         navigate(action)
                     }
 

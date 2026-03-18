@@ -21,6 +21,8 @@ struct ContentView: View {
                         PinView()
                     case .main:
                         HomeRootView()
+                    case .kitchenTips:
+                        KitchenTipsView()
                     case .newsDetails(let title):
                         NewsDetailsView(title: title)
                     case .favoriteDetails(let title):

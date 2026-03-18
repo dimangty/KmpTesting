@@ -64,6 +64,23 @@ struct ProfileTabView: View {
                 .background(Color(.secondarySystemBackground))
                 .clipShape(RoundedRectangle(cornerRadius: 12))
 
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Kitchen Tips")
+                        .font(.headline)
+                    Text("Open a compact planning screen with a weekly cooking checklist.")
+                        .font(.body)
+                        .foregroundStyle(.secondary)
+
+                    Button("Open screen") {
+                        viewModel.onEvent(event: .KitchenTipsTapped())
+                    }
+                    .buttonStyle(.bordered)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(16)
+                .background(Color(.secondarySystemBackground))
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+
                 Button("Logout") {
                     viewModel.onEvent(event: .LogoutTapped())
                 }
@@ -138,6 +155,75 @@ struct ProfileTabView: View {
     }
 }
 
+struct KitchenTipsView: View {
+
+    @StateObject private var viewModel = KitchenTipsScreenViewModel()
+
+    var body: some View {
+        VStack(spacing: 0) {
+            CustomNavigationStateView(titleBar: viewModel.state.titleBarState) {
+                viewModel.navigationService?.navigateBack()
+            }
+
+            ScrollView {
+                VStack(spacing: 16) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(viewModel.state.heroTitle)
+                            .font(.title2)
+                            .bold()
+                        Text(viewModel.state.heroDescription)
+                            .font(.body)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(20)
+                    .background(Color(red: 0.91, green: 0.96, blue: 0.92))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Quick checklist")
+                            .font(.headline)
+
+                        ForEach(0 ..< viewModel.state.checklist.count, id: \.self) { index in
+                            HStack(alignment: .top, spacing: 10) {
+                                Text("\(index + 1).")
+                                    .font(.headline)
+                                Text(viewModel.state.checklist[index])
+                                    .font(.body)
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(20)
+                    .background(Color(.secondarySystemBackground))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                    ForEach(0 ..< viewModel.state.tipCards.count, id: \.self) { index in
+                        let item = viewModel.state.tipCards[index]
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Tip \(index + 1)")
+                                .font(.caption)
+                                .foregroundStyle(.blue)
+                            Text(item.title)
+                                .font(.headline)
+                            Text(item.description)
+                                .font(.body)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(20)
+                        .background(Color(.secondarySystemBackground))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    }
+                }
+                .padding(16)
+            }
+        }
+        .navigationBarHidden(true)
+        .onAppear {
+            viewModel.sendViewAppearedEvent()
+        }
+    }
+}
+
 private final class ProfileScreenViewModel: BaseViewModel<shared.ProfileViewModel, ProfileState> {
 
     required override init() {
@@ -154,6 +240,13 @@ private final class ProfileScreenViewModel: BaseViewModel<shared.ProfileViewMode
 
     func onEvent(event: ProfileEvents) {
         mViewModel?.pushEvent(event: event)
+    }
+}
+
+private final class KitchenTipsScreenViewModel: BaseViewModel<shared.KitchenTipsViewModel, KitchenTipsState> {
+
+    required override init() {
+        super.init()
     }
 }
 

@@ -48,6 +48,10 @@ class ProfileViewModel(
                 }
             }
 
+            ProfileEvents.KitchenTipsTapped -> {
+                navigate(NavigationAction.NavigateToKitchenTips)
+            }
+
             ProfileEvents.LogoutTapped -> {
                 viewModelScope.launch {
                     authService.logout()

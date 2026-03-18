@@ -27,6 +27,9 @@ sealed class NavigationAction {
     class NavigateToRecipesDetails(val recipeId: String) : NavigationAction()
 
     @Serializable
+    data object NavigateToKitchenTips : NavigationAction()
+
+    @Serializable
     data object NavigateBack : NavigationAction()
 
 }

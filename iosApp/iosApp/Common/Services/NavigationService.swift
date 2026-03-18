@@ -13,6 +13,7 @@ enum NavigationDestination: Hashable {
     case signUp
     case pin
     case main
+    case kitchenTips
     case newsDetails(title: String)
     case favoriteDetails(title: String)
     case recipesDetails(recipeId: String)
@@ -56,6 +57,9 @@ class NavigationService: ObservableObject {
 
         case is NavigationAction.NavigateToMain:
             replace(with: .main)
+
+        case is NavigationAction.NavigateToKitchenTips:
+            navigate(to: .kitchenTips)
 
         case let navAction as NavigationAction.NavigateToNewsDetails:
             navigate(to: .newsDetails(title: navAction.title))

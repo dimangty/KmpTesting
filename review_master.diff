@@ -1,0 +1,1596 @@
+diff --git a/.idea/KursovikKMP.iosApp.iml b/.idea/KursovikKMP.iosApp.iml
+deleted file mode 100644
+index 1e29701..0000000
+--- a/.idea/KursovikKMP.iosApp.iml
++++ /dev/null
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module classpath="CIDR" type="CIDR_MODULE" version="4" />
+\ No newline at end of file
+diff --git a/.idea/caches/deviceStreaming.xml b/.idea/caches/deviceStreaming.xml
+index 8f993d4..c8eb66b 100644
+--- a/.idea/caches/deviceStreaming.xml
++++ b/.idea/caches/deviceStreaming.xml
+@@ -508,11 +508,6 @@
+           <option name="screenDensity" value="390" />
+           <option name="screenX" value="2076" />
+           <option name="screenY" value="2152" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="api" value="35" />
+@@ -526,23 +521,6 @@
+           <option name="screenDensity" value="390" />
+           <option name="screenX" value="2076" />
+           <option name="screenY" value="2152" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+-        </PersistentDeviceSelectionData>
+-        <PersistentDeviceSelectionData>
+-          <option name="api" value="35" />
+-          <option name="brand" value="motorola" />
+-          <option name="codename" value="cuscoi" />
+-          <option name="id" value="cuscoi" />
+-          <option name="labId" value="google" />
+-          <option name="manufacturer" value="Motorola" />
+-          <option name="name" value="edge 50 fusion" />
+-          <option name="screenDensity" value="400" />
+-          <option name="screenX" value="1080" />
+-          <option name="screenY" value="2400" />
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="api" value="35" />
+@@ -628,11 +606,6 @@
+           <option name="screenDensity" value="480" />
+           <option name="screenX" value="1080" />
+           <option name="screenY" value="2340" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="api" value="36" />
+@@ -646,11 +619,6 @@
+           <option name="screenDensity" value="480" />
+           <option name="screenX" value="1080" />
+           <option name="screenY" value="2340" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="api" value="36" />
+@@ -1383,11 +1351,6 @@
+           <option name="screenDensity" value="440" />
+           <option name="screenX" value="1080" />
+           <option name="screenY" value="2340" />
+-          <option name="tags">
+-            <list>
+-              <option value="default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="accessStatus">
+@@ -1602,11 +1565,6 @@
+           <option name="screenDensity" value="420" />
+           <option name="screenX" value="1080" />
+           <option name="screenY" value="2424" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="api" value="35" />
+@@ -1620,11 +1578,6 @@
+           <option name="screenDensity" value="420" />
+           <option name="screenX" value="1080" />
+           <option name="screenY" value="2424" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="api" value="36" />
+@@ -1638,11 +1591,6 @@
+           <option name="screenDensity" value="420" />
+           <option name="screenX" value="1080" />
+           <option name="screenY" value="2424" />
+-          <option name="tags">
+-            <list>
+-              <option value="dda-default" />
+-            </list>
+-          </option>
+         </PersistentDeviceSelectionData>
+         <PersistentDeviceSelectionData>
+           <option name="accessStatus">
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+index 17badb0..b2f6a19 100644
+--- a/.idea/gradle.xml
++++ b/.idea/gradle.xml
+@@ -16,13 +16,6 @@
+             <option value="$PROJECT_DIR$/androidApp/feature_favorites" />
+             <option value="$PROJECT_DIR$/androidApp/feature_news" />
+             <option value="$PROJECT_DIR$/shared" />
+-            <option value="$PROJECT_DIR$/shared/core" />
+-            <option value="$PROJECT_DIR$/shared/favorites" />
+-            <option value="$PROJECT_DIR$/shared/fridge" />
+-            <option value="$PROJECT_DIR$/shared/home" />
+-            <option value="$PROJECT_DIR$/shared/news" />
+-            <option value="$PROJECT_DIR$/shared/profile" />
+-            <option value="$PROJECT_DIR$/shared/recipe" />
+           </set>
+         </option>
+       </GradleProjectSettings>
+diff --git a/.idea/markdown.xml b/.idea/markdown.xml
+deleted file mode 100644
+index c61ea33..0000000
+--- a/.idea/markdown.xml
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="MarkdownSettings">
+-    <option name="previewPanelProviderInfo">
+-      <ProviderInfo name="Compose (experimental)" className="com.intellij.markdown.compose.preview.ComposePanelProvider" />
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+index fd808dc..0000000
+--- a/.idea/modules.xml
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/KursovikKMP.iosApp.iml" filepath="$PROJECT_DIR$/.idea/KursovikKMP.iosApp.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/xcode.xml b/.idea/xcode.xml
+deleted file mode 100644
+index 4eb3242..0000000
+--- a/.idea/xcode.xml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="XcodeMetaData" PROJECT_DIR="$PROJECT_DIR$/iosApp" PROJECT_FILE="$PROJECT_DIR$/iosApp/iosApp.xcodeproj" />
+-</project>
+\ No newline at end of file
+diff --git a/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt b/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt
+index e412674..6445e35 100644
+--- a/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt
++++ b/androidApp/src/main/java/com/example/kursovikkmp/android/BottomNavigationBar.kt
+@@ -207,6 +207,10 @@ fun BottomNavigationBar() {
+                 )
+             }
+ 
++            composable<NavigationAction.NavigateToKitchenTips> {
++                KitchenTipsScreen()
++            }
++
+             composable<NavigationAction.NavigateToSignUp> {
+                 navController.navigate(Screens.SignUp.route)
+             }
+diff --git a/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt b/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt
+index aa61f41..83fbc19 100644
+--- a/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt
++++ b/androidApp/src/main/java/com/example/kursovikkmp/android/ProfileScreen.kt
+@@ -23,6 +23,7 @@ import androidx.compose.material3.AlertDialog
+ import androidx.compose.material3.Button
+ import androidx.compose.material3.Card
+ import androidx.compose.material3.MaterialTheme
++import androidx.compose.material3.OutlinedButton
+ import androidx.compose.material3.Text
+ import androidx.compose.material3.TextButton
+ import androidx.compose.runtime.Composable
+@@ -112,6 +113,7 @@ fun ProfileScreen() {
+     ProfileScreenView(
+         state = state,
+         onAvatarClick = { viewModel.pushEvent(ProfileEvents.AvatarTapped) },
++        onKitchenTipsClick = { viewModel.pushEvent(ProfileEvents.KitchenTipsTapped) },
+         onLogoutClick = { viewModel.pushEvent(ProfileEvents.LogoutTapped) }
+     )
+ }
+@@ -120,6 +122,7 @@ fun ProfileScreen() {
+ private fun ProfileScreenView(
+     state: ProfileState,
+     onAvatarClick: () -> Unit,
++    onKitchenTipsClick: () -> Unit,
+     onLogoutClick: () -> Unit
+ ) {
+     Column(
+@@ -176,6 +179,28 @@ private fun ProfileScreenView(
+             }
+         }
+ 
++        Card(modifier = Modifier.fillMaxWidth()) {
++            Column(
++                modifier = Modifier.padding(16.dp),
++                verticalArrangement = Arrangement.spacedBy(8.dp)
++            ) {
++                Text(
++                    text = "Kitchen Tips",
++                    style = MaterialTheme.typography.titleMedium
++                )
++                Text(
++                    text = "Open a compact planning screen with a weekly cooking checklist.",
++                    style = MaterialTheme.typography.bodyMedium
++                )
++                OutlinedButton(
++                    onClick = onKitchenTipsClick,
++                    modifier = Modifier.fillMaxWidth()
++                ) {
++                    Text("Open screen")
++                }
++            }
++        }
++
+         Button(
+             onClick = onLogoutClick,
+             modifier = Modifier.fillMaxWidth()
+diff --git a/gradle/config.properties b/gradle/config.properties
+deleted file mode 100644
+index ca256a8..0000000
+--- a/gradle/config.properties
++++ /dev/null
+@@ -1 +0,0 @@
+-java.home=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
+diff --git a/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist b/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist
+index fa59f97..56b5955 100644
+--- a/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist
++++ b/iosApp/iosApp.xcodeproj/xcuserdata/dmitrijbykov.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -4,7 +4,7 @@
+ <dict>
+ 	<key>SchemeUserState</key>
+ 	<dict>
+-		<key>iosApp.xcscheme</key>
++		<key>iosApp.xcscheme_^#shared#^_</key>
+ 		<dict>
+ 			<key>orderHint</key>
+ 			<integer>0</integer>
+diff --git a/iosApp/iosApp/Common/Services/NavigationService.swift b/iosApp/iosApp/Common/Services/NavigationService.swift
+index e069835..98bf071 100644
+--- a/iosApp/iosApp/Common/Services/NavigationService.swift
++++ b/iosApp/iosApp/Common/Services/NavigationService.swift
+@@ -13,6 +13,7 @@ enum NavigationDestination: Hashable {
+     case signUp
+     case pin
+     case main
++    case kitchenTips
+     case newsDetails(title: String)
+     case favoriteDetails(title: String)
+     case recipesDetails(recipeId: String)
+@@ -57,6 +58,9 @@ class NavigationService: ObservableObject {
+         case is NavigationAction.NavigateToMain:
+             replace(with: .main)
+ 
++        case is NavigationAction.NavigateToKitchenTips:
++            navigate(to: .kitchenTips)
++
+         case let navAction as NavigationAction.NavigateToNewsDetails:
+             navigate(to: .newsDetails(title: navAction.title))
+ 
+diff --git a/iosApp/iosApp/ContentView.swift b/iosApp/iosApp/ContentView.swift
+index 4233e8e..31a6f47 100644
+--- a/iosApp/iosApp/ContentView.swift
++++ b/iosApp/iosApp/ContentView.swift
+@@ -21,6 +21,8 @@ struct ContentView: View {
+                         PinView()
+                     case .main:
+                         HomeRootView()
++                    case .kitchenTips:
++                        KitchenTipsView()
+                     case .newsDetails(let title):
+                         NewsDetailsView(title: title)
+                     case .favoriteDetails(let title):
+diff --git a/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift b/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift
+index 82aa8c9..d4cdfdf 100644
+--- a/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift
++++ b/iosApp/iosApp/Screens/Profile/View/ProfileTabView.swift
+@@ -64,6 +64,23 @@ struct ProfileTabView: View {
+                 .background(Color(.secondarySystemBackground))
+                 .clipShape(RoundedRectangle(cornerRadius: 12))
+ 
++                VStack(alignment: .leading, spacing: 8) {
++                    Text("Kitchen Tips")
++                        .font(.headline)
++                    Text("Open a compact planning screen with a weekly cooking checklist.")
++                        .font(.body)
++                        .foregroundStyle(.secondary)
++
++                    Button("Open screen") {
++                        viewModel.onEvent(event: .KitchenTipsTapped())
++                    }
++                    .buttonStyle(.bordered)
++                }
++                .frame(maxWidth: .infinity, alignment: .leading)
++                .padding(16)
++                .background(Color(.secondarySystemBackground))
++                .clipShape(RoundedRectangle(cornerRadius: 12))
++
+                 Button("Logout") {
+                     viewModel.onEvent(event: .LogoutTapped())
+                 }
+@@ -138,6 +155,75 @@ struct ProfileTabView: View {
+     }
+ }
+ 
++struct KitchenTipsView: View {
++
++    @StateObject private var viewModel = KitchenTipsScreenViewModel()
++
++    var body: some View {
++        VStack(spacing: 0) {
++            CustomNavigationStateView(titleBar: viewModel.state.titleBarState) {
++                viewModel.navigationService?.navigateBack()
++            }
++
++            ScrollView {
++                VStack(spacing: 16) {
++                    VStack(alignment: .leading, spacing: 10) {
++                        Text(viewModel.state.heroTitle)
++                            .font(.title2)
++                            .bold()
++                        Text(viewModel.state.heroDescription)
++                            .font(.body)
++                    }
++                    .frame(maxWidth: .infinity, alignment: .leading)
++                    .padding(20)
++                    .background(Color(red: 0.91, green: 0.96, blue: 0.92))
++                    .clipShape(RoundedRectangle(cornerRadius: 20))
++
++                    VStack(alignment: .leading, spacing: 12) {
++                        Text("Quick checklist")
++                            .font(.headline)
++
++                        ForEach(0 ..< viewModel.state.checklist.count, id: \.self) { index in
++                            HStack(alignment: .top, spacing: 10) {
++                                Text("\(index + 1).")
++                                    .font(.headline)
++                                Text(viewModel.state.checklist[index])
++                                    .font(.body)
++                            }
++                        }
++                    }
++                    .frame(maxWidth: .infinity, alignment: .leading)
++                    .padding(20)
++                    .background(Color(.secondarySystemBackground))
++                    .clipShape(RoundedRectangle(cornerRadius: 20))
++
++                    ForEach(0 ..< viewModel.state.tipCards.count, id: \.self) { index in
++                        let item = viewModel.state.tipCards[index]
++                        VStack(alignment: .leading, spacing: 8) {
++                            Text("Tip \(index + 1)")
++                                .font(.caption)
++                                .foregroundStyle(.blue)
++                            Text(item.title)
++                                .font(.headline)
++                            Text(item.description)
++                                .font(.body)
++                        }
++                        .frame(maxWidth: .infinity, alignment: .leading)
++                        .padding(20)
++                        .background(Color(.secondarySystemBackground))
++                        .clipShape(RoundedRectangle(cornerRadius: 20))
++                    }
++                }
++                .padding(16)
++            }
++        }
++        .navigationBarHidden(true)
++        .onAppear {
++            viewModel.sendViewAppearedEvent()
++        }
++    }
++}
++
+ private final class ProfileScreenViewModel: BaseViewModel<shared.ProfileViewModel, ProfileState> {
+ 
+     required override init() {
+@@ -157,6 +243,13 @@ private final class ProfileScreenViewModel: BaseViewModel<shared.ProfileViewMode
+     }
+ }
+ 
++private final class KitchenTipsScreenViewModel: BaseViewModel<shared.KitchenTipsViewModel, KitchenTipsState> {
++
++    required override init() {
++        super.init()
++    }
++}
++
+ private struct PhotoPicker: UIViewControllerRepresentable {
+ 
+     let sourceType: UIImagePickerController.SourceType
+diff --git a/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt b/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt
+index aa9bc59..254ce04 100644
+--- a/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt
++++ b/shared/core/src/androidMain/kotlin/com/example/kursovikkmp/navigation/NavigationService.android.kt
+@@ -67,7 +67,8 @@ class NavigationServiceImpl : NavigationService {
+                 when (action) {
+                     is NavigationAction.NavigateToFavoritesDetails,
+                     is NavigationAction.NavigateToNewsDetails,
+-                    is NavigationAction.NavigateToRecipesDetails -> {
++                    is NavigationAction.NavigateToRecipesDetails,
++                    NavigationAction.NavigateToKitchenTips -> {
+                         navigate(action)
+                     }
+ 
+diff --git a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt
+index fdc1c6a..e9ec991 100644
+--- a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt
++++ b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/Greeting.kt
+@@ -9,4 +9,3 @@ class Greeting {
+ }
+ 
+ 
+-
+diff --git a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt
+index 2f90a84..a1945fc 100644
+--- a/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt
++++ b/shared/core/src/commonMain/kotlin/com/example/kursovikkmp/navigation/NavigationAction.kt
+@@ -26,6 +26,9 @@ sealed class NavigationAction {
+     @Serializable
+     class NavigateToRecipesDetails(val recipeId: String) : NavigationAction()
+ 
++    @Serializable
++    data object NavigateToKitchenTips : NavigationAction()
++
+     @Serializable
+     data object NavigateBack : NavigationAction()
+ 
+diff --git a/shared/core/src/commonMain/moko-resources/base/strings.xml b/shared/core/src/commonMain/moko-resources/base/strings.xml
+index d992b5c..afbe6f6 100644
+--- a/shared/core/src/commonMain/moko-resources/base/strings.xml
++++ b/shared/core/src/commonMain/moko-resources/base/strings.xml
+@@ -16,6 +16,7 @@
+     <string name="scr_recipe_details_screen_title">Рецепт</string>
+     <string name="scr_recipe_ingredients_title">Ингредиенты</string>
+     <string name="scr_recipe_steps_title">Шаги</string>
++    <string name="scr_kitchen_tips_title">Kitchen Tips</string>
+     <string name="scr_details_open_button">Open</string>
+ 
+     <!-- Login Screen -->
+diff --git a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt
+index cb9b426..c6d71f5 100644
+--- a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt
++++ b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileEvents.kt
+@@ -5,5 +5,6 @@ import com.example.kursovikkmp.base.BaseEvent
+ sealed class ProfileEvents : BaseEvent {
+     data object AvatarTapped : ProfileEvents()
+     data class PhotoChanged(val photoPath: String) : ProfileEvents()
++    data object KitchenTipsTapped : ProfileEvents()
+     data object LogoutTapped : ProfileEvents()
+ }
+diff --git a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt
+index 845a982..bac6a71 100644
+--- a/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt
++++ b/shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModel.kt
+@@ -48,6 +48,10 @@ class ProfileViewModel(
+                 }
+             }
+ 
++            ProfileEvents.KitchenTipsTapped -> {
++                navigate(NavigationAction.NavigateToKitchenTips)
++            }
++
+             ProfileEvents.LogoutTapped -> {
+                 viewModelScope.launch {
+                     authService.logout()
+diff --git a/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt b/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
+index 3b57e93..566b62a 100644
+--- a/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
++++ b/shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/ProfileViewModelTest.kt
+@@ -208,6 +208,19 @@ class ProfileViewModelTest {
+         }
+     }
+ 
++    @Test
++    fun kitchenTipsTapped_navigatesToKitchenTips() = runTest {
++        viewModel.navigationEffectFlow.test {
++            // When
++            viewModel.pushEvent(ProfileEvents.KitchenTipsTapped)
++            testDispatcher.scheduler.advanceUntilIdle()
++
++            // Then
++            val navigationAction = awaitItem()
++            assertEquals(NavigationAction.NavigateToKitchenTips, navigationAction)
++        }
++    }
++
+     // ==================== Mock Implementations ====================
+ 
+     private class ProfileRepositoryFake : ProfileRepository {
+diff --git a/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt b/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt
+index a2bf860..8764745 100644
+--- a/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt
++++ b/shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt
+@@ -15,6 +15,7 @@ import com.example.kursovikkmp.feature.auth.pin.PinViewModel
+ import com.example.kursovikkmp.feature.auth.signup.SignUpViewModel
+ import com.example.kursovikkmp.feature.fridge.list.FridgeViewModel
+ import com.example.kursovikkmp.feature.profile.ProfileViewModel
++import com.example.kursovikkmp.feature.profile.tips.KitchenTipsViewModel
+ import com.example.kursovikkmp.feature.recipes.details.RecipesDetailsViewModel
+ import com.example.kursovikkmp.feature.recipes.list.RecipesListViewModel
+ import com.example.kursovikkmp.navigation.NavigationService
+@@ -41,6 +42,7 @@ internal actual val vmModule: Module = module {
+     viewModelOf(::PinViewModel)
+     viewModelOf(::SignUpViewModel)
+     viewModelOf(::ProfileViewModel)
++    viewModelOf(::KitchenTipsViewModel)
+     viewModelOf(::RecipesListViewModel)
+     viewModelOf(::RecipesDetailsViewModel)
+     viewModelOf(::FridgeViewModel)
+diff --git a/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt b/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt
+index 810929c..92b5cea 100644
+--- a/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt
++++ b/shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt
+@@ -17,6 +17,7 @@ import com.example.kursovikkmp.feature.auth.pin.PinViewModel
+ import com.example.kursovikkmp.feature.auth.signup.SignUpViewModel
+ import com.example.kursovikkmp.feature.fridge.list.FridgeViewModel
+ import com.example.kursovikkmp.feature.profile.ProfileViewModel
++import com.example.kursovikkmp.feature.profile.tips.KitchenTipsViewModel
+ import com.example.kursovikkmp.feature.recipes.details.RecipesDetailsViewModel
+ import com.example.kursovikkmp.feature.recipes.list.RecipesListViewModel
+ import com.example.kursovikkmp.navigation.NavigationService
+@@ -67,6 +68,7 @@ internal actual val vmModule: Module = module {
+     factoryOf(::PinViewModel)
+     factoryOf(::SignUpViewModel)
+     factoryOf(::ProfileViewModel)
++    factoryOf(::KitchenTipsViewModel)
+     factoryOf(::RecipesListViewModel)
+     factoryOf(::RecipesDetailsViewModel)
+     factoryOf(::FridgeViewModel)
+diff --git a/skills-kmp-opencode.zip b/skills-kmp-opencode.zip
+deleted file mode 100644
+index 4fce61b..0000000
+Binary files a/skills-kmp-opencode.zip and /dev/null differ
+diff --git a/skills-kmp-opencode/jetpack-compose-kmp/SKILL.md b/skills-kmp-opencode/jetpack-compose-kmp/SKILL.md
+deleted file mode 100644
+index a1ec8df..0000000
+--- a/skills-kmp-opencode/jetpack-compose-kmp/SKILL.md
++++ /dev/null
+@@ -1,35 +0,0 @@
+----
+-name: jetpack-compose-kmp
+-description: Build and refactor Android Jetpack Compose screens that consume shared KMP ViewModels and shared UI state/events. Use when creating Compose screen entry points, wiring BaseScreen lifecycle/LCE handling, mapping UI interactions to shared events, or standardizing feature UI to existing project patterns.
+----
+-
+-# Jetpack Compose KMP
+-
+-## Overview
+-Implement Compose screens that stay thin and delegate behavior to shared ViewModels.
+-
+-## Workflow
+-1. Create screen entry function and obtain VM via `koinViewModel()`.
+-2. Collect `flowState` and `lceState` with `collectAsState()`.
+-3. Wrap UI in `BaseScreen(...)`.
+-4. Build stateless `ScreenView(state, onUiEvent)` function.
+-5. Map callbacks to shared `FeatureEvents` and call `onUiEvent(...)`.
+-6. Add `@Preview` using `State.getMock()`.
+-
+-## Screen Entry Rules
+-- Keep side effects out of composables.
+-- Pass `viewModel::pushEvent` to stateless content.
+-- Pass `viewModel::onDefaultUiEvent` into `BaseScreen`.
+-
+-## Stateless View Rules
+-- Accept only `state` and callback lambdas.
+-- Avoid direct Koin access inside stateless content.
+-- Avoid direct navigation calls in composable; use events to ViewModel.
+-
+-## LCE and Lifecycle Rules
+-- Always use `BaseScreen` for loading/error handling and lifecycle events.
+-- Do not duplicate dialog/loading logic inside each feature screen.
+-
+-## References
+-- Read `references/compose-screen-template.md` before creating a new screen.
+-- Read `references/current-project-compose-patterns.md` for real file examples.
+diff --git a/skills-kmp-opencode/jetpack-compose-kmp/agents/openai.yaml b/skills-kmp-opencode/jetpack-compose-kmp/agents/openai.yaml
+deleted file mode 100644
+index 38365dd..0000000
+--- a/skills-kmp-opencode/jetpack-compose-kmp/agents/openai.yaml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-interface:
+-  display_name: "Jetpack Compose KMP"
+-  short_description: "Compose screens with shared state/events and BaseScreen"
+-  default_prompt: "Use $jetpack-compose-kmp to build or refactor a Compose screen wired to shared ViewModel and BaseScreen."
+diff --git a/skills-kmp-opencode/jetpack-compose-kmp/references/compose-screen-template.md b/skills-kmp-opencode/jetpack-compose-kmp/references/compose-screen-template.md
+deleted file mode 100644
+index 08768e4..0000000
+--- a/skills-kmp-opencode/jetpack-compose-kmp/references/compose-screen-template.md
++++ /dev/null
+@@ -1,28 +0,0 @@
+-# Compose Screen Template
+-
+-```kotlin
+-@Composable
+-fun FeatureScreen() {
+-    val viewModel: FeatureViewModel = koinViewModel()
+-    val state by viewModel.flowState.collectAsState()
+-    val lceState by viewModel.lceState.collectAsState()
+-
+-    BaseScreen(
+-        lceState = lceState,
+-        onDefaultUiEvent = viewModel::onDefaultUiEvent
+-    ) {
+-        FeatureScreenView(
+-            state = state,
+-            onUiEvent = viewModel::pushEvent
+-        )
+-    }
+-}
+-
+-@Composable
+-fun FeatureScreenView(
+-    state: FeatureState,
+-    onUiEvent: (FeatureEvents) -> Unit
+-) {
+-    // UI
+-}
+-```
+diff --git a/skills-kmp-opencode/jetpack-compose-kmp/references/current-project-compose-patterns.md b/skills-kmp-opencode/jetpack-compose-kmp/references/current-project-compose-patterns.md
+deleted file mode 100644
+index 8d56827..0000000
+--- a/skills-kmp-opencode/jetpack-compose-kmp/references/current-project-compose-patterns.md
++++ /dev/null
+@@ -1,13 +0,0 @@
+-# Current Project Compose Patterns
+-
+-## Examples
+-- `androidApp/feature_news/src/main/java/com/example/feature_news/NewsScreen.kt`
+-- `androidApp/feature_favorites/src/main/java/com/example/feature_favorites/FavoriteScreen.kt`
+-- `androidApp/core/src/main/java/com/example/core/BaseScreen.kt`
+-
+-## Shared points
+-- `koinViewModel()` in top-level screen function
+-- `flowState` + `lceState` collection
+-- `BaseScreen` wrapper
+-- event forwarding through `viewModel::pushEvent`
+-- preview based on `State.getMock()`
+diff --git a/skills-kmp-opencode/kmp-feature-development/SKILL.md b/skills-kmp-opencode/kmp-feature-development/SKILL.md
+deleted file mode 100644
+index 4321f2b..0000000
+--- a/skills-kmp-opencode/kmp-feature-development/SKILL.md
++++ /dev/null
+@@ -1,47 +0,0 @@
+----
+-name: kmp-feature-development
+-description: Build and refactor cross-platform KMP features in a modular project with shared business logic, Android Compose UI, SwiftUI UI bridge, and Koin DI. Use when implementing a new feature end-to-end (State/Event/ViewModel + Android screen + iOS bridge), migrating existing feature code to project conventions, or wiring feature dependencies and navigation across shared, Android, and iOS layers.
+----
+-
+-# KMP Feature Development
+-
+-## Overview
+-Implement feature code in three layers: shared logic (`State/Event/ViewModel`), Android Compose screen, and iOS SwiftUI bridge. Follow the existing architecture around `BaseViewModel`, `BaseScreen`, and Koin modules.
+-
+-## Workflow
+-1. Define feature contract in shared module.
+-2. Implement `ViewModel` extending shared `BaseViewModel`.
+-3. Add Android Compose screen and wire events.
+-4. Add iOS SwiftUI `BaseViewModel` wrapper and view actions.
+-5. Register dependencies in Koin for Android and iOS.
+-6. Add `commonTest` coverage for core behavior.
+-
+-## Shared Layer Rules
+-- Create `FeatureState` as `data class` implementing `BaseViewState`.
+-- Create `FeatureEvents` as `sealed class` implementing `BaseEvent`.
+-- Create `FeatureViewModel` extending `BaseViewModel<FeatureState, FeatureEvents>`.
+-- Handle lifecycle in `initToolbar`, `initScreenData`, `onEvent`.
+-- Use `updateState { copy(...) }` for all state updates.
+-- Use `navigate(...)` and `navigateBack()` only from ViewModel.
+-
+-## Android Layer Rules
+-- Use `koinViewModel()` for ViewModel retrieval.
+-- Collect `flowState` and `lceState` via `collectAsState()`.
+-- Wrap screen content with `BaseScreen(lceState, onDefaultUiEvent = viewModel::onDefaultUiEvent)`.
+-- Map UI actions to shared `FeatureEvents` through `viewModel::pushEvent`.
+-- Keep previews with `State.getMock()`.
+-
+-## iOS Layer Rules
+-- Create Swift ViewModel inheriting `BaseViewModel<shared.FeatureViewModel, FeatureState>`.
+-- Translate SwiftUI actions into shared `pushEvent(...)` calls.
+-- Call `sendViewAppearedEvent()` in `.onAppear`.
+-- Keep public configuration in `FeatureModuleInput` protocol.
+-
+-## Koin Wiring Checklist
+-- Android registrations: `shared/src/androidMain/.../Di.android.kt` via `viewModelOf(::FeatureViewModel)`.
+-- iOS registrations: `shared/src/iosMain/.../Di.ios.kt` via `factoryOf(::FeatureViewModel)`.
+-- Add repositories/services to shared modules if feature needs new dependencies.
+-
+-## References
+-- Read `references/project-patterns.md` before creating files.
+-- Read `references/feature-checklist.md` before finalizing the feature.
+diff --git a/skills-kmp-opencode/kmp-feature-development/agents/openai.yaml b/skills-kmp-opencode/kmp-feature-development/agents/openai.yaml
+deleted file mode 100644
+index 79e1192..0000000
+--- a/skills-kmp-opencode/kmp-feature-development/agents/openai.yaml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-interface:
+-  display_name: "KMP Feature Development"
+-  short_description: "Build full KMP features across shared, Android, iOS"
+-  default_prompt: "Use $kmp-feature-development to implement a new KMP feature end-to-end in this repository style."
+diff --git a/skills-kmp-opencode/kmp-feature-development/references/feature-checklist.md b/skills-kmp-opencode/kmp-feature-development/references/feature-checklist.md
+deleted file mode 100644
+index fffcd78..0000000
+--- a/skills-kmp-opencode/kmp-feature-development/references/feature-checklist.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Feature Checklist
+-
+-- Shared state/event/viewmodel created.
+-- Toolbar and screen initialization logic implemented.
+-- Navigation events mapped in ViewModel.
+-- Android Compose screen wired with `BaseScreen`.
+-- iOS ViewModel bridge and action mapper created.
+-- Koin registration added for Android and iOS.
+-- At least one `commonTest` added for main feature behavior.
+-- Build tasks pass for Android and iOS simulator.
+diff --git a/skills-kmp-opencode/kmp-feature-development/references/project-patterns.md b/skills-kmp-opencode/kmp-feature-development/references/project-patterns.md
+deleted file mode 100644
+index 850c09f..0000000
+--- a/skills-kmp-opencode/kmp-feature-development/references/project-patterns.md
++++ /dev/null
+@@ -1,27 +0,0 @@
+-# Project Patterns
+-
+-## Key paths
+-- Shared base VM: `shared/core/src/commonMain/kotlin/com/example/kursovikkmp/base/BaseViewModel.kt`
+-- Android base screen: `androidApp/core/src/main/java/com/example/core/BaseScreen.kt`
+-- Android DI: `shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt`
+-- iOS DI: `shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt`
+-- iOS base VM bridge: `iosApp/iosApp/Base/BaseViewModel.swift`
+-- iOS Koin bridge: `iosApp/iosApp/Utils/KoinHelper.swift`
+-
+-## Shared feature shape
+-- `FeatureState.kt`
+-- `FeatureEvents.kt`
+-- `FeatureViewModel.kt`
+-- Optional: repository/service interfaces and models
+-
+-## Android screen shape
+-- `FeatureScreen()` loads VM with `koinViewModel()`
+-- Collects `flowState` + `lceState`
+-- Calls `BaseScreen(...)`
+-- Stateless `FeatureScreenView(state, onUiEvent)`
+-
+-## iOS screen shape
+-- `FeatureViewModel.swift` inherits `BaseViewModel<shared.FeatureViewModel, FeatureState>`
+-- `FeatureViewActions.swift` enum for local UI actions
+-- `FeatureModuleInput.swift` for parent module configuration
+-- `FeatureView.swift` with `@StateObject`
+diff --git a/skills-kmp-opencode/kmp-koin-di/SKILL.md b/skills-kmp-opencode/kmp-koin-di/SKILL.md
+deleted file mode 100644
+index 23b9abd..0000000
+--- a/skills-kmp-opencode/kmp-koin-di/SKILL.md
++++ /dev/null
+@@ -1,37 +0,0 @@
+----
+-name: kmp-koin-di
+-description: Configure and troubleshoot Koin dependency injection across KMP shared, Android, and iOS targets in a modular project. Use when adding new repositories/services/viewmodels, registering platform-specific dependencies, fixing missing binding/runtime injection errors, or aligning Android and iOS DI registrations.
+----
+-
+-# KMP Koin DI
+-
+-## Overview
+-Manage DI in one shared graph with platform-specific modules and target-specific VM registration.
+-
+-## Workflow
+-1. Add shared services/repositories in common modules.
+-2. Add Android platform bindings in `Di.android.kt`.
+-3. Add iOS platform bindings in `Di.ios.kt`.
+-4. Register ViewModels for Android (`viewModelOf`) and iOS (`factoryOf`).
+-5. Verify app startup wiring and constructor arguments.
+-
+-## Registration Rules
+-- Shared/common dependencies belong in `shared/src/commonMain/.../Di.kt` modules.
+-- Android-specific classes belong in `shared/src/androidMain/.../Di.android.kt`.
+-- iOS-specific classes belong in `shared/src/iosMain/.../Di.ios.kt`.
+-- Keep constructor dependencies explicit; avoid service locator calls in feature code.
+-
+-## ViewModel Rules
+-- Android: `viewModelOf(::FeatureViewModel)`.
+-- iOS: `factoryOf(::FeatureViewModel)` for KMP-to-Swift bridge.
+-- For parameterized VMs, use Koin parameters and verify iOS bridge resolver supports parameter list.
+-
+-## Diagnostics
+-- Check constructor signature vs registered providers.
+-- Check module inclusion path from `sharedModule`.
+-- Check Android app startup (`startKoin { modules(sharedModule) }`).
+-- Check iOS startup (`Di_iosKt.doInitKoin()` via `KoinHelper.swift`).
+-
+-## References
+-- Read `references/di-topology.md` before adding bindings.
+-- Read `references/common-errors.md` when resolving runtime DI failures.
+diff --git a/skills-kmp-opencode/kmp-koin-di/agents/openai.yaml b/skills-kmp-opencode/kmp-koin-di/agents/openai.yaml
+deleted file mode 100644
+index 6bdae5f..0000000
+--- a/skills-kmp-opencode/kmp-koin-di/agents/openai.yaml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-interface:
+-  display_name: "KMP Koin DI"
+-  short_description: "Configure Koin modules for shared, Android, and iOS"
+-  default_prompt: "Use $kmp-koin-di to register and troubleshoot dependencies in shared, Android, and iOS Koin modules."
+diff --git a/skills-kmp-opencode/kmp-koin-di/references/common-errors.md b/skills-kmp-opencode/kmp-koin-di/references/common-errors.md
+deleted file mode 100644
+index 3566511..0000000
+--- a/skills-kmp-opencode/kmp-koin-di/references/common-errors.md
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Common Koin Errors
+-
+-## No definition found
+-- Missing `single`/`factory` in module.
+-- Module not included in `sharedModule`.
+-- Constructor type mismatch.
+-
+-## Works on Android but fails on iOS
+-- VM registered with `viewModelOf` only; missing iOS `factoryOf`.
+-- iOS inject call uses parameters but VM resolver expects none.
+-- iOS bridge cannot resolve class mapping (`getOriginalKotlinClass`).
+-
+-## Parameterized VM failures
+-- Android screen must pass `parametersOf(...)`.
+-- iOS wrapper must use `init(param:)` or `init(parameters:)` and matching Koin resolver.
+diff --git a/skills-kmp-opencode/kmp-koin-di/references/di-topology.md b/skills-kmp-opencode/kmp-koin-di/references/di-topology.md
+deleted file mode 100644
+index 10428e8..0000000
+--- a/skills-kmp-opencode/kmp-koin-di/references/di-topology.md
++++ /dev/null
+@@ -1,11 +0,0 @@
+-# DI Topology
+-
+-## Core entry points
+-- Shared module graph: `shared/src/commonMain/kotlin/com/example/kursovikkmp/Di.kt`
+-- Android module: `shared/src/androidMain/kotlin/com/example/kursovikkmp/Di.android.kt`
+-- iOS module: `shared/src/iosMain/kotlin/com/example/kursovikkmp/Di.ios.kt`
+-- Android startup: `androidApp/src/main/java/com/example/kursovikkmp/android/MyApplication.kt`
+-- iOS startup bridge: `iosApp/iosApp/Utils/KoinHelper.swift`
+-
+-## Shared graph composition
+-`sharedModule` includes platform, common, network, storage, and VM modules.
+diff --git a/skills-kmp-opencode/kmp-screen-class-generator/SKILL.md b/skills-kmp-opencode/kmp-screen-class-generator/SKILL.md
+deleted file mode 100644
+index 5cda315..0000000
+--- a/skills-kmp-opencode/kmp-screen-class-generator/SKILL.md
++++ /dev/null
+@@ -1,52 +0,0 @@
+----
+-name: kmp-screen-class-generator
+-description: Scaffold KMP screen class files by screen name for shared feature contracts, Android Compose screen entry, and iOS SwiftUI bridge classes. Use when bootstrapping a new screen in another KMP project quickly, generating consistent file names and package paths, or creating a starting point before wiring repositories/services and DI.
+----
+-
+-# KMP Screen Class Generator
+-
+-## Overview
+-Generate a consistent screen skeleton from one screen name. The generator creates shared Kotlin classes, Android Compose entry screen, and iOS Swift bridge files.
+-
+-## Run Generator
+-Run:
+-
+-```bash
+-python3 scripts/generate_kmp_screen.py \
+-  --screen Profile \
+-  --package com.example.kursovikkmp \
+-  --output /path/to/project
+-```
+-
+-Optional flags:
+-- `--feature-name profile` to override folder slug.
+-- `--no-ios` to skip Swift files.
+-- `--no-android` to skip Compose file.
+-- `--no-tests` to skip shared test skeleton.
+-- `--overwrite` to replace existing files.
+-
+-## Generated Files
+-- Shared:
+-  - `FeatureState.kt`
+-  - `FeatureEvents.kt`
+-  - `FeatureViewModel.kt`
+-- Android:
+-  - `FeatureScreen.kt`
+-- iOS:
+-  - `FeatureViewModel.swift`
+-  - `FeatureViewActions.swift`
+-  - `FeatureModuleInput.swift`
+-  - `FeatureView.swift`
+-- Optional shared test skeleton:
+-  - `FeatureViewModelCommonTest.kt`
+-
+-## After Generation
+-1. Register ViewModel in Koin Android and iOS modules.
+-2. Add repository/service dependencies to constructor.
+-3. Implement event handling and navigation.
+-4. Attach screen to Android navigation graph and iOS assembly.
+-5. Replace placeholder tests with real behavior tests.
+-
+-## References
+-- Read `references/generated-layout.md` for exact path rules.
+-- Read `references/follow-up-checklist.md` after scaffolding.
+diff --git a/skills-kmp-opencode/kmp-screen-class-generator/agents/openai.yaml b/skills-kmp-opencode/kmp-screen-class-generator/agents/openai.yaml
+deleted file mode 100644
+index 4880686..0000000
+--- a/skills-kmp-opencode/kmp-screen-class-generator/agents/openai.yaml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-interface:
+-  display_name: "KMP Screen Class Generator"
+-  short_description: "Scaffold KMP screen classes by screen name"
+-  default_prompt: "Use $kmp-screen-class-generator to scaffold KMP screen files by screen name for shared, Compose, and SwiftUI layers."
+diff --git a/skills-kmp-opencode/kmp-screen-class-generator/references/follow-up-checklist.md b/skills-kmp-opencode/kmp-screen-class-generator/references/follow-up-checklist.md
+deleted file mode 100644
+index 3a721ac..0000000
+--- a/skills-kmp-opencode/kmp-screen-class-generator/references/follow-up-checklist.md
++++ /dev/null
+@@ -1,7 +0,0 @@
+-# Follow-Up Checklist
+-
+-- Add Android VM registration in `Di.android.kt` with `viewModelOf(::FeatureViewModel)`.
+-- Add iOS VM registration in `Di.ios.kt` with `factoryOf(::FeatureViewModel)`.
+-- Add screen route and navigation mapping in Android `NavHost`.
+-- Add iOS assembly/hosting controller usage if project uses modular assemblies.
+-- Add real `commonTest` cases for state, events, and navigation.
+diff --git a/skills-kmp-opencode/kmp-screen-class-generator/references/generated-layout.md b/skills-kmp-opencode/kmp-screen-class-generator/references/generated-layout.md
+deleted file mode 100644
+index 84f28de..0000000
+--- a/skills-kmp-opencode/kmp-screen-class-generator/references/generated-layout.md
++++ /dev/null
+@@ -1,13 +0,0 @@
+-# Generated Layout
+-
+-For screen `Profile` and package `com.example.kursovikkmp`, the generator creates:
+-
+-- `shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/list/ProfileState.kt`
+-- `shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/list/ProfileEvents.kt`
+-- `shared/profile/src/commonMain/kotlin/com/example/kursovikkmp/feature/profile/list/ProfileViewModel.kt`
+-- `shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/profile/list/ProfileViewModelCommonTest.kt`
+-- `androidApp/feature_profile/src/main/java/com/example/kursovikkmp/feature_profile/ProfileScreen.kt`
+-- `iosApp/iosApp/Screens/Profile/ViewModel/ProfileViewModel.swift`
+-- `iosApp/iosApp/Screens/Profile/ViewModel/ProfileViewActions.swift`
+-- `iosApp/iosApp/Screens/Profile/ViewModel/ProfileModuleInput.swift`
+-- `iosApp/iosApp/Screens/Profile/View/ProfileView.swift`
+diff --git a/skills-kmp-opencode/kmp-screen-class-generator/scripts/generate_kmp_screen.py b/skills-kmp-opencode/kmp-screen-class-generator/scripts/generate_kmp_screen.py
+deleted file mode 100755
+index 49d6a03..0000000
+--- a/skills-kmp-opencode/kmp-screen-class-generator/scripts/generate_kmp_screen.py
++++ /dev/null
+@@ -1,367 +0,0 @@
+-#!/usr/bin/env python3
+-"""Scaffold KMP screen classes by screen name."""
+-
+-from __future__ import annotations
+-
+-import argparse
+-import re
+-from pathlib import Path
+-
+-
+-def to_pascal(value: str) -> str:
+-    parts = re.split(r"[^A-Za-z0-9]+", value)
+-    cleaned = [p for p in parts if p]
+-    if not cleaned:
+-        raise ValueError("screen name must contain letters or digits")
+-    return "".join(word[:1].upper() + word[1:] for word in cleaned)
+-
+-
+-def to_feature_name(value: str) -> str:
+-    value = re.sub(r"(.)([A-Z][a-z]+)", r"\1_\2", value)
+-    value = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", value)
+-    value = re.sub(r"[^A-Za-z0-9]+", "_", value)
+-    value = re.sub(r"_+", "_", value)
+-    value = value.strip("_").lower()
+-    if not value:
+-        raise ValueError("feature name cannot be empty")
+-    return value
+-
+-
+-def path_from_package(package_name: str) -> str:
+-    if not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z_][A-Za-z0-9_]*)*", package_name):
+-        raise ValueError("invalid package format")
+-    return package_name.replace(".", "/")
+-
+-
+-def write_file(path: Path, content: str, overwrite: bool) -> bool:
+-    if path.exists() and not overwrite:
+-        return False
+-    path.parent.mkdir(parents=True, exist_ok=True)
+-    path.write_text(content, encoding="utf-8")
+-    return True
+-
+-
+-def kt_state(package_name: str, feature_slug: str, screen: str) -> str:
+-    return f'''package {package_name}.feature.{feature_slug}.list
+-
+-import com.example.kursovikkmp.base.BaseViewState
+-import com.example.kursovikkmp.common.view.TitleBarState
+-import com.example.kursovikkmp.common.view.getMock
+-
+-data class {screen}State(
+-    override val titleBarState: TitleBarState = TitleBarState.getMock(),
+-    val items: List<{screen}ItemUiState> = emptyList(),
+-    val searchQuery: String = "",
+-) : BaseViewState {{
+-    companion object {{
+-        fun getMock() = {screen}State(
+-            items = listOf({screen}ItemUiState.getMock())
+-        )
+-    }}
+-}}
+-
+-data class {screen}ItemUiState(
+-    val id: String = "",
+-    val title: String = "",
+-) {{
+-    companion object {{
+-        fun getMock() = {screen}ItemUiState(
+-            id = "1",
+-            title = "{screen} item",
+-        )
+-    }}
+-}}
+-'''
+-
+-
+-def kt_events(package_name: str, feature_slug: str, screen: str) -> str:
+-    return f'''package {package_name}.feature.{feature_slug}.list
+-
+-import com.example.kursovikkmp.base.BaseEvent
+-
+-sealed class {screen}Events : BaseEvent {{
+-    data class OnItemClicked(val id: String) : {screen}Events()
+-    data class OnSearchQueryChanged(val query: String) : {screen}Events()
+-    data object OnRetryClicked : {screen}Events()
+-}}
+-'''
+-
+-
+-def kt_viewmodel(package_name: str, feature_slug: str, screen: str) -> str:
+-    return f'''package {package_name}.feature.{feature_slug}.list
+-
+-import com.example.kursovikkmp.base.BaseViewModel
+-
+-class {screen}ViewModel(
+-    // TODO: add dependencies
+-) : BaseViewModel<{screen}State, {screen}Events>() {{
+-
+-    override fun initToolbar() {{
+-        // TODO: configure toolbar title/state
+-    }}
+-
+-    override fun initScreenData() {{
+-        updateState {{ copy(items = listOf({screen}ItemUiState.getMock())) }}
+-    }}
+-
+-    override fun initialState(): {screen}State = {screen}State()
+-
+-    override fun onEvent(event: {screen}Events) {{
+-        when (event) {{
+-            is {screen}Events.OnItemClicked -> {{
+-                // TODO: handle item click
+-            }}
+-
+-            is {screen}Events.OnSearchQueryChanged -> {{
+-                updateState {{ copy(searchQuery = event.query) }}
+-            }}
+-
+-            {screen}Events.OnRetryClicked -> {{
+-                initScreenData()
+-            }}
+-        }}
+-    }}
+-}}
+-'''
+-
+-
+-def kt_compose(package_name: str, feature_slug: str, screen: str) -> str:
+-    android_package = f"{package_name}.feature_{feature_slug}"
+-    shared_package = f"{package_name}.feature.{feature_slug}.list"
+-    return f'''package {android_package}
+-
+-import androidx.compose.foundation.layout.Column
+-import androidx.compose.foundation.layout.fillMaxSize
+-import androidx.compose.material3.OutlinedTextField
+-import androidx.compose.material3.Text
+-import androidx.compose.runtime.Composable
+-import androidx.compose.runtime.collectAsState
+-import androidx.compose.runtime.getValue
+-import androidx.compose.ui.Modifier
+-import com.example.core.BaseScreen
+-import com.example.core.Toolbar
+-import org.koin.androidx.compose.koinViewModel
+-import {shared_package}.{screen}Events
+-import {shared_package}.{screen}State
+-import {shared_package}.{screen}ViewModel
+-
+-@Composable
+-fun {screen}Screen() {{
+-    val viewModel: {screen}ViewModel = koinViewModel()
+-    val state by viewModel.flowState.collectAsState()
+-    val lceState by viewModel.lceState.collectAsState()
+-
+-    BaseScreen(
+-        lceState = lceState,
+-        onDefaultUiEvent = viewModel::onDefaultUiEvent
+-    ) {{
+-        {screen}ScreenView(
+-            state = state,
+-            onUiEvent = viewModel::pushEvent
+-        )
+-    }}
+-}}
+-
+-@Composable
+-fun {screen}ScreenView(
+-    state: {screen}State,
+-    onUiEvent: ({screen}Events) -> Unit
+-) {{
+-    Column(modifier = Modifier.fillMaxSize()) {{
+-        Toolbar(toolbarState = state.titleBarState)
+-        OutlinedTextField(
+-            value = state.searchQuery,
+-            onValueChange = {{ onUiEvent({screen}Events.OnSearchQueryChanged(it)) }},
+-            label = {{ Text("Search") }}
+-        )
+-
+-        state.items.forEach {{ item ->
+-            Text(
+-                text = item.title,
+-                modifier = Modifier,
+-            )
+-        }}
+-    }}
+-}}
+-'''
+-
+-
+-def kt_test(package_name: str, feature_slug: str, screen: str) -> str:
+-    return f'''package {package_name}.feature.{feature_slug}.list
+-
+-import kotlin.test.Test
+-import kotlin.test.assertTrue
+-
+-class {screen}ViewModelCommonTest {{
+-
+-    @Test
+-    fun placeholderTest() {{
+-        // TODO: replace with real tests for state/events/navigation
+-        assertTrue(true)
+-    }}
+-}}
+-'''
+-
+-
+-def swift_actions(screen: str) -> str:
+-    return f'''import Foundation
+-
+-enum {screen}ViewActions {{
+-    case itemTapped(String)
+-    case searchChanged(String)
+-}}
+-'''
+-
+-
+-def swift_module_input(screen: str) -> str:
+-    return f'''import Foundation
+-
+-struct {screen}ConfigData {{
+-}}
+-
+-protocol {screen}ModuleInput: AnyObject {{
+-    func configure(data: {screen}ConfigData)
+-}}
+-'''
+-
+-
+-def swift_viewmodel(screen: str) -> str:
+-    return f'''import Foundation
+-import shared
+-
+-final class {screen}ViewModel: BaseViewModel<shared.{screen}ViewModel, {screen}State> {{
+-
+-    required override init() {{
+-        super.init()
+-    }}
+-
+-    func onEvent(event: {screen}ViewActions) {{
+-        switch event {{
+-        case .itemTapped(let id):
+-            mViewModel?.pushEvent(event: .OnItemClicked(id: id))
+-        case .searchChanged(let query):
+-            mViewModel?.pushEvent(event: .OnSearchQueryChanged(query: query))
+-        }}
+-    }}
+-}}
+-
+-extension {screen}ViewModel: {screen}ModuleInput {{
+-    func configure(data: {screen}ConfigData) {{
+-        // TODO: configure screen from parent module
+-    }}
+-}}
+-'''
+-
+-
+-def swift_view(screen: str) -> str:
+-    return f'''import SwiftUI
+-
+-struct {screen}View: View {{
+-    @StateObject private var viewModel = {screen}ViewModel()
+-
+-    var body: some View {{
+-        VStack(spacing: 12) {{
+-            TextField(
+-                "Search",
+-                text: Binding(
+-                    get: {{ viewModel.state.searchQuery }},
+-                    set: {{ viewModel.onEvent(event: .searchChanged($0)) }}
+-                )
+-            )
+-            .textFieldStyle(.roundedBorder)
+-
+-            List(0..<viewModel.state.items.count, id: \\.self) {{ index in
+-                let item = viewModel.state.items[index]
+-                Text(item.title)
+-                    .onTapGesture {{
+-                        viewModel.onEvent(event: .itemTapped(item.id))
+-                    }}
+-            }}
+-        }}
+-        .padding(16)
+-        .onAppear {{
+-            viewModel.sendViewAppearedEvent()
+-        }}
+-    }}
+-}}
+-
+-#Preview {{
+-    {screen}View()
+-}}
+-'''
+-
+-
+-def main() -> int:
+-    parser = argparse.ArgumentParser(description="Generate KMP screen skeleton files")
+-    parser.add_argument("--screen", required=True, help="Screen name, e.g. Profile or NewsList")
+-    parser.add_argument("--package", required=True, help="Base Kotlin package, e.g. com.example.app")
+-    parser.add_argument("--output", default=".", help="Project root directory")
+-    parser.add_argument("--feature-name", default="", help="Feature folder slug override")
+-    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files")
+-    parser.add_argument("--no-ios", action="store_true", help="Skip iOS Swift files")
+-    parser.add_argument("--no-android", action="store_true", help="Skip Android Compose screen")
+-    parser.add_argument("--no-tests", action="store_true", help="Skip shared commonTest file")
+-    args = parser.parse_args()
+-
+-    try:
+-        screen = to_pascal(args.screen)
+-        feature_slug = to_feature_name(args.feature_name) if args.feature_name else to_feature_name(screen)
+-        package_path = path_from_package(args.package)
+-    except ValueError as exc:
+-        print(f"error: {exc}")
+-        return 1
+-
+-    root = Path(args.output).resolve()
+-
+-    shared_main = root / "shared" / feature_slug / "src" / "commonMain" / "kotlin" / package_path / "feature" / feature_slug / "list"
+-    shared_test = root / "shared" / feature_slug / "src" / "commonTest" / "kotlin" / package_path / "feature" / feature_slug / "list"
+-    android_dir = root / "androidApp" / f"feature_{feature_slug}" / "src" / "main" / "java" / package_path / f"feature_{feature_slug}"
+-    ios_vm_dir = root / "iosApp" / "iosApp" / "Screens" / screen / "ViewModel"
+-    ios_view_dir = root / "iosApp" / "iosApp" / "Screens" / screen / "View"
+-
+-    files = {
+-        shared_main / f"{screen}State.kt": kt_state(args.package, feature_slug, screen),
+-        shared_main / f"{screen}Events.kt": kt_events(args.package, feature_slug, screen),
+-        shared_main / f"{screen}ViewModel.kt": kt_viewmodel(args.package, feature_slug, screen),
+-    }
+-
+-    if not args.no_tests:
+-        files[shared_test / f"{screen}ViewModelCommonTest.kt"] = kt_test(args.package, feature_slug, screen)
+-
+-    if not args.no_android:
+-        files[android_dir / f"{screen}Screen.kt"] = kt_compose(args.package, feature_slug, screen)
+-
+-    if not args.no_ios:
+-        files[ios_vm_dir / f"{screen}ViewActions.swift"] = swift_actions(screen)
+-        files[ios_vm_dir / f"{screen}ModuleInput.swift"] = swift_module_input(screen)
+-        files[ios_vm_dir / f"{screen}ViewModel.swift"] = swift_viewmodel(screen)
+-        files[ios_view_dir / f"{screen}View.swift"] = swift_view(screen)
+-
+-    created = []
+-    skipped = []
+-    for path, content in files.items():
+-        changed = write_file(path, content, overwrite=args.overwrite)
+-        if changed:
+-            created.append(path)
+-        else:
+-            skipped.append(path)
+-
+-    print(f"screen: {screen}")
+-    print(f"feature: {feature_slug}")
+-    print(f"package: {args.package}")
+-    print("")
+-    print("created files:")
+-    for path in created:
+-        print(f"  - {path}")
+-
+-    if skipped:
+-        print("")
+-        print("skipped existing files (use --overwrite):")
+-        for path in skipped:
+-            print(f"  - {path}")
+-
+-    return 0
+-
+-
+-if __name__ == "__main__":
+-    raise SystemExit(main())
+diff --git a/skills-kmp-opencode/kmp-unit-tests/SKILL.md b/skills-kmp-opencode/kmp-unit-tests/SKILL.md
+deleted file mode 100644
+index baf6415..0000000
+--- a/skills-kmp-opencode/kmp-unit-tests/SKILL.md
++++ /dev/null
+@@ -1,39 +0,0 @@
+----
+-name: kmp-unit-tests
+-description: Create and maintain shared/commonTest unit tests for KMP ViewModels and feature logic with coroutine test tools, Turbine, and Koin-backed fakes. Use when adding tests for events, state transitions, navigation/effects, or when fixing unstable asynchronous tests across feature modules.
+----
+-
+-# KMP Unit Tests
+-
+-## Overview
+-Write deterministic `commonTest` ViewModel tests for shared feature behavior.
+-
+-## Workflow
+-1. Reuse or create `BaseViewModelCommonTest` test kit with fake `NavigationService`, `ResourceService`, and `DeviceService`.
+-2. Build feature-specific fakes (repository/service/auth).
+-3. Instantiate shared ViewModel directly.
+-4. Trigger events using `pushEvent(...)`.
+-5. Assert state/effects/navigation with Turbine and recorded actions.
+-6. Advance scheduler with `advanceUntilIdle()` when needed.
+-
+-## Test Structure Rules
+-- Use `runTest` for coroutine tests.
+-- Use `flowState.test { ... }` for state assertions.
+-- Use effect flow tests when screen emits one-off effects.
+-- Keep fakes inside test file unless reused heavily.
+-
+-## Koin in Tests
+-- Call `stopKoin()` before re-initializing.
+-- Register required dependencies in local test module.
+-- Avoid pulling production network/storage modules into unit tests.
+-
+-## What to Assert
+-- Initial state correctness.
+-- Event-to-state transition.
+-- Event-to-navigation action.
+-- Event-to-effect emission.
+-- Data mutation via fake repositories/services.
+-
+-## References
+-- Read `references/common-test-kit-pattern.md` before creating test base.
+-- Read `references/viewmodel-test-examples.md` for concrete tests.
+diff --git a/skills-kmp-opencode/kmp-unit-tests/agents/openai.yaml b/skills-kmp-opencode/kmp-unit-tests/agents/openai.yaml
+deleted file mode 100644
+index c802552..0000000
+--- a/skills-kmp-opencode/kmp-unit-tests/agents/openai.yaml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-interface:
+-  display_name: "KMP Unit Tests"
+-  short_description: "Write stable commonTest ViewModel tests with Turbine"
+-  default_prompt: "Use $kmp-unit-tests to create or fix shared/commonTest ViewModel tests with Koin fakes and Turbine."
+diff --git a/skills-kmp-opencode/kmp-unit-tests/references/common-test-kit-pattern.md b/skills-kmp-opencode/kmp-unit-tests/references/common-test-kit-pattern.md
+deleted file mode 100644
+index c38dba6..0000000
+--- a/skills-kmp-opencode/kmp-unit-tests/references/common-test-kit-pattern.md
++++ /dev/null
+@@ -1,14 +0,0 @@
+-# Common Test Kit Pattern
+-
+-## Source example
+-- `shared/home/src/commonTest/kotlin/com/example/kursovikkmp/feature/gpt/feature/testutil/ViewModelCommonTestKit.kt`
+-
+-## Responsibilities
+-- Set `Dispatchers.Main` to `StandardTestDispatcher`.
+-- Stop/start Koin in setup.
+-- Provide test doubles for:
+-  - `NavigationService`
+-  - `ResourceService`
+-  - `DeviceService`
+-  - `LceStateManager` factory
+-- Reset dispatchers and stop Koin in teardown.
+diff --git a/skills-kmp-opencode/kmp-unit-tests/references/viewmodel-test-examples.md b/skills-kmp-opencode/kmp-unit-tests/references/viewmodel-test-examples.md
+deleted file mode 100644
+index d17e421..0000000
+--- a/skills-kmp-opencode/kmp-unit-tests/references/viewmodel-test-examples.md
++++ /dev/null
+@@ -1,12 +0,0 @@
+-# ViewModel Test Examples
+-
+-## Source examples
+-- `shared/news/src/commonTest/kotlin/com/example/kursovikkmp/feature/gpt/feature/news/list/NewsListViewModelCommonTest.kt`
+-- `shared/profile/src/commonTest/kotlin/com/example/kursovikkmp/feature/gpt/feature/profile/ProfileViewModelCommonTest.kt`
+-- `shared/recipe/src/commonTest/kotlin/com/example/kursovikkmp/feature/gpt/feature/recipes/details/RecipesDetailsViewModelCommonTest.kt`
+-
+-## Typical scenarios
+-- Search/filter logic updates list state.
+-- Item click emits navigation action.
+-- Avatar tap emits one-off effect.
+-- Retry event re-runs loading logic.
+diff --git a/skills-kmp-opencode/prompt-examples/prompts-ru.md b/skills-kmp-opencode/prompt-examples/prompts-ru.md
+deleted file mode 100644
+index d9a4c70..0000000
+--- a/skills-kmp-opencode/prompt-examples/prompts-ru.md
++++ /dev/null
+@@ -1,33 +0,0 @@
+-# Примеры промтов для skills
+-
+-## $kmp-feature-development
+-- `Используй $kmp-feature-development: добавь новый фиче-модуль Orders (State/Events/ViewModel + Android Compose экран + iOS SwiftUI bridge).`
+-- `Используй $kmp-feature-development: рефактори NewsListViewModel, чтобы поиск и фильтры были вынесены в отдельные функции и покрыты тестами.`
+-
+-## $swiftui-kmp-baseviewmodel
+-- `Используй $swiftui-kmp-baseviewmodel: сделай SwiftUI экран ProfileEdit на базе shared ProfileViewModel с action enum и sendViewAppearedEvent.`
+-- `Используй $swiftui-kmp-baseviewmodel: исправь рассинхрон state между SwiftUI и shared BaseViewModel на экране Favorites.`
+-
+-## $jetpack-compose-kmp
+-- `Используй $jetpack-compose-kmp: создай Compose экран RecipesSearch с BaseScreen, collectAsState и событиями в shared Events.`
+-- `Используй $jetpack-compose-kmp: приведи существующий FridgeScreen к паттерну Screen + ScreenView + Preview.`
+-
+-## $kmp-unit-tests
+-- `Используй $kmp-unit-tests: добавь commonTest для LoginViewModel (успех, ошибка, навигация на PIN).`
+-- `Используй $kmp-unit-tests: перепиши нестабильные тесты NewsListViewModel на Turbine + StandardTestDispatcher.`
+-
+-## $kmp-koin-di
+-- `Используй $kmp-koin-di: зарегистрируй новый OrdersRepository и OrdersViewModel для Android и iOS.`
+-- `Используй $kmp-koin-di: найди и исправь причину No definition found для ProfileViewModel на iOS.`
+-
+-## $kmp-screen-class-generator
+-- `Используй $kmp-screen-class-generator: сгенерируй экран Settings для пакета com.example.kursovikkmp.`
+-- `Используй $kmp-screen-class-generator: сгенерируй экран OrdersHistory без iOS файлов и сразу с --overwrite.`
+-
+-## Пример прямого запуска генератора
+-```bash
+-python3 skills-kmp-opencode/kmp-screen-class-generator/scripts/generate_kmp_screen.py \
+-  --screen Settings \
+-  --package com.example.kursovikkmp \
+-  --output /path/to/your/project
+-```
+diff --git a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/SKILL.md b/skills-kmp-opencode/swiftui-kmp-baseviewmodel/SKILL.md
+deleted file mode 100644
+index 393a4e2..0000000
+--- a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/SKILL.md
++++ /dev/null
+@@ -1,39 +0,0 @@
+----
+-name: swiftui-kmp-baseviewmodel
+-description: Implement and refactor SwiftUI screens that consume KMP shared ViewModels through the iOS BaseViewModel bridge and Koin injection helpers. Use when creating a new SwiftUI screen for shared feature logic, connecting SwiftUI actions to shared events, handling shared navigation effects, or fixing state/lifecycle synchronization between SwiftUI and Kotlin flows.
+----
+-
+-# SwiftUI KMP BaseViewModel
+-
+-## Overview
+-Use this skill to wire SwiftUI screens to shared Kotlin ViewModels using `BaseViewModel.swift` and `KoinHelper.swift`.
+-
+-## Workflow
+-1. Create Swift ViewModel wrapper inheriting `BaseViewModel<shared.FeatureViewModel, FeatureState>`.
+-2. Create Swift action enum (`FeatureViewActions`).
+-3. Map action enum to shared `pushEvent(...)` calls.
+-4. Build SwiftUI View with `@StateObject private var viewModel = FeatureViewModel()`.
+-5. Call `viewModel.sendViewAppearedEvent()` in `.onAppear`.
+-6. Add optional `FeatureModuleInput` protocol for parent configuration.
+-
+-## BaseViewModel Rules
+-- Use `required override init()` + `super.init()` for no params.
+-- Use `super.init(param:)` or `super.init(parameters:)` when constructor args are required.
+-- Keep all business logic in shared Kotlin ViewModel.
+-- Keep Swift ViewModel focused on UI action mapping and local adaptation.
+-
+-## Action Mapping Rules
+-- Define Swift `enum FeatureViewActions` with associated values for user input.
+-- Handle all cases in `onEvent(event:)`.
+-- For each case, call shared VM event:
+-  - `mViewModel?.pushEvent(event: .OnXxx(...))`
+-- Do not duplicate validation/business logic in Swift if it already exists in shared code.
+-
+-## Navigation and LCE Rules
+-- Let `BaseViewModel` handle shared `navigationEffectFlow` and `lceFlow`.
+-- Override `onChangeNavigation` only if screen-specific behavior is required.
+-- Keep loader/errors centralized through injected `ContentService`.
+-
+-## References
+-- Read `references/baseviewmodel-bridge.md` before creating new wrappers.
+-- Read `references/swiftui-screen-template.md` before writing a new SwiftUI screen.
+diff --git a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/agents/openai.yaml b/skills-kmp-opencode/swiftui-kmp-baseviewmodel/agents/openai.yaml
+deleted file mode 100644
+index ec71e90..0000000
+--- a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/agents/openai.yaml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-interface:
+-  display_name: "SwiftUI KMP BaseViewModel"
+-  short_description: "Bridge SwiftUI screens to shared KMP ViewModels"
+-  default_prompt: "Use $swiftui-kmp-baseviewmodel to add or refactor a SwiftUI screen using BaseViewModel and shared flows."
+diff --git a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/references/baseviewmodel-bridge.md b/skills-kmp-opencode/swiftui-kmp-baseviewmodel/references/baseviewmodel-bridge.md
+deleted file mode 100644
+index 03a9d24..0000000
+--- a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/references/baseviewmodel-bridge.md
++++ /dev/null
+@@ -1,17 +0,0 @@
+-# BaseViewModel Bridge Notes
+-
+-## Relevant files
+-- `iosApp/iosApp/Base/BaseViewModel.swift`
+-- `iosApp/iosApp/Utils/KoinHelper.swift`
+-- `iosApp/iosApp/Screens/NewsList/ViewModel/NewsListViewModel.swift`
+-
+-## Important behavior
+-- `BaseViewModel` auto-subscribes to shared `stateFlow`, `lceFlow`, and `navigationEffectFlow`.
+-- `OnScreenCreated` is sent during init.
+-- `OnScreenDestroyed` is sent in `deinit`.
+-- `sendViewAppearedEvent()` should be called from SwiftUI `.onAppear`.
+-
+-## Generic types
+-- `BaseViewModel<T: AnyObject, S: AnyObject>`
+-  - `T`: shared Kotlin VM type (e.g., `shared.NewsListViewModel`)
+-  - `S`: shared Kotlin State type (e.g., `NewsListState`)
+diff --git a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/references/swiftui-screen-template.md b/skills-kmp-opencode/swiftui-kmp-baseviewmodel/references/swiftui-screen-template.md
+deleted file mode 100644
+index b8f3d0a..0000000
+--- a/skills-kmp-opencode/swiftui-kmp-baseviewmodel/references/swiftui-screen-template.md
++++ /dev/null
+@@ -1,32 +0,0 @@
+-# SwiftUI Screen Template
+-
+-```swift
+-import SwiftUI
+-import shared
+-
+-enum FeatureViewActions {
+-    case itemTapped(String)
+-}
+-
+-final class FeatureViewModel: BaseViewModel<shared.FeatureViewModel, FeatureState> {
+-    required override init() {
+-        super.init()
+-    }
+-
+-    func onEvent(event: FeatureViewActions) {
+-        switch event {
+-        case .itemTapped(let id):
+-            mViewModel?.pushEvent(event: .OnItemClicked(id: id))
+-        }
+-    }
+-}
+-
+-struct FeatureView: View {
+-    @StateObject private var viewModel = FeatureViewModel()
+-
+-    var body: some View {
+-        Text(viewModel.state.titleBarState.title.value)
+-            .onAppear { viewModel.sendViewAppearedEvent() }
+-    }
+-}
+-```

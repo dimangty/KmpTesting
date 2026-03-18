@@ -208,6 +208,19 @@ class ProfileViewModelTest {
         }
     }
 
+    @Test
+    fun kitchenTipsTapped_navigatesToKitchenTips() = runTest {
+        viewModel.navigationEffectFlow.test {
+            // When
+            viewModel.pushEvent(ProfileEvents.KitchenTipsTapped)
+            testDispatcher.scheduler.advanceUntilIdle()
+
+            // Then
+            val navigationAction = awaitItem()
+            assertEquals(NavigationAction.NavigateToKitchenTips, navigationAction)
+        }
+    }
+
     // ==================== Mock Implementations ====================
 
     private class ProfileRepositoryFake : ProfileRepository {
