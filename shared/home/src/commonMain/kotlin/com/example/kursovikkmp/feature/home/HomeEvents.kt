@@ -4,3 +4,4 @@ import com.example.kursovikkmp.base.BaseEvent
 
 sealed class HomeEvents: BaseEvent {
 }
+
