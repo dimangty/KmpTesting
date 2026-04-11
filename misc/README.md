@@ -71,16 +71,16 @@ find misc/ -name '*.png' -exec convert {} -resize 50% {} \;
 
 ## Current Status
 
-- [ ] login.png
-- [ ] signup.png
-- [ ] pin.png
+- [x] login.png
+- [x] signup.png
+- [x] pin.png
 - [ ] news.png
 - [ ] favorites.png
-- [ ] recipes.png
-- [ ] fridge.png
+- [x] recipes.png
+- [x] fridge.png
 - [ ] news_details.png
-- [ ] recipe_details.png
+- [x] recipe_details.png
 - [ ] profile.png
 - [ ] fridge_recommendations.png
 
-Check off items as screenshots are captured.
+**6 out of 11 screenshots captured** (55% complete)

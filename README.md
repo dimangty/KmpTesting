@@ -188,47 +188,45 @@ cd TestingKMP
 ## Screenshots
 
 ### Authentication Flow
-| Login | Sign Up | PIN |
-|-------|---------|-----|
-| ![Login](misc/login.png) | ![SignUp](misc/signup.png) | ![PIN](misc/pin.png) |
+<p align="center">
+  <img src="misc/login.png" width="250" alt="Login Screen"/>
+  <img src="misc/signup.png" width="250" alt="Sign Up Screen"/>
+  <img src="misc/pin.png" width="250" alt="PIN Screen"/>
+</p>
 
-### Main Screens
-| News | Favorites | Recipes | Fridge |
-|------|-----------|---------|--------|
-| ![News](misc/news.png) | ![Favorites](misc/favorites.png) | ![Recipes](misc/recipes.png) | ![Fridge](misc/fridge.png) |
+**Login Screen** - Phone number authentication with "Sign Up" link
 
-### Detail Views
-| News Details | Recipe Details | Profile |
-|--------------|----------------|---------|
-| ![News Details](misc/news_details.png) | ![Recipe Details](misc/recipe_details.png) | ![Profile](misc/profile.png) |
+**Sign Up Screen** - Complete registration form with personal info, location, and contact details
 
-### Fridge Recommendations
-| Fridge with Recommendations |
-|-----------------------------|
-| ![Fridge Recommendations](misc/fridge_recommendations.png) |
+**PIN Screen** - 6-digit PIN entry for additional security
+
+### Main Application
+<p align="center">
+  <img src="misc/recipes.png" width="250" alt="Recipes List"/>
+  <img src="misc/recipe_details.png" width="250" alt="Recipe Details"/>
+  <img src="misc/fridge.png" width="250" alt="Fridge Screen"/>
+</p>
+
+**Recipes Screen** - Browse recipe catalog with cooking time indicators (Паста Карбонара, Том Ям)
+
+**Recipe Details** - Step-by-step cooking instructions with ingredient checklist and timer
+
+**Fridge Screen** - Smart inventory management with product selection (Авокадо, Бекон, Ваниль, etc.)
 
 ---
 
-## How to Capture Screenshots
+### Additional Screens
 
-To populate the screenshots, connect an Android device/emulator and run:
+The app also includes:
+- **News Screen** - Browse latest articles with list view
+- **Favorites Screen** - View saved articles and recipes
+- **Profile Screen** - User profile with photo upload and personal information
+- **News Details** - Full article view
+- **Fridge Recommendations** - Recipe suggestions based on available ingredients
 
+To capture additional screenshots, use the included `capture_screenshots.sh` script or manually capture with:
 ```bash
-# Start the app
-adb shell am start -n com.example.kursovikkmp.android/.MainActivity
-
-# Navigate through screens and capture with:
-adb exec-out screencap -p > misc/login.png
-adb exec-out screencap -p > misc/signup.png
-adb exec-out screencap -p > misc/pin.png
-adb exec-out screencap -p > misc/news.png
-adb exec-out screencap -p > misc/favorites.png
-adb exec-out screencap -p > misc/recipes.png
-adb exec-out screencap -p > misc/fridge.png
-adb exec-out screencap -p > misc/news_details.png
-adb exec-out screencap -p > misc/recipe_details.png
-adb exec-out screencap -p > misc/profile.png
-adb exec-out screencap -p > misc/fridge_recommendations.png
+adb exec-out screencap -p > misc/<screen_name>.png
 ```
 
 ## Testing
