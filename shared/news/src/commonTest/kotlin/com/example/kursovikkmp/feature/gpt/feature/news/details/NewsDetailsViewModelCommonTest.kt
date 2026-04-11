@@ -19,6 +19,7 @@ class NewsDetailsViewModelCommonTest : BaseViewModelCommonTest() {
     private val favoritesRepository =
         com.example.kursovikkmp.gpt.feature.news.details.FakeDetailsFavoritesRepository()
 
+
     @Test
     fun initScreenData_loadsArticleState() = runTest {
         // Given
