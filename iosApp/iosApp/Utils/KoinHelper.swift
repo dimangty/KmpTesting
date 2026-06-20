@@ -6,7 +6,7 @@
 //  Copyright © 2025 orgName. All rights reserved.
 //
 
-import shared
+import ComposeApp
 
 typealias KoinApplication = Koin_coreKoinApplication
 
@@ -36,7 +36,7 @@ func inject<T : AnyObject>(param: Any?) -> T {
 }
 
 func inject<T : AnyObject>(parameters: [Any?]?) -> T {
-    if let ktClass = shared.PlatformModule_iosKt.getOriginalKotlinClass(objCClass: T.self) {
+    if let ktClass = PlatformModule_iosKt.getOriginalKotlinClass(objCClass: T.self) {
         return KoinApplication.shared.koin.get(
             clazz: ktClass,
             qualifier: nil,

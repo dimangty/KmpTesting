@@ -6,7 +6,7 @@
 //
 import Combine
 import Foundation
-import shared
+import ComposeApp
 
 class BaseViewModel<T: AnyObject, S: AnyObject>: ObservableObject  {
     
@@ -23,7 +23,7 @@ class BaseViewModel<T: AnyObject, S: AnyObject>: ObservableObject  {
     
     init() {
         mViewModel = inject()
-        let model = mViewModel as! shared.BaseViewModel<S, shared.BaseEvent>
+        let model = mViewModel as! BaseViewModel<S, BaseEvent>
         state = model.state
         observe(model: model)
         model.onDefaultUiEvent(event: .OnScreenCreated())
@@ -31,7 +31,7 @@ class BaseViewModel<T: AnyObject, S: AnyObject>: ObservableObject  {
     
     init(param: Any?) {
         mViewModel = inject(param: param)
-        let model = mViewModel as! shared.BaseViewModel<S, shared.BaseEvent>
+        let model = mViewModel as! BaseViewModel<S, BaseEvent>
         state = model.state 
         observe(model: model)
         model.onDefaultUiEvent(event: .OnScreenCreated())
@@ -39,7 +39,7 @@ class BaseViewModel<T: AnyObject, S: AnyObject>: ObservableObject  {
     
     init(parameters: [Any?]) {
         mViewModel = inject(parameters: parameters)
-        let model = mViewModel as! shared.BaseViewModel<S, shared.BaseEvent>
+        let model = mViewModel as! BaseViewModel<S, BaseEvent>
         state = model.state
         
         observe(model: model)
@@ -48,7 +48,7 @@ class BaseViewModel<T: AnyObject, S: AnyObject>: ObservableObject  {
 
 
     deinit {
-        let model = mViewModel as! shared.BaseViewModel<S, shared.BaseEvent>
+        let model = mViewModel as! BaseViewModel<S, BaseEvent>
         model.onDefaultUiEvent(event: .OnScreenDestroyed())
         
         mViewModel = nil
@@ -57,11 +57,11 @@ class BaseViewModel<T: AnyObject, S: AnyObject>: ObservableObject  {
     }
     
     final func sendViewAppearedEvent() {
-        let model = mViewModel as? shared.BaseViewModel<shared.UiEvent, S>
+        let model = mViewModel as? BaseViewModel<UiEvent, S>
         model?.onDefaultUiEvent(event: .OnScreenResumed())
     }
     
-    func observe(model: shared.BaseViewModel<S, shared.BaseEvent>) {
+    func observe(model: BaseViewModel<S, BaseEvent>) {
         model.stateFlow.watch { [weak self] state in
             guard let newState = state else { return }
             self?.state = newState

@@ -343,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :composeApp:embedAndSignAppleFrameworkForXcode\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -352,38 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6BBABA2D6A211100408370 /* ContentService.swift in Sources */,
-				8B6BBAC22D6A246100408370 /* NavigationService.swift in Sources */,
-				8B6BBAA62D6A1EC200408370 /* KoinHelper.swift in Sources */,
-				8B6BBAAF2D6A1F7E00408370 /* ContainerModel.swift in Sources */,
-				8B6BBAB02D6A1F7E00408370 /* IModelView.swift in Sources */,
-				8B6BBAB12D6A1F7E00408370 /* LazyView.swift in Sources */,
-				8B6BBAB22D6A1F7E00408370 /* ContainerView.swift in Sources */,
-				8BD78DE62D79EBA70038FBA5 /* NavigationController+Gesture.swift in Sources */,
-				8B6BBAB32D6A1F7E00408370 /* BaseViewModel.swift in Sources */,
-				8B6BBAB42D6A1F7E00408370 /* ContainerEmptyView.swift in Sources */,
-				8B6BBAB52D6A1F7E00408370 /* IModel.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				8BF8F7A12D7465CA0024E341 /* UIUtils.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				8B6BBABF2D6A246000408370 /* ServiceLocator.swift in Sources */,
-				8BC84B682D76FCC000392913 /* View+Hidden.swift in Sources */,
-				8B6BBAC02D6A246000408370 /* Injected.swift in Sources */,
-				8B6BBAC12D6A246000408370 /* Configurator.swift in Sources */,
-				8B9E8BDA2D7347C200CCEBE8 /* Blocks.swift in Sources */,
-				8B026A1E2F3BCF250047635C /* CustomNavigationStateView.swift in Sources */,
-				8B026A2F2F3BCF250047635C /* TextFieldWithState.swift in Sources */,
-				8B026A332F3BCF250047635C /* ProgressView.swift in Sources */,
-				8B026A352F3BCF250047635C /* FilledButtonWithState.swift in Sources */,
-				8B026A372F3BCF250047635C /* ButtonWithState.swift in Sources */,
-				8B026A3A2F3BCF250047635C /* TextWithState.swift in Sources */,
-				8B026A412F3BCF250047635C /* LoaderView.swift in Sources */,
-				8B026A422F3BCF250047635C /* ImageButtonWithState.swift in Sources */,
-				8B026A452F3BCF250047635C /* ActivityIndicator.swift in Sources */,
-				8B026A472F3BCF250047635C /* PickerWithState.swift in Sources */,
-				8B6BBB072D6DF2A700408370 /* Colors.swift in Sources */,
-				8B6BBB052D6DF14C00408370 /* View+Corners.swift in Sources */,
-				8B999BBB2F3BD2220047635C /* StringResource+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +485,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				"$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -524,10 +494,11 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					shared,
-				);
+				"$(inherited)",
+				"-framework",
+				ComposeApp,
+				"-lsqlite3",
+			);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -544,7 +515,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				"$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -553,10 +524,11 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					shared,
-				);
+				"$(inherited)",
+				"-framework",
+				ComposeApp,
+				"-lsqlite3",
+			);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

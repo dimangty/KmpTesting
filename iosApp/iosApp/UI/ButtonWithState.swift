@@ -6,7 +6,7 @@
 //  Copyright © 2025 orgName. All rights reserved.
 //
 import SwiftUI
-import shared
+import ComposeApp
 
 struct ButtonWithState: View {
 
@@ -41,4 +41,3 @@ struct ButtonWithState: View {
     }
 
 }
-

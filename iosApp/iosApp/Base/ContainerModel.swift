@@ -8,7 +8,7 @@
 
 import Foundation
 import Combine
-import shared
+import ComposeApp
 import SwiftUI
 
 class ContainerModel:ObservableObject {

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import shared
+import ComposeApp
 
 struct TextFieldWithState: View {
     let state: TextFieldState

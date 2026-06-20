@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import shared
+import ComposeApp
 
 extension StringResource {
     func localized() -> String {

@@ -65,6 +65,13 @@ fun BaseScreen(
     var toast by remember { mutableStateOf<ToastState?>(null) }
     var alertDialog by remember { mutableStateOf<AlertDialogState?>(null) }
     var bottomSheetDialog by remember { mutableStateOf<EpsBottomSheetState?>(null) }
+    val resolvedTopBarState = remember(topBarState, onDefaultUiEvent) {
+        topBarState.copy(
+            onBackClick = topBarState.onBackClick ?: { onDefaultUiEvent(DefaultUiEvent.OnBackClicked) },
+            onNotificationsClick = topBarState.onNotificationsClick
+                ?: { onDefaultUiEvent(DefaultUiEvent.OnNotificationsClicked) },
+        )
+    }
 
     LaunchedEffect(Unit) {
         onDefaultUiEvent(DefaultUiEvent.OnScreenCreated)
@@ -84,7 +91,7 @@ fun BaseScreen(
                 EpsStatusBarSpacer()
             }
             if (addTopBar) {
-                EpsTopBar(topBarState)
+                EpsTopBar(resolvedTopBarState)
             }
             Box(modifier = Modifier.weight(1f)) {
                 content()

@@ -1,14 +1,9 @@
 import SwiftUI
-import shared
+import ComposeApp
 
 @main
 struct iOSApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
-    init() {
-        // Initialize Koin DI once via shared helper.
-        KoinApplication.start()
-    }
 
 	var body: some Scene {
 		WindowGroup {
