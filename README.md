@@ -1,6 +1,7 @@
 Агрегатор Новостей.
 
 Стек: KMP, KTOR, SqlDelight, Koin, Moko-Resources
+"CMP Nav 3"
 
 Jetpack Compose / SwiftUI
 
