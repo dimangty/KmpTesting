@@ -12,7 +12,7 @@ typealias KoinApplication = Koin_coreKoinApplication
 
 
 extension KoinApplication {
-    static let shared = Di_iosKt.doInitKoin()
+    static let shared = PlatformModule_iosKt.doInitKoin()
 
   @discardableResult
   static func start() -> KoinApplication {
@@ -36,7 +36,7 @@ func inject<T : AnyObject>(param: Any?) -> T {
 }
 
 func inject<T : AnyObject>(parameters: [Any?]?) -> T {
-    if let ktClass = shared.Di_iosKt.getOriginalKotlinClass(objCClass: T.self) {
+    if let ktClass = shared.PlatformModule_iosKt.getOriginalKotlinClass(objCClass: T.self) {
         return KoinApplication.shared.koin.get(
             clazz: ktClass,
             qualifier: nil,
