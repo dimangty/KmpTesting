@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/KmpTesting.iml" filepath="$PROJECT_DIR$/.idea/KmpTesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KursovikKMP.iosApp.iml" filepath="$PROJECT_DIR$/.idea/KursovikKMP.iosApp.iml" />
     </modules>
   </component>
 </project>
