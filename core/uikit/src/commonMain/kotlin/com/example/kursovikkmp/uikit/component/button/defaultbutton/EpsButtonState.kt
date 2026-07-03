@@ -4,6 +4,7 @@ data class EpsButtonState(
     val text: String = "",
     val type: EpsButtonType = EpsButtonType.Primary,
     val enabled: Boolean = true,
+    val fillMaxWidth: Boolean = false,
     val onClick: (() -> Unit)? = null,
 ) {
     companion object {

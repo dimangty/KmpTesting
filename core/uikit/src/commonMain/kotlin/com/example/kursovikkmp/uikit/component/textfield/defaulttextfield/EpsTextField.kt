@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.text.KeyboardOptions
 
 @Composable
 fun EpsTextField(state: EpsTextFieldState) {
@@ -17,6 +18,9 @@ fun EpsTextField(state: EpsTextFieldState) {
             { Text(state.error) }
         } else null,
         enabled = state.enabled,
+        singleLine = state.singleLine,
+        keyboardOptions = KeyboardOptions(keyboardType = state.keyboardType),
+        visualTransformation = state.visualTransformation,
         modifier = Modifier.fillMaxWidth(),
     )
 }

@@ -4,7 +4,11 @@ import androidx.lifecycle.viewModelScope
 import com.example.kursovikkmp.favorites.domain.FavoritesRepository
 import com.example.kursovikkmp.mvvm.BaseViewModel
 import com.example.kursovikkmp.navigation.NavigationAction
+import com.example.kursovikkmp.uikit.component.articlecard.EpsArticleCardState
 import com.example.kursovikkmp.uikit.component.topbar.EpsTopBarState
+import kursovikkmp.core.uikit.generated.resources.Res
+import kursovikkmp.core.uikit.generated.resources.scr_favorite_empty
+import kursovikkmp.core.uikit.generated.resources.scr_favorite_screen_title
 import kotlinx.coroutines.launch
 
 class FavoritesListViewModel(
@@ -12,7 +16,11 @@ class FavoritesListViewModel(
 ) : BaseViewModel<FavoritesListUiEvent, FavoritesListState>(FavoritesListState()) {
 
     override fun initTopBarState(): suspend EpsTopBarState.() -> EpsTopBarState = {
-        copy()
+        copy(title = getString(Res.string.scr_favorite_screen_title))
+    }
+
+    override fun initScreenStrings(): suspend FavoritesListState.() -> FavoritesListState = {
+        copy(emptyTextState = emptyTextState.copy(text = getString(Res.string.scr_favorite_empty)))
     }
 
     override fun processUiEvent(event: FavoritesListUiEvent) {
@@ -42,7 +50,20 @@ class FavoritesListViewModel(
                     date = it.publishedAt
                 )
             }
-            updateState { copy(articles = articles) }
+            updateState {
+                copy(
+                    articles = articles,
+                    articleCardStates = articles.map { article ->
+                        EpsArticleCardState(
+                            title = article.title,
+                            subtitle = article.text,
+                            onClick = {
+                                onUiEvent(FavoritesListUiEvent.OnArticleClick(article.title))
+                            },
+                        )
+                    },
+                )
+            }
         }
     }
 }
