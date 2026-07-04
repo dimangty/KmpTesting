@@ -24,8 +24,6 @@ kotlin {
             implementation(project(":feature:news:news-domain"))
             implementation(libs.koin.core)
             implementation(libs.kotlinx.coroutines.core)
-            implementation(libs.kotlinx.serialization)
-            implementation(libs.ktor.client.core)
         }
     }
 }

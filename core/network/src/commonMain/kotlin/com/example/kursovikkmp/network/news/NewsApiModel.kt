@@ -1,4 +1,4 @@
-package com.example.kursovikkmp.news.data
+package com.example.kursovikkmp.network.news
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
